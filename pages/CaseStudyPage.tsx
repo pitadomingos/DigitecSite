@@ -45,7 +45,7 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         color: 'blue',
         icon: ShieldCheck,
         gradient: 'from-blue-600 to-indigo-700',
-        appPath: '/safeteq-login',
+        appPath: 'https://rac-s.vercel.app',
         isAvailable: true
       },
       minesite: {
@@ -293,9 +293,20 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
                         {canLaunch ? labels.standardsDesc : labels.stagingDesc}
                     </p>
                     {canLaunch ? (
-                        <Link to={currentStudy.appPath} className={`w-full py-4 rounded-2xl bg-gradient-to-r ${currentStudy.gradient} text-white font-black shadow-lg hover:scale-105 transition-all flex items-center justify-center gap-2`}>
+                        currentStudy.appPath.startsWith('http') ? (
+                          <a 
+                            href={currentStudy.appPath} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className={`w-full py-4 rounded-2xl bg-gradient-to-r ${currentStudy.gradient} text-white font-black shadow-lg hover:scale-105 transition-all flex items-center justify-center gap-2`}
+                          >
                             <Rocket size={18} /> {t.launchpad.btnLaunch}
-                        </Link>
+                          </a>
+                        ) : (
+                          <Link to={currentStudy.appPath} className={`w-full py-4 rounded-2xl bg-gradient-to-r ${currentStudy.gradient} text-white font-black shadow-lg hover:scale-105 transition-all flex items-center justify-center gap-2`}>
+                              <Rocket size={18} /> {t.launchpad.btnLaunch}
+                          </Link>
+                        )
                     ) : (
                         <div className="w-full py-4 rounded-2xl bg-slate-100 text-slate-400 font-black flex items-center justify-center gap-2 border border-slate-200 cursor-not-allowed opacity-60">
                             <Lock size={18} /> {t.launchpad.btnLaunch}

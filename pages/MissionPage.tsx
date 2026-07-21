@@ -126,29 +126,28 @@ const MissionPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                   <h3 className="text-4xl md:text-6xl font-black tracking-tighter mb-8">
-                      Intelligent <br/>
-                      Machine Ecosystems.
+                      {t.publicMission.telemetry.machineEcosystems}
                   </h3>
                   <div className="space-y-6">
                       <div className="flex gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
                           <Zap className="text-yellow-400 shrink-0" size={24} />
                           <div>
-                              <h4 className="font-bold text-lg">EOM Parameter Extraction</h4>
-                              <p className="text-slate-400 text-sm">Real-time CAN-bus integration pulling critical temperature, pressure, and fuel data directly from the ECM.</p>
+                              <h4 className="font-bold text-lg">{t.publicMission.telemetry.eomTitle}</h4>
+                              <p className="text-slate-400 text-sm">{t.publicMission.telemetry.eomDesc}</p>
                           </div>
                       </div>
                       <div className="flex gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
                           <Shield className="text-red-400 shrink-0" size={24} />
                           <div>
-                              <h4 className="font-bold text-lg">Fire Suppression Systems</h4>
-                              <p className="text-slate-400 text-sm">Automated health monitoring and trigger alerts for multi-million dollar asset protection.</p>
+                              <h4 className="font-bold text-lg">{t.publicMission.telemetry.fireTitle}</h4>
+                              <p className="text-slate-400 text-sm">{t.publicMission.telemetry.fireDesc}</p>
                           </div>
                       </div>
                       <div className="flex gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
                           <Activity className="text-blue-400 shrink-0" size={24} />
                           <div>
-                              <h4 className="font-bold text-lg">Lincoln AutoLub Monitoring</h4>
-                              <p className="text-slate-400 text-sm">Predictive lubrication tracking to prevent premature component failure and downtime.</p>
+                              <h4 className="font-bold text-lg">{t.publicMission.telemetry.lubTitle}</h4>
+                              <p className="text-slate-400 text-sm">{t.publicMission.telemetry.lubDesc}</p>
                           </div>
                       </div>
                   </div>
@@ -160,10 +159,10 @@ const MissionPage: React.FC = () => {
                           <div className="w-3 h-3 rounded-full bg-red-500"></div>
                           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                           <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                          <span className="text-xs font-mono text-slate-500">telemetry_daemon.v1</span>
+                          <span className="text-xs font-mono text-slate-500">{t.publicMission.telemetry.daemonName}</span>
                       </div>
                       <div className="space-y-4 font-mono text-sm">
-                          <div className="text-blue-400"># Fetching ECM Parameters...</div>
+                          <div className="text-blue-400">{t.publicMission.telemetry.fetchEcm}</div>
                           <div className="text-slate-300">&gt; Engine Load: 78%</div>
                           <div className="text-slate-300">&gt; Oil Pressure: 62 PSI [OK]</div>
                           <div className="text-green-400">&gt; Fire Suppression: READY</div>

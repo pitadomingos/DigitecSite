@@ -36,9 +36,9 @@ const Dashboard: React.FC<DashboardProps> = ({
   const { addMessage } = useMessages();
   
   // -- GLOBAL FILTERS (LOCAL TO PAGE) --
-  const [selectedCompany, setSelectedCompany] = useState<string>('All');
-  const [selectedDepartment, setSelectedDepartment] = useState<string>('All');
-  const [selectedAccessStatus, setSelectedAccessStatus] = useState<'All' | 'Granted' | 'Blocked'>('All');
+  const [selectedCompany, setSelectedCompany] = useState<string>(t.common.all);
+  const [selectedDepartment, setSelectedDepartment] = useState<string>(t.common.all);
+  const [selectedAccessStatus, setSelectedAccessStatus] = useState<'All' | 'Granted' | 'Blocked'>(t.common.all as any);
 
   // Trigger re-render every minute to update countdowns
   const [, setTick] = useState(0);
@@ -48,8 +48,8 @@ const Dashboard: React.FC<DashboardProps> = ({
   const AB_ROWS_PER_PAGE = 5; 
 
   // Filters for Employee Bookings Table
-  const [empFilterCompany, setEmpFilterCompany] = useState<string>('All');
-  const [empFilterRac, setEmpFilterRac] = useState<string>('All');
+  const [empFilterCompany, setEmpFilterCompany] = useState<string>(t.common.all);
+  const [empFilterRac, setEmpFilterRac] = useState<string>(t.common.all);
   const [empFilterDate, setEmpFilterDate] = useState<string>('');
 
   const [isSendingSms, setIsSendingSms] = useState(false);
@@ -63,7 +63,7 @@ const Dashboard: React.FC<DashboardProps> = ({
   if (!t || !t.dashboard || !t.dashboard.upcoming || !t.dashboard.booked) {
       return (
           <div className="flex items-center justify-center h-full p-20 text-slate-500">
-              Loading Dashboard Resources...
+              {t.dashboard?.loading || 'Loading Dashboard Resources...'}
           </div>
       );
   }

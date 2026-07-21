@@ -27,11 +27,11 @@ const ReportsPage: React.FC<ReportsPageProps> = ({ bookings, sessions, currentSi
   const [period, setPeriod] = useState<ReportPeriod>('Monthly');
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
-  const [selectedDept, setSelectedDept] = useState('All');
-  const [selectedRac, setSelectedRac] = useState('All');
+  const [selectedDept, setSelectedDept] = useState(t.common.all);
+  const [selectedRac, setSelectedRac] = useState(t.common.all);
   
   // Local Site Filter (Use only if Global is 'All')
-  const [localSelectedSite, setLocalSelectedSite] = useState('All');
+  const [localSelectedSite, setLocalSelectedSite] = useState(t.common.all);
   
   // Determine effective site filter
   const effectiveSiteId = currentSiteId !== 'all' ? currentSiteId : localSelectedSite;
@@ -87,12 +87,12 @@ const ReportsPage: React.FC<ReportsPageProps> = ({ bookings, sessions, currentSi
        if (!bDate) return false;
        if (start && bDate < start) return false;
        if (end && bDate > end) return false;
-       if (selectedDept !== 'All' && b.employee.department !== selectedDept) return false;
-       if (selectedRac !== 'All' && getRacCode(b) !== selectedRac) return false;
+       if (selectedDept !== t.common.all && b.employee.department !== selectedDept) return false;
+       if (selectedRac !== t.common.all && getRacCode(b) !== selectedRac) return false;
        
        // Site Filter Logic
        const bSite = b.employee.siteId || 's1'; // Default
-       if (effectiveSiteId !== 'All' && bSite !== effectiveSiteId) return false;
+       if (effectiveSiteId !== t.common.all && bSite !== effectiveSiteId) return false;
 
        return true;
     });

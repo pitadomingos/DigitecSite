@@ -6,6 +6,7 @@ import {
   Smartphone, ShieldCheck, HardHat, Activity, ExternalLink,
   GraduationCap, Wallet, Monitor
 } from 'lucide-react';
+import DigitecLogo from '../components/DigitecLogo';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const PublicHome: React.FC = () => {
@@ -102,12 +103,7 @@ const PublicHome: React.FC = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#020617]/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="bg-gradient-to-tr from-blue-600 to-cyan-500 p-2 rounded-lg text-white">
-              <Code size={24} strokeWidth={3} />
-            </div>
-            <span className="text-2xl font-black tracking-tighter text-white">
-              Digitec
-            </span>
+            <DigitecLogo light />
           </div>
 
           {/* Desktop Menu */}
@@ -126,7 +122,7 @@ const PublicHome: React.FC = () => {
               onClick={() => navigate('/portfolio')}
               className="text-sm font-bold uppercase tracking-wider text-slate-300 hover:text-blue-400 transition-colors"
             >
-              Portfolio
+              {t.publicHome.nav.portfolio}
             </button>
 
             <div className="h-6 w-px bg-slate-700 mx-2"></div>
@@ -164,7 +160,7 @@ const PublicHome: React.FC = () => {
                 {t.publicHome.nav[item as keyof typeof t.publicHome.nav]}
               </button>
             ))}
-            <button onClick={() => navigate('/portfolio')} className="text-left font-bold text-slate-300 py-2 border-b border-slate-800">Portfolio</button>
+            <button onClick={() => navigate('/portfolio')} className="text-left font-bold text-slate-300 py-2 border-b border-slate-800">{t.publicHome.nav.portfolio}</button>
             <button onClick={() => navigate('/launchpad')} className="bg-blue-600 text-white py-3 rounded-lg font-bold">{t.publicHome.nav.enterHub}</button>
           </div>
         )}
@@ -301,7 +297,7 @@ const PublicHome: React.FC = () => {
              <div className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-600 rounded-full px-4 py-1 text-xs font-black uppercase tracking-widest mb-4">
                 <Target size={14} /> {t.publicMission.hero.badge.toUpperCase()}
              </div>
-             <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-6">Our Mission</h2>
+             <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-6">{t.publicHome.nav.mission}</h2>
              <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
           </div>
 
@@ -445,7 +441,7 @@ const PublicHome: React.FC = () => {
 
       <footer className="bg-[#020617] text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2"><Code size={20} /><span className="text-lg font-bold text-white">Digitec</span></div>
+          <DigitecLogo light size="sm" />
           <div className="text-sm font-medium">&copy; {new Date().getFullYear()} Digitec Enterprise. {t.common.rights}</div>
           <div className="flex gap-6 text-sm font-medium">
             <a href="https://github.com/digitec" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-1">

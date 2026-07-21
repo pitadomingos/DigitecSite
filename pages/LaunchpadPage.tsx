@@ -4,6 +4,7 @@ import {
   ShieldCheck, GraduationCap, Activity, Wallet, Wrench, CreditCard, 
   User, Bell, LayoutGrid, ArrowRight, Star, ChevronLeft, Home, Globe, Lock
 } from 'lucide-react';
+import DigitecLogo from '../components/DigitecLogo';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface LaunchpadPageProps {
@@ -23,12 +24,12 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName, isPre
   const applications = [
     {
       id: 'SAFETEQ',
-      name: 'SAFETEQ Enterprise Risk Management',
+      name: t.portfolio?.items?.safeteq?.name || 'SAFETEQ Enterprise Risk Management',
       desc: t.portfolio?.items?.safeteq?.category || 'Enterprise Risk Management',
       icon: ShieldCheck,
       color: 'blue',
       gradient: 'from-blue-600 to-indigo-700',
-      status: 'Enterprise',
+      status: t.launchpad?.status?.enterprise || 'Enterprise',
       path: 'https://rac-s.vercel.app',
       isAvailable: true
     },
@@ -105,10 +106,9 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName, isPre
               <button onClick={() => navigate('/')} className="p-2 mr-2 text-slate-400 hover:text-white transition-colors bg-white/5 rounded-lg border border-white/10" title="Back to Website">
                   <Home size={20} />
               </button>
-              <div className="bg-gradient-to-tr from-blue-600 to-cyan-500 p-2 rounded-lg text-white">
-                  <LayoutGrid size={24} />
-              </div>
-              <span className="text-2xl font-black text-white tracking-tighter">Digitec <span className="text-slate-500 font-light">Hub</span></span>
+              <DigitecLogo light />
+              <div className="h-8 w-px bg-slate-800 ml-2"></div>
+              <span className="text-xl font-bold text-slate-500 uppercase tracking-widest ml-1">{t.launchpad.hub}</span>
           </div>
           
           <div className="flex items-center gap-4">
@@ -177,7 +177,7 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName, isPre
                                       isTrial && canLaunch ? 'bg-amber-500/10 text-amber-400 border-amber-500/20' :
                                       'bg-slate-800 text-slate-500 border-slate-700'
                                   }`}>
-                                      {canLaunch ? app.status : 'Pending Setup'}
+                                      {canLaunch ? app.status : t.launchpad?.status?.pending || 'Pending Setup'}
                                   </div>
                               </div>
 
@@ -187,8 +187,8 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName, isPre
                               </div>
 
                               <div className="mt-10 flex items-center justify-between">
-                                  <span className={`text-xs font-bold uppercase tracking-widest ${canLaunch ? (isActive || isTrial ? (t.launchpad?.btnLaunch || 'Launch') : (t.launchpad?.btnExplore || 'View')) : 'Locked'}`}>
-                                      {isActive || isTrial ? t.launchpad?.btnLaunch || 'Launch' : t.launchpad?.btnExplore || 'View'}
+                                  <span className={`text-xs font-bold uppercase tracking-widest ${canLaunch ? (isActive || isTrial ? (t.launchpad?.btnLaunch || 'Launch') : (t.launchpad?.btnExplore || 'View')) : (t.launchpad?.status?.locked || 'Locked')}`}>
+                                      {canLaunch ? (isActive || isTrial ? (t.launchpad?.btnLaunch || 'Launch') : (t.launchpad?.btnExplore || 'View')) : (t.launchpad?.status?.locked || 'Locked')}
                                   </span>
                                   <div className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all ${canLaunch ? 'bg-blue-600 border-blue-500 text-white' : 'bg-transparent border-slate-800 text-slate-800'}`}>
                                       <ArrowRight size={18} className={canLaunch ? "group-hover:translate-x-1 transition-transform" : ""} />

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Shield, Lock, User, ArrowRight, Loader2, Code, ChevronLeft, Globe } from 'lucide-react';
+import DigitecLogo from '../components/DigitecLogo';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface LoginPageProps {
@@ -67,11 +68,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
         
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-800 to-slate-900 p-8 text-center text-white">
-          <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border border-white/20">
-            <Shield size={32} className="text-cyan-400" />
+          <div className="flex justify-center mb-6">
+            <DigitecLogo light />
           </div>
-          <h2 className="text-2xl font-black tracking-tight">{t.publicHome.nav.enterHub}</h2>
-          <p className="text-slate-400 text-sm mt-1">Secure Access to Digitec Ecosystem</p>
+          <h2 className="text-2xl font-black tracking-tight">{t.auth.loginPage.title}</h2>
+          <p className="text-slate-400 text-sm mt-1">{t.auth.loginPage.subtitle}</p>
         </div>
 
         {/* Form */}
@@ -79,7 +80,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
           <form onSubmit={handleLogin} className="space-y-6">
             
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Email Address</label>
+              <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t.auth.loginPage.emailLabel}</label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-blue-500">
                   <User size={18} />
@@ -87,7 +88,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
                 <input 
                   type="email" 
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-slate-800 font-medium outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
-                  placeholder="admin@vulcan.com"
+                  placeholder={t.auth.loginPage.placeholderEmail}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -95,7 +96,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Password</label>
+              <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t.auth.loginPage.passwordLabel}</label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-blue-500">
                   <Lock size={18} />
@@ -103,7 +104,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
                 <input 
                   type="password" 
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-slate-800 font-medium outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
-                  placeholder="••••••••"
+                  placeholder={t.auth.loginPage.placeholderPassword}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -112,7 +113,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
             {error && (
               <div className="p-3 bg-red-50 text-red-600 text-xs font-bold rounded-lg text-center animate-shake">
-                {error}
+                {t.auth.loginPage.error}
               </div>
             )}
 
@@ -127,10 +128,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
           </form>
         </div>
 
-        <div className="p-4 bg-slate-50 text-center border-t border-slate-100">
-          <p className="text-xs text-slate-400 font-medium">
-            Powered by <span className="text-slate-600 font-bold">Digitec</span> Security
-          </p>
+        <div className="p-4 bg-slate-50 text-center border-t border-slate-100 flex items-center justify-center gap-2">
+          <p className="text-xs text-slate-400 font-medium">{t.auth.poweredBy}</p>
+          <DigitecLogo size="sm" />
         </div>
       </div>
     </div>

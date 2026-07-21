@@ -45,6 +45,7 @@ import {
   LogOut,
   GitBranch
 } from 'lucide-react';
+import DigitecLogo from './DigitecLogo';
 import { UserRole, SystemNotification, Site, Company } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
@@ -202,8 +203,13 @@ const Layout: React.FC<LayoutProps> = ({
       >
         <div className={`flex items-center h-16 border-b border-slate-700 dark:border-slate-800 ${isCollapsed ? 'justify-center p-0' : 'justify-between p-4'}`}>
           <div className="flex items-center space-x-2">
-            <ShieldCheck className={`${isCollapsed ? 'w-8 h-8' : 'w-8 h-8'} text-yellow-500`} />
-            {!isCollapsed && <span className="text-xl font-bold tracking-wider">{t.common.vulcan}</span>}
+            {isCollapsed ? (
+               <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                  <ShieldCheck className="w-6 h-6 text-yellow-500" />
+               </div>
+            ) : (
+              <DigitecLogo light size="sm" />
+            )}
           </div>
           <button onClick={() => setSidebarOpen(false)} className="md:hidden text-gray-400 hover:text-white">
             <X size={24} />
@@ -226,7 +232,7 @@ const Layout: React.FC<LayoutProps> = ({
                 `}
               >
                 <LayoutGrid size={20} className="text-blue-400" />
-                {!isCollapsed && <span className="truncate font-bold text-blue-400">Switch Application</span>}
+                {!isCollapsed && <span className="truncate font-bold text-blue-400">{t.launchpad.switchApp}</span>}
           </Link>
 
           {navItems.map((item) => {

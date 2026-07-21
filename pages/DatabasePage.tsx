@@ -28,9 +28,9 @@ const DatabasePage: React.FC<DatabasePageProps> = ({ bookings, requirements, upd
   const { t } = useLanguage();
   
   // -- State --
-  const [selectedCompany, setSelectedCompany] = useState<string>('All');
-  const [selectedDepartment, setSelectedDepartment] = useState<string>('All');
-  const [accessStatusFilter, setAccessStatusFilter] = useState<'All' | 'Granted' | 'Blocked'>('All');
+  const [selectedCompany, setSelectedCompany] = useState<string>(t.common.all);
+  const [selectedDepartment, setSelectedDepartment] = useState<string>(t.common.all);
+  const [accessStatusFilter, setAccessStatusFilter] = useState<'All' | 'Granted' | 'Blocked'>(t.common.all as any);
   const [searchTerm, setSearchTerm] = useState('');
   
   // Pagination State
@@ -636,9 +636,9 @@ const DatabasePage: React.FC<DatabasePageProps> = ({ bookings, requirements, upd
             if (sId !== currentSiteId) return false;
         }
 
-        if (selectedCompany !== 'All' && item.emp.company !== selectedCompany) return false;
-        if (selectedDepartment !== 'All' && item.emp.department !== selectedDepartment) return false;
-        if (accessStatusFilter !== 'All' && item.status !== accessStatusFilter) return false;
+        if (selectedCompany !== t.common.all && item.emp.company !== selectedCompany) return false;
+        if (selectedDepartment !== t.common.all && item.emp.department !== selectedDepartment) return false;
+        if (accessStatusFilter !== t.common.all && item.status !== accessStatusFilter) return false;
         if (searchTerm) {
             const lower = searchTerm.toLowerCase();
             return item.emp.name.toLowerCase().includes(lower) || item.emp.recordId.toLowerCase().includes(lower);

@@ -160,6 +160,18 @@ export const translations = {
                 title: 'Data Sovereignty',
                 desc: 'Providing a single immutable record of safety training and personnel health across global sites.'
             }
+        },
+        telemetry: {
+          title: 'Our Mission',
+          machineEcosystems: 'Intelligent Machine Ecosystems.',
+          eomTitle: 'EOM Parameter Extraction',
+          eomDesc: 'Real-time CAN-bus integration pulling critical temperature, pressure, and fuel data directly from the ECM.',
+          fireTitle: 'Fire Suppression Systems',
+          fireDesc: 'Automated health monitoring and trigger alerts for multi-million dollar asset protection.',
+          lubTitle: 'Lincoln AutoLub Monitoring',
+          lubDesc: 'Predictive lubrication tracking to prevent premature component failure and downtime.',
+          daemonName: 'telemetry_daemon.v1',
+          fetchEcm: '# Fetching ECM Parameters...'
         }
     },
     portfolio: {
@@ -378,10 +390,15 @@ export const translations = {
       welcome: 'Welcome, {name}. Select an industrial workspace.',
       btnLaunch: 'Access Vault',
       btnExplore: 'View Specs',
+      hub: 'Hub',
+      switchApp: 'Switch Application',
       status: {
         active: 'Production Active',
         access: 'Standard Access',
-        trial: 'Beta Testing'
+        trial: 'Beta Testing',
+        enterprise: 'Enterprise',
+        pending: 'Pending Setup',
+        locked: 'Locked'
       },
       footer: {
         title: 'Unified Ecosystem Support',
@@ -414,9 +431,20 @@ export const translations = {
     },
     auth: {
       login: 'Sign In',
-      logout: 'Exit Hub'
+      logout: 'Exit Hub',
+      poweredBy: 'Powered by',
+      loginPage: {
+        title: 'Enter Client Hub',
+        subtitle: 'Secure Access to Digitec Ecosystem',
+        emailLabel: 'Email Address',
+        passwordLabel: 'Password',
+        placeholderEmail: 'admin@vulcan.com',
+        placeholderPassword: '••••••••',
+        error: 'Please enter valid credentials.'
+      }
     },
     dashboard: {
+      loading: 'Loading Dashboard Resources...',
       title: 'Operational Dashboard',
       subtitle: 'Site Overview',
       upcoming: {
@@ -1107,6 +1135,18 @@ export const translations = {
       },
       operationalMatrix: 'Matriz Operacional',
       owner: 'Proprietário',
+      sending: 'Enviando...',
+      smsBlast: 'Envio de SMS em Massa',
+      simulateRole: 'Simular Função',
+      superuser: 'Acesso Superusuário',
+      restricted: 'Acesso Restrito',
+      enterpriseView: 'Vista Empresarial',
+      exitFullScreen: 'Sair de Ecrã Inteiro',
+      fullScreen: 'Ecrã Inteiro',
+      notifications: 'Notificações',
+      noNotifications: 'Sem notificações',
+      clearAll: 'Limpar Tudo',
+      legal: 'Legal',
       rights: 'Todos os direitos reservados.'
     },
     publicHome: {
@@ -1195,54 +1235,291 @@ export const translations = {
                 title: 'Soberania de Dados',
                 desc: 'Fornecendo um registro único e imutável de treinamento de segurança e saúde em sites globais.'
             }
+        },
+        telemetry: {
+          title: 'Nossa Missão',
+          machineEcosystems: 'Ecossistemas de Máquinas Inteligentes.',
+          eomTitle: 'Extração de Parâmetros EOM',
+          eomDesc: 'Integração CAN-bus em tempo real extraindo dados críticos de temperatura, pressão e combustível diretamente do ECM.',
+          fireTitle: 'Sistemas de Supressão de Incêndio',
+          fireDesc: 'Monitoramento automatizado de integridade e alertas de gatilho para proteção de ativos multimilionários.',
+          lubTitle: 'Monitoramento Lincoln AutoLub',
+          lubDesc: 'Acompanhamento preditivo de lubrificação para evitar falhas prematuras de componentes e tempo de inatividade.',
+          daemonName: 'telemetry_daemon.v1',
+          fetchEcm: '# Extraindo Parâmetros ECM...'
         }
     },
     portfolio: {
+      hero: {
+        badge: 'Ecossistema Empresarial',
+        title: 'Portfólio de Soluções',
+        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas dos sectores mineiro e industrial.'
+      },
+      btnCaseStudy: 'Ver Especificações',
+      back: 'Voltar ao Início',
+      labels: {
+        flagship: 'Padrão Primário',
+        ready: 'Pronto para Produção',
+        webSolution: 'Digital Corporativo',
+        iotSolution: 'Telemetria Avançada'
+      },
       items: {
         safeteq: {
           name: 'SAFETEQ Enterprise Risk Management',
           category: 'Requisições Críticas',
-          desc: 'O "Sistema de Requisitos de Atividades Críticas" (SAFETEQ). Automatiza conformidade, passaportes digitais e controle de acesso.'
+          desc: 'O "Sistema de Requisitos de Atividades Críticas" (SAFETEQ). Automatiza fluxos de trabalho de treinamento, passaportes digitais e controle de acesso para uma força de trabalho mais segura.'
         },
         minesite: {
           name: 'Minesite Vision',
-          category: 'Telemetria IoT',
-          desc: 'Monitoramento IoT avançado para frotas. Rastreia Sistemas de Supressão de Incêndio, AutoLub e parâmetros EOM via ECM.'
+          category: 'Telemetria de Frota IoT',
+          desc: 'Monitoramento IoT avançado para frotas de mineração pesada. Rastreia Sistemas de Supressão de Incêndio, desempenho do Lincoln AutoLub e parâmetros críticos EOM do ECM.'
         },
         amtecheng: {
           name: 'Amtecheng Eng.',
           category: 'Portal de Engenharia',
-          desc: 'Ecossistema corporativo de alta conversão para firmas de engenharia líderes.'
+          desc: 'Um ecossistema corporativo de alta conversão para empresas líderes de engenharia. Focado na geração de leads e na exibição de projetos industriais.'
         },
         edudesk: {
           name: 'EduDesk',
           category: 'Treinamento Industrial',
-          desc: 'Digitalizando o ciclo de vida de programas de treinamento de aprendizes e operadores.'
+          desc: 'Digitalizando o ciclo de vida dos programas de treinamento de aprendizes e operadores com livros de notas e módulos de assiduidade.'
         },
         h365: {
           name: 'H365 Site Health',
           category: 'Saúde Ocupacional',
-          desc: 'Gestão médica para operações remotas com rastreamento ASO integrado.'
+          desc: 'Gestão médica para operações remotas. Rastreamento ASO integrado e Registos Médicos Eletrónicos.'
         },
         microfin: {
           name: 'MicroFin',
-          category: 'Controle Financeiro',
-          desc: 'Orquestração automatizada de empréstimos e folha de pagamento para empreiteiras.'
+          category: 'Controlo Financeiro',
+          desc: 'Orquestração automatizada de empréstimos e folha de pagamento para forças de trabalho de empreiteiras industriais de grande escala.'
         },
         jactrac: {
           name: 'JacTrac Mini',
-          category: 'Rastreamento de Ativos',
-          desc: 'IoT industrial especializado para rastrear o ciclo de vida de componentes hidráulicos.'
+          category: 'Rastreamento de Ativos Hidráulicos',
+          desc: 'IoT industrial especializado para rastrear ciclos de vida de instalação de mangueiras e prever falhas catastróficas de componentes.'
         },
         swiftpos: {
           name: 'SwiftPOS Retail',
           category: 'Segurança de Inventário',
-          desc: 'Ponto de Venda integrado com CFTV para visibilidade operacional total.'
+          desc: 'Ponto de Venda integrado com CCTV e alarmes de armazém para visibilidade operacional total.'
         }
+      },
+      industries: {
+        mining: 'Mineração',
+        oilGas: 'Petróleo e Gás',
+        ports: 'Portos',
+        manufacturing: 'Indústria',
+        education: 'Académico',
+        healthcare: 'Clínico',
+        finance: 'Banca',
+        retail: 'Retalho',
+        logistics: 'Cadeia de Suprimentos',
+        gov: 'Sector Público',
+        clinical: 'Médico',
+        banking: 'Fintech',
+        industry: 'Indústria Pesada',
+        security: 'Segurança Física',
+        engineering: 'Engenharia'
+      },
+      tags: {
+        iot: 'Habilitado para IoT',
+        saas: 'SaaS',
+        security: 'Alta Segurança',
+        offline: 'Núcleo Offline',
+        scalable: 'Auto-Escalável',
+        secure: 'Zero-Trust',
+        cloud: 'Multi-Região',
+        smb: 'Pronto para PME',
+        seo: 'Motor SEO',
+        telemetry: 'Telemetria em Tempo Real'
+      },
+      footer: {
+        title: 'Necessita de Arquitetura Personalizada?',
+        desc: "Construímos software por medida para lógica industrial complexa. Contacte o nosso balcão de soluções.",
+        btn: 'Solicitar Consulta'
+      }
+    },
+    caseStudies: {
+      labels: {
+        challenge: 'O Desafio',
+        solution: 'A Solução',
+        techFeatures: 'Características Técnicas',
+        stack: 'Stack Tecnológica',
+        buildLaunch: 'Construção e Lançamento',
+        ready: 'Implementação em breve?',
+        readyDesc: 'As nossas unidades de engenharia estão prontas para escalar a sua próxima migração digital.',
+        contact: 'Contacte-nos',
+        previewPending: 'Fase de Staging',
+        sandboxAccess: 'Acesso a Demo Pública',
+        stagingDesc: "Esta aplicação encontra-se atualmente em fase de staging interna para validação do cliente.",
+        standardsDesc: "Este sistema segue os elevados padrões da Digitec para resiliência de nível industrial."
+      },
+      safeteq: {
+        subtitle: 'Requisitos de Atividades Críticas - SAFETEQ Enterprise Risk Management',
+        challenge: 'As operações mineiras de grande escala debatiam-se com silos de certificação. As credenciais expiradas criavam responsabilidades de risco de vida nos portões do local, onde mais de 10.000 funcionários necessitavam de verificação individual diária.',
+        solution: 'O SAFETEQ Enterprise Risk Management é um motor de conformidade de alta segurança. Funde registos de RH com resultados de formação em tempo real para gerar passaportes QR digitais. Se um requisito (RACS, ASO ou DL) expirar, o acesso é bloqueado automaticamente.',
+        features: [
+          'Arquitetura multi-tenant que suporta líderes globais de mineração.',
+          ' "Passaportes" QR digitais para verificação de campo offline.',
+          'Motor de lógica booleana para matrizes de conformidade complexas.',
+          'Integração de portão com Controlo de Álcool IoT (etiloteste).',
+          'Filas automatizadas de renovação de formação e alertas SMS.'
+        ],
+        impact: [
+          { label: 'Fluxo no Portão', desc: 'Tempo de verificação mais rápido.' },
+          { label: 'Aderência à Segurança', desc: 'Conformidade com o SAFETEQ Enterprise Risk Management.' },
+          { label: 'Erros Administrativos', desc: 'Redução na introdução manual.' }
+        ]
+      },
+      minesite: {
+          subtitle: 'Telemetria IoT Preditiva',
+          challenge: 'Falhas inesperadas nos equipamentos levaram a milhões em perda de produtividade e riscos de segurança durante falhas na supressão de incêndios.',
+          solution: 'O Minesite Vision integra-se diretamente com os ECMs da frota via MQTT para monitorizar parâmetros como carga do motor, níveis de lubrificação e estado do sistema de incêndio em tempo real.',
+          features: [
+            'Extração direta de parâmetros via CAN-bus.',
+            'Fluxo de telemetria em tempo real MQTT.',
+            'Previsão automatizada de falhas de lubrificação.',
+            'Verificações integradas de integridade da supressão de incêndios.'
+          ],
+          impact: [
+            { label: 'Tempo de Inatividade', desc: 'Redução significativa em paragens não planeadas.' },
+            { label: 'Incidentes de Segurança', desc: 'Zero falhas de ativos protegidos.' },
+            { label: 'Precisão de Dados', desc: 'Telemetria em tempo real em vez de registos manuais.' }
+          ]
+      },
+      amtecheng: {
+          subtitle: 'Presença Estratégica de Engenharia',
+          challenge: 'As principais empresas de engenharia careciam de uma plataforma unificada para exibir projetos complexos de vários milhões de dólares e gerir a geração de leads de alta intenção.',
+          solution: 'Um ecossistema corporativo de alta conversão construído com Next.js, apresentando um CMS headless para atualizações rápidas de projetos e um motor de pontuação de leads personalizado.',
+          features: [
+            'CMS Headless para gestão de ativos pesados.',
+            'SSR de alto desempenho para SEO técnico.',
+            'Funil de nutrição de leads integrado.',
+            'Visitas interativas em 3D aos projetos.'
+          ],
+          impact: [
+            { label: 'Volume de Leads', desc: 'Aumento substancial nos RFQs mensais.' },
+            { label: 'Carga de Página', desc: 'Desempenho inferior a um segundo para sites de projetos globais.' },
+            { label: 'Avaliação de Utilizador', desc: 'Pontuações elevadas em acessibilidade técnica.' }
+          ]
+      },
+      edudesk: {
+        subtitle: 'Orquestração de Campus Digital',
+        challenge: 'A classificação manual em papel nos centros de formação industrial levava a atrasos na certificação e falta de transparência nos dados.',
+        solution: 'O EduDesk é um sistema de gestão de formação centralizado que automatiza cadernetas, assiduidade e emissão de certificados.',
+        features: ['Cadernetas Digitais', 'Assiduidade Automatizada', 'Integração NFC', 'Acompanhamento de Progresso em Tempo Real'],
+        impact: [
+          { label: 'Eficiência', desc: 'Ciclos de classificação mais rápidos.' },
+          { label: 'Transparência', desc: 'Acesso em tempo real aos dados dos alunos.' },
+          { label: 'Papelada', desc: 'redução de 90% nos registos físicos.' }
+        ]
+      },
+      h365: {
+        subtitle: 'Plataforma de Saúde Ocupacional',
+        challenge: 'Os locais de mineração remotos careciam de histórico médico integrado e acompanhamento de ASO em tempo real, aumentando os riscos de segurança.',
+        solution: 'O H365 fornece uma plataforma completa de EMR e saúde ocupacional com acompanhamento integrado de certificações.',
+        features: ['Registos Médicos Eletrónicos', 'Auto-Alertas ASO', 'Integração de Telemedicina', 'Acompanhamento de Aptidão Física'],
+        impact: [
+          { label: 'Redução de Risco', desc: 'Menos incidentes relacionados com a saúde.' },
+          { label: 'Conformidade', desc: '100% de acompanhamento da validade de ASO.' },
+          { label: 'Acesso', desc: 'Dados médicos instantâneos para HSE.' }
+        ]
+      },
+      microfin: {
+          subtitle: 'Orquestração Financeira para Empreiteiros',
+          challenge: 'Gerir a folha de pagamento e pequenos empréstimos para milhares de empreiteiros era um fardo administrativo manual e propenso a erros.',
+          solution: 'O MicroFin automatiza o ciclo de vida dos empréstimos e integra-se diretamente com os dados de assiduidade dos empreiteiros.',
+          features: ['Empréstimos Automatizados', 'Integração com Folha de Pagamento', 'Pontuação de Risco', 'Desembolso Móvel'],
+          impact: [
+            { label: 'Tempo Administrativo', desc: 'Redução significativa no processamento.' },
+            { label: 'Precisão', desc: 'Zero erros de cálculo manual.' },
+            { label: 'Velocidade', desc: 'Desembolso instantâneo aos trabalhadores.' }
+          ]
+      },
+      jactrac: {
+          subtitle: 'Acompanhamento do Ciclo de Vida de Ativos Industriais',
+          challenge: 'Componentes hidráulicos críticos falhavam sem aviso, causando enormes tempos de inatividade e riscos de segurança.',
+          solution: 'O JacTrac utiliza IoT e análise de ciclo de vida para prever falhas de componentes antes que estas aconteçam.',
+          features: ['Serialização de Componentes', 'Previsão de Falhas IoT', 'Agendamento de Manutenção', 'Auditoria de Ativos em Campo'],
+          impact: [
+            { label: 'Inatividade', desc: 'Redução drástica nas paragens por falha.' },
+            { label: 'Segurança', desc: 'Prevenção de explosões de alta pressão.' },
+            { label: 'Custo', desc: 'Otimização dos gastos com inventário.' }
+          ]
+      },
+      swiftpos: {
+          subtitle: 'Ecossistema de Retalho de Alta Segurança',
+          challenge: 'As fugas de inventário em armazém e a fraude no retalho exigiam uma plataforma integrada de segurança e transações.',
+          solution: 'O SwiftPOS funde a lógica de ponto de venda com telemetria de CCTV e alarmes para segurança total do local.',
+          features: ['CCTV Integrado', 'Sincronização de Inventário em Tempo Real', 'IA de Deteção de Fraude', 'Gestão de Múltiplas Lojas'],
+          impact: [
+            { label: 'Perdas (Shrinkage)', desc: 'Grande redução na perda de inventário.' },
+            { label: 'Segurança', desc: 'Alerta instantâneo sobre vendas anómalas.' },
+            { label: 'Controlo', desc: 'Vista unificada em todas as sucursais.' }
+          ]
+      }
+    },
+    launchpad: {
+      title: 'Centro de Comando Digital',
+      welcome: 'Bem-vindo, {name}. Selecione um espaço de trabalho industrial.',
+      btnLaunch: 'Aceder ao Cofre',
+      btnExplore: 'Ver Especificações',
+      hub: 'Hub',
+      switchApp: 'Mudar de Aplicação',
+      status: {
+        active: 'Produção Ativa',
+        access: 'Acesso Padrão',
+        trial: 'Teste Beta',
+        enterprise: 'Empresarial',
+        pending: 'Configuração Pendente',
+        locked: 'Bloqueado'
+      },
+      footer: {
+        title: 'Suporte a Ecossistema Unificado',
+        desc: 'A Digitec fornece sincronização de dados entre aplicações para clientes empresariais.',
+        btn: 'Contactar Arquiteto de Soluções'
+      },
+      globalStatus: 'Estado: Operacional'
+    },
+    nav: {
+      dashboard: 'Painel',
+      booking: 'Agendamento',
+      records: 'Registos de Formação',
+      database: 'Matriz Mestra',
+      reports: 'Analítica',
+      enterpriseDashboard: 'Vista Corporativa',
+      alcohol: 'IoT de Álcool',
+      requestCards: 'Emitir Passaportes',
+      communications: 'Registo de Comms',
+      schedule: 'Calendário',
+      siteGovernance: 'Motor de Políticas',
+      trainerInput: 'Entrada de Notas',
+      users: 'Acesso de Utilizadores',
+      settings: 'Config do Sistema',
+      logs: 'Registos do Sistema',
+      manuals: 'Documentação',
+      feedbackAdmin: 'Tickets de Suporte',
+      adminGuide: 'Slides de Admin',
+      presentation: 'Proposta',
+      proposal: 'Especificação Completa'
+    },
+    auth: {
+      login: 'Entrar',
+      logout: 'Sair da Central',
+      poweredBy: 'Desenvolvido por',
+      loginPage: {
+        title: 'Central do Cliente',
+        subtitle: 'Acesso Seguro ao Ecossistema Digitec',
+        emailLabel: 'Endereço de E-mail',
+        passwordLabel: 'Palavra-passe',
+        placeholderEmail: 'admin@vulcan.com',
+        placeholderPassword: '••••••••',
+        error: 'Por favor, insira credenciais válidas.'
       }
     },
     database: {
-      title: 'Matriz de Conformidade',
+      title: 'Matriz Mestra de Conformidade',
       subtitle: 'Controle de Autorização da Força de Trabalho',
       granted: 'Autorizado',
       blocked: 'Bloqueado',
@@ -1261,9 +1538,9 @@ export const translations = {
       dlDetails: 'Detalhes da Carta de Condução',
       number: 'Número',
       class: 'Classe',
-      mappingTitle: 'Mapeamento de Dados',
-      mappingSubtitle: 'Conecte as colunas do seu CSV aos campos do SAFETEQ',
-      preview: 'Pré-visualização',
+      mappingTitle: 'Mapeamento de Dados de Origem',
+      mappingSubtitle: 'Conecte as colunas do seu CSV legado aos campos do SAFETEQ',
+      preview: 'Pré-visualização de Dados',
       coreData: 'Identidade Principal',
       complianceTrain: 'Conformidade e Treino',
       sourceCol: 'Coluna de Origem',
@@ -1273,7 +1550,7 @@ export const translations = {
       confirmDelete: 'Excluir Registo?',
       confirmDeleteMsg: 'Isto removerá permanentemente o registo da base de dados.',
       bulkQrMessage: 'Tem a certeza que deseja gerar {count} códigos QR? Isto pode levar algum tempo.',
-      processImport: 'Iniciar Processamento',
+      processImport: 'Iniciar Processamento de Importação',
       importCsv: 'Importar CSV',
       ops: {
           EMI_PTS: 'Emi-PTS',
@@ -1283,14 +1560,180 @@ export const translations = {
       }
     },
     dashboard: {
+      loading: 'A carregar recursos do painel...',
       title: 'Painel Operacional',
       subtitle: 'Visão Geral do Site',
+      upcoming: {
+        title: 'Próximas Formações',
+        viewSchedule: 'Calendário Completo',
+        date: 'Data',
+        session: 'Módulo',
+        capacity: 'Vagas',
+        status: 'Estado'
+      },
+      booked: {
+        title: 'Pessoal Reservado',
+        tableEmployee: 'Funcionário',
+        tableRac: 'Módulo',
+        tableDate: 'Data',
+        tableRoom: 'Local',
+        tableTrainer: 'Instrutor',
+        noData: 'Sem reservas atuais'
+      },
       kpi: {
-        certifications: 'SAFETEQ Enterprise Risk Management Ativos'
+        adherence: 'Conformidade',
+        certifications: 'SAFETEQ Enterprise Risk Management Ativos',
+        pending: 'Em Formação',
+        expiring: 'Alerta de Renovação',
+        scheduled: 'Sessões'
       },
       charts: {
-        complianceSubtitle: 'Por Protocolo SAFETEQ Enterprise Risk Management'
+        compliant: 'Autorizado',
+        nonCompliant: 'Bloqueado',
+        complianceTitle: 'Matriz de Aderência',
+        complianceSubtitle: 'Por Protocolo SAFETEQ Enterprise Risk Management',
+        accessTitle: 'Estado do Portão',
+        missing: 'Deficiências'
+      },
+      renewal: {
+        title: 'Alertas de Renovação',
+        message: 'funcionários que necessitam de renovação em 30 dias.',
+        button: 'Iniciar Renovações'
+      },
+      autoBooking: {
+        title: 'Auto-Reservas',
+        subPart1: 'Pessoal com expiração de alto risco',
+        subPart2: 'foram auto-reservados.'
       }
+    },
+    reports: {
+      title: 'Relatórios e Analítica',
+      subtitle: 'Desempenho do site e tendências de conformidade',
+      filters: {
+        period: 'Período do Relatório',
+        startDate: 'Data de Início',
+        endDate: 'Data de Fim',
+        department: 'Departamento',
+        racType: 'Módulo RAC'
+      },
+      periods: {
+        weekly: 'Últimos 7 Dias',
+        monthly: 'Últimos 30 Dias',
+        ytd: 'Ano até à Data',
+        custom: 'Intervalo Personalizado'
+      },
+      printReport: 'Imprimir Relatório Executivo',
+      stats: {
+        totalTrained: 'Total Formado',
+        passRate: 'Taxa de Aprovação',
+        attendance: 'Assiduidade',
+        noShows: 'Não Comparências'
+      },
+      charts: {
+        performance: 'Tendência de Desempenho RAC',
+        breakdownTitle: 'Sucesso vs Falha por Módulo',
+        distributionTitle: 'Distribuição de Conformidade',
+        distributionSubtitle: 'Divisão da população atual do site',
+        aiSubtitle: 'Insights Estratégicos'
+      },
+      executiveAnalysis: 'Resumo Executivo de IA',
+      analyzing: 'Analisando...',
+      generate: 'Gerar Resumo',
+      leaderboard: 'Desempenho do Instrutor',
+      trainerMetrics: {
+        students: 'Alunos',
+        avgTheory: 'Média Teórica'
+      },
+      noShowsTitle: 'Registo de Incidentes de Não Comparência'
+    },
+    results: {
+      searchPlaceholder: 'Pesquisar por Nome ou ID...',
+      passport: 'Meu Passaporte',
+      export: 'Exportar Resultados',
+      table: {
+        employee: 'Colaborador',
+        session: 'Formação',
+        date: 'Data',
+        trainer: 'Instrutor',
+        theory: 'Teoria',
+        status: 'Estado',
+        expiry: 'Validade'
+      }
+    },
+    trainer: {
+      title: 'Terminal de Classificação',
+      loggedInAs: 'Instrutor Autenticado:',
+      noSessions: 'Nenhuma sessão pendente encontrada na sua fila.',
+      selectSession: 'Seleção de Fluxo Operacional',
+      chooseSession: 'Selecione uma sessão de formação para inserir notas',
+      saveResults: 'Confirmar e Imprimir Registo'
+    },
+    cards: {
+      title: 'Estúdio de Passaportes',
+      sending: 'Processando Pedido...',
+      requestButton: 'Solicitar Emissão de Cartão',
+      eligibility: {
+          failedTitle: 'Elegibilidade Pendente',
+          failedMsg: 'Atualmente não é elegível para um Passaporte Digital. Certifique-se de que as suas certificações ASO e RAC são válidas.',
+          checkReqs: 'Ver Requisitos'
+      }
+    },
+    verification: {
+      title: 'Autorização de Ativos',
+      notFound: 'Passaporte Digital Não Encontrado',
+      verified: 'ACESSO AUTORIZADO',
+      notVerified: 'ACESSO BLOQUEADO',
+      scanTime: 'Hora da Verificação',
+      asoStatus: 'Validade Médica',
+      dlStatus: 'Autorização de Condutor'
+    },
+    communications: {
+        title: 'Central de Comunicação',
+        subtitle: 'Registos de Notificações de Saída',
+        clear: 'Limpar Histórico',
+        search: 'Pesquisar mensagens...',
+        empty: 'Nenhum histórico de mensagens encontrado.',
+        select: 'Selecione uma mensagem para pré-visualizar a simulação',
+        sms: 'NOTIFICAÇÃO SMS',
+        gateway: 'Digital Gateway 04',
+        to: 'Para',
+        automated: 'Esta é uma notificação automática do sistema.'
+    },
+    notifications: {
+        capacityTitle: 'Alocação Automática Ativa',
+        capacityMsg: 'Sessão atingiu a capacidade. Alunos excedentes movidos para'
+    },
+    feedback: {
+        title: 'Feedback do Sistema',
+        subtitle: 'Ajude-nos a otimizar a plataforma',
+        typeLabel: 'Tipo de Entrada',
+        types: {
+            Bug: 'Problema Técnico',
+            Improvement: 'Pedido de Funcionalidade',
+            General: 'Comentário da Plataforma'
+        },
+        messageLabel: 'Descrição Detalhada',
+        msgPlaceholder: 'Descreva a sua observação...',
+        button: 'Enviar Resumo',
+        adminTitle: 'Auditor de Experiência do Utilizador',
+        manage: 'Gerir feedback de utilizadores e relatórios de erros.',
+        status: {
+            New: 'Aguardando Revisão',
+            InProgress: 'Investigando',
+            Resolved: 'Otimizado',
+            Dismissed: 'Fechado'
+        },
+        actionable: 'Acionável',
+        noSelection: 'Nenhum Feedback Selecionado',
+        selectPrompt: 'Selecione uma entrada da lista para ver detalhes técnicos.',
+        workflow: 'Fluxo de Resolução',
+        priority: 'Prioridade Estratégica',
+        markActionable: 'Marcar como Acionável',
+        markedActionable: 'Acionável Engajado',
+        submittedBy: 'Reportado pelo Utilizador',
+        internalNotes: 'Notas de Análise de Engenharia',
+        visibleAdmin: 'Confidencial: Apenas Vista de Engenharia Interna',
+        deleteRecord: 'Purgar Registo'
     },
     racDefs: {
         RAC01: 'RACS 01 - Trabalho em Altura',
@@ -1308,6 +1751,326 @@ export const translations = {
         ART: 'ART - Análise de Risco da Tarefa',
         LIB_OPS: 'LIB-OPS - Liberação Operacional',
         LIB_MOV: 'LIB-MOV - Liberação de Movimentação'
+    },
+    advisor: {
+      button: 'Consultor de Segurança',
+      title: 'Consultor de Segurança',
+      sender: 'IA SAFETEQ Enterprise Risk Management',
+      emptyState: 'Pergunte-me sobre protocolos de segurança.',
+      placeholder: 'Digite a sua consulta...'
+    },
+    alcohol: {
+      dashboard: {
+        live: 'Stream em Direto Ativo',
+        backToLive: 'Voltar à Monitorização',
+        specs: 'Especificações Técnicas',
+        title: 'Sistema de Controlo de Álcool',
+        subtitle: 'Integração IoT e Monitorização de Portão em Direto',
+        kpi: {
+          total: 'Total de Testes',
+          violations: 'Violações',
+          health: 'Estado do Dispositivo'
+        },
+        online: 'Online',
+        hourlyTrend: 'Volume de Testes por Hora',
+        dailyTrend: 'Volume de Testes Diário',
+        deviceLoad: 'Distribuição de Tráfego do Dispositivo',
+        complianceRatio: 'Conformidade vs Violações',
+        liveStream: 'Fluxo de Eventos em Tempo Real',
+        mqtt: 'Protocolo MQTT',
+        deviceHealth: 'Integridade da Rede',
+        alert: {
+          title: 'VIOLAÇÃO DETETADA',
+          desc: 'Bloqueio Imediato Iniciado',
+          measured: 'BAC Medido'
+        },
+        actions: 'Registo de Resposta Automatizada',
+        actionLog: {
+          locked: 'Credencial Bloqueada na Matriz Mestra',
+          generating: 'Gerando Relatório de Incidente...',
+          logged: 'Incidente Registado no Trilho de Auditoria',
+          contacting: 'Contactando Supervisor de HSE...',
+          sent: 'Alerta Enviado via SMS/Email'
+        },
+        close: 'Reconhecer Alerta'
+      },
+      protocol: {
+        title: 'Protocolo de Intertravamento de Segurança',
+        positiveTitle: 'Deteção de BAC Positivo',
+        positiveDesc: 'O sistema invalida imediatamente o estado de "Acesso Autorizado" pelas próximas 24 horas. O torniquete do portão permanece bloqueado.',
+        resetTitle: 'Sobreposição Manual',
+        resetDesc: 'Apenas os Gestores de HSE podem repor um estado bloqueado após uma entrevista formal e um segundo teste manual.'
+      },
+      features: {
+        title: 'Capacidades Técnicas',
+        iotTitle: 'Gateway IoT',
+        iotDesc: 'Conetividade de baixa latência via controladores de borda ESP32/PLC.',
+        accessTitle: 'Bloqueio Instante',
+        accessDesc: 'Integração direta com a lógica do torniquete e credenciais de RH.',
+        complianceTitle: 'Trilho de Auditoria',
+        complianceDesc: 'Registos à prova de adulteração de cada tentativa de entrada com dados de BAC.'
+      }
+    },
+    enterprise: {
+      systemTitle: 'Central de Comando Global',
+      systemSubtitle: 'Gestão Multi-Tenant',
+      title: 'Vista Empresarial',
+      subtitle: 'Desempenho do Grupo',
+      siteName: 'Local',
+      globalHealth: 'Conformidade Agregada',
+      totalWorkforce: 'Total de Pessoal',
+      topPerformer: 'Melhor Local',
+      needsAttention: 'Área de Risco',
+      noData: 'Dados não disponíveis',
+      tenantMatrix: 'Saúde do Portfólio',
+      systemView: 'Vista Mestra',
+      siteComparison: 'Benchmarking de Locais',
+      riskHeatmap: 'Mapeamento de Risco',
+      selectPrompt: 'Ajuste os filtros para visualizar dados',
+      aiAuditor: 'Auditor da Plataforma',
+      aiDirector: 'IA Diretor de Segurança',
+      systemIntelligence: 'Insights da Plataforma',
+      companyIntelligence: 'Insights Empresariais',
+      aiPrompt: 'Gerando resumo estratégico...',
+      aiPromptSystem: 'Analisando riscos do portfólio.',
+      aiPromptEnterprise: 'Analisando tendências locais.',
+      bottlenecks: 'Fricção Operacional',
+      failure: 'Taxa de Falha'
+    },
+    schedule: {
+      title: 'Agenda de Treino',
+      subtitle: 'Coordenação de Recursos e Locais',
+      newSession: 'Nova Sessão',
+      modal: {
+        title: 'Configuração de Agendamento',
+        racType: 'Módulo de Certificação',
+        date: 'Data da Sessão',
+        startTime: 'Hora de Início',
+        location: 'Local/Sala',
+        capacity: 'Capacidade',
+        instructor: 'Instrutor Certificado',
+        language: 'Idioma da Sessão',
+        portuguese: 'Português',
+        english: 'Inglês',
+        saveSession: 'Confirmar no Agendamento'
+      }
+    },
+    settings: {
+      title: 'Configuração Global',
+      globalConfig: 'Política Mestra do Sistema',
+      localConfig: 'Preferências Específicas do Local',
+      saveAll: 'Aplicar Todas as Alterações',
+      saving: 'Sincronizando...',
+      rooms: {
+        title: 'Locais e Recursos Físicos',
+        name: 'Nome da Sala',
+        capacity: 'Capacidade de Lugares'
+      },
+      trainers: {
+        title: 'Instrutores Autenticados',
+        new: 'Registar Novo Instrutor'
+      },
+      racs: {
+        title: 'Matriz de Lógica de Certificação'
+      },
+      integrationPage: {
+        title: 'Pontes de Dados Externos',
+        sourceA: 'ERP Corporativo (SuccessFactors)',
+        sourceB: 'DB de Empreiteiros (Célula)',
+        waiting: 'Middleware em Espera',
+        processing: 'Normalização de Dados Ativa',
+        syncNow: 'Acionar Sincronização na Nuvem'
+      }
+    },
+    logs: {
+        title: 'Registos de Eventos do Sistema',
+        levels: {
+            all: 'Toda a Gravidade',
+            info: 'Informativo',
+            warn: 'Avisos',
+            error: 'Erros Críticos',
+            audit: 'Auditorias de Segurança'
+        },
+        table: {
+            level: 'Gravidade',
+            timestamp: 'Hora do Sistema',
+            user: 'Originador',
+            message: 'Descrição do Evento'
+        }
+    },
+    users: {
+        title: 'Gestão de Credenciais',
+        subtitle: 'RBAC (Controle de Acesso Baseado em Funções)',
+        addUser: 'Adicionar Participante',
+        table: {
+            user: 'Utilizador Autorizado',
+            role: 'Conjunto de Permissões',
+            status: 'Estado Operacional',
+            actions: 'Controle de Autenticação'
+        },
+        modal: {
+            title: 'Provisionar Acesso',
+            name: 'Nome Legal',
+            email: 'E-mail Corporativo',
+            createUser: 'Conceder Permissões'
+        }
+    },
+    booking: {
+        title: 'Reserva de Sessão',
+        selfServiceTitle: 'Portal de Autoinscrição',
+        selfServiceDesc: 'Reserve as suas certificações de formação de segurança obrigatórias.',
+        secureMode: 'Reserva Administrativa Segura ativa.',
+        manageSchedule: 'Config de Recursos',
+        success: 'Reservas Bloqueadas com Sucesso',
+        selectSession: 'Vaga Operacional',
+        chooseSession: 'Selecionar sessão ativa',
+        dlRequired: 'RAC 02 requer verificação de Carta de Condução válida.',
+        addRow: 'Adicionar Entrada',
+        submitBooking: 'Confirmar Reservas'
+    },
+    manuals: {
+        title: 'Diretrizes Operacionais',
+        subtitle: 'Documentação do Sistema e Procedimentos Padrão',
+        sysAdmin: {
+            title: 'Guia do Administrador SaaS',
+            subtitle: 'Gestão Global de Tenants e Lógica',
+            configTitle: '1. Provisionamento de Recursos',
+            configDesc: 'Antes de agendar, certifique-se de que todos os locais e instrutores estão verificados.',
+            rooms: 'Mapear salas de alta capacidade para locais físicos.',
+            trainers: 'Atribuir permissões de certificação aos instrutores.',
+            racs: 'Configurar meses de validade global (Padrão: 24 meses).',
+            dbTitle: '2. Soberania de Dados',
+            dbDesc: 'A Base de Dados utiliza Lógica Unificada para Controle de Acesso.',
+            restrictionWarning: 'CRÍTICO: A desativação de um utilizador remove-o do acesso ao portão imediatamente.',
+            csv: 'O Assistente de Importação suporta o mapeamento automatizado de cabeçalhos de fontes de RH.',
+            active: 'Alterne a coluna "Ativo" para controlar o acesso físico ao site.'
+        },
+        racAdmin: {
+            title: 'Manual do Administrador do Site',
+            subtitle: 'Gestão de Formação e Capacidade',
+            schedTitle: 'Coordenação de Sessões',
+            schedDesc: 'Agendar vagas de formação para satisfazer a procura do departamento.',
+            create: 'Criar vagas com IDs de Sala válidos.',
+            lang: 'Selecionar idioma com base na demografia da força de trabalho.',
+            autoTitle: 'Protocolo de Auto-Reserva',
+            autoDesc: 'O sistema reserva automaticamente lugares para utilizadores com expiração em < 7 dias.',
+            approve: 'Os administradores devem aprovar manualmente as auto-reservas excedentes.',
+            renewTitle: 'Renovações',
+            renewDesc: 'Utilize o widget de Alerta do Painel para reservar em massa funcionários a expirar.'
+        },
+        racTrainer: {
+            title: 'Guia de Campo do Instrutor',
+            subtitle: 'Entrada de Resultados e Validação',
+            inputTitle: 'Terminal de Classificação',
+            inputDesc: 'Introduzir resultados em tempo real para as sessões atribuídas.',
+            grading: 'Assiduidade + Pontuação (mín. 70%) = Aprovação.',
+            rac02: 'REGRA RAC 02: A Carta de Condução DEVE ser visualmente verificada para aprovação.',
+            save: 'Guardar resultados aciona uma impressão automática do registo físico.'
+        },
+        deptAdmin: {
+            title: 'Manual de Operações do Gestor',
+            subtitle: 'Desempenho e Conformidade do Departamento',
+            reqTitle: 'Requisitos de Pessoal',
+            reqDesc: 'Verifique quais RACs a sua equipa necessita com base no risco da tarefa.',
+            search: 'Pesquisar matrículas específicas para estado em tempo real.',
+            print: 'Exportar relatórios CSV para reuniões de segurança semanais.',
+            repTitle: 'Relatórios Estratégicos',
+            repDesc: 'Gerar e analisar relatórios de desempenho de segurança ao nível do departamento.'
+        },
+        user: {
+            title: 'Instruções para o Utilizador Final',
+            subtitle: 'Autosserviço e Verificação',
+            statusTitle: 'Passaporte de Acesso',
+            statusDesc: 'O seu "Estado de Acesso" é calculado a partir das suas certificações válidas.',
+            filterAlert: 'Certifique-se de que o seu ASO (Médico) é válido para evitar o bloqueio do local.',
+            green: 'Autorizado: Todos os requisitos cumpridos.',
+            red: 'Bloqueado: Certificação expirada.',
+            qr: 'A verificação de campo é feita através do seu Passaporte QR Digital.'
+        }
+    },
+    adminManual: {
+        title: 'Guia de Comando Estratégico',
+        subtitle: 'Protocolos de Orquestração de Segurança Empresarial',
+        slides: {
+            intro: 'Visão Geral Executiva',
+            logic: 'O Motor de Conformidade',
+            dashboard: 'Centros de Comando',
+            workflows: 'Procedimentos Operacionais Padrão',
+            advanced: 'Protocolos Avançados',
+            robotics: 'Resiliência Robótica',
+            troubleshoot: 'Suporte Tático',
+            architecture: 'Plantas do Sistema'
+        },
+        content: {
+            confidential: 'Apenas Acesso Autorizado',
+            production: 'Ambiente Estável de Produção',
+            logic: {
+                title: 'Matriz de Lógica 4.0',
+                desc: 'Como a conformidade binária é calculada.',
+                active: 'Contexto do Utilizador',
+                aso: 'Validade Médica',
+                racs: 'Validação de Competências',
+                result: 'ACESSO AO PORTÃO'
+            },
+            dashboard: {
+                operational: {
+                    title: 'Controle ao Nível de Campo',
+                    kpi: 'Acompanhamento de KPI em Direto',
+                    renewal: 'Alertas de Expiração',
+                    auto: 'Controle de Transbordo'
+                },
+                enterprise: {
+                    title: 'Supervisão Corporativa',
+                    global: 'Métricas Multi-Site',
+                    risk: 'Mapas de Calor Departamentais',
+                    ai: 'Relatórios de Estratégia de IA'
+                }
+            },
+            workflows: {
+                a: { title: 'Integração', steps: ['Importação de Base de Dados', 'Mapeamento de Matriz', 'Verificação de ASO'] },
+                b: { title: 'Planeamento', steps: ['Agendar Vaga', 'Verificar Local', 'Atribuir Instrutor'] },
+                c: { title: 'Execução', steps: ['Assiduidade', 'Entrada de Notas', 'Auto-Impressão'] },
+                d: { title: 'Emissão', steps: ['Aprovação de Conformidade', 'Geração de QR', 'Emissão de Passaporte'] }
+            },
+            advanced: {
+                gov: { title: 'Governança do Site', desc: 'Enviar políticas de segurança globais para sites remotos específicos.' },
+                alcohol: { title: 'Integração IoT', desc: 'Etilotesters ligados via MQTT acionam bloqueio imediato.' }
+            },
+            robotics: {
+                title: 'Protocolos de Autorrecuperação Robótica',
+                subtitle: 'Sistemas automatizados de resiliência e diagnóstico.',
+                crash: {
+                    title: 'Motor de Autorrecuperação',
+                    desc: 'O sistema utiliza um wrapper React Error Boundary. Se ocorrer um erro crítico de tempo de execução (ex: fuga de memória), o protocolo "RoboTech" intercepta a falha, exibe uma visualização de diagnóstico e tenta um soft-reload do estado.'
+                },
+                diagnostics: {
+                    title: 'Diagnóstico Ativo',
+                    desc: 'Os Admins do Sistema podem acionar manualmente o "Protocolo Healer RoboTech" na página de Configurações. Este executa um scan em segundo plano para latência da base de dados e otimiza fragmentos de memória.'
+                }
+            },
+            architecture: {
+                ui: '[ INTERFACE DO UTILIZADOR ]',
+                gate: '[ PORTÃO de PERMISSÃO ]',
+                gateDesc: 'Verifica a Função do Utilizador (Admin vs Utilizador)',
+                logic: '[ MOTOR DE LÓGICA ]',
+                checkCap: 'Verificar Capacidade',
+                checkMatrix: 'Verificar Bloqueio de Matriz',
+                checkDl: 'Verificar Validade de DL',
+                dbState: '[ ESTADO DA BASE DE DADOS ]',
+                updateRecord: 'Atualiza Registo de Reserva / Colaborador',
+                automation: '[ AUTOMAÇÃO ]',
+                emailTrig: '📧 Acionador de Email/SMS',
+                printTrig: '🖨️ Auto-Impressão de Registo',
+                aiTrig: '🤖 Atualização de Análise de IA'
+            },
+            troubleshoot: {
+                denied: { issue: 'Acesso Negado', solution: 'Verificar data de ASO na BD.' },
+                booking: { issue: 'Reserva Bloqueada', solution: 'Verificar matriz de requisitos.' },
+                failed: { issue: 'Auto-Falha', solution: 'Verificar data da Carta de Condução.' },
+                qr: { issue: 'QR Não Encontrado', solution: 'Garantir sensibilidade a maiúsculas/minúsculas do ID.' },
+                speed: { issue: 'Lentidão', solution: 'Aguardar log de Sincronização na Nuvem.' }
+            }
+        }
     },
     proposal: {
         digitalTrans: 'Proposta de Transformação Digital',
@@ -1329,7 +2092,27 @@ export const translations = {
             problemTitle: 'Fricção Atual',
             problemText: 'O rastreamento manual de certificações cria atrasos fatais e responsabilidade administrativa.',
             solutionTitle: 'Solução Digital',
-            goals: ['Automatizar Conformidade de Portaria', 'Unificar Dados Multi-Tenant', 'Emissão de Passaporte QR Digital', 'Análise de Risco por IA']
+            goals: ['Automatizar Conformidade de Portaria', 'Unificar Dados Multi-Tenant', 'Emissão de Passaporte QR Digital', 'Análise de Risco por IA em Tempo Real']
+        },
+        organogram: {
+            title: 'Estrutura do Projeto',
+            tech1: 'Engenheiro de Lógica',
+            tech2: 'Líder de Infraestrutura'
+        },
+        timeline: {
+            title: 'Roadmap de Implementação',
+            phase1: 'Design de Arquitetura', phase1desc: 'Mapeamento de lógica e esquema de BD.',
+            phase2: 'Sincronização de Middleware', phase2desc: 'Conetividade com sistemas legados.',
+            phase3: 'Construção de Módulos', phase3desc: 'Implementação de UI e Lógica.',
+            phase4: 'Testes UAT', phase4desc: 'Validação pelo utilizador e endurecimento.',
+            phase5: 'Entrega do Site', phase5desc: 'Formação e entrada em produção.'
+        },
+        techStack: {
+            title: 'Ecossistema Tecnológico',
+            frontendTitle: 'Web/Móvel', frontend: 'React • TypeScript • Tailwind',
+            backendTitle: 'Orquestração', backend: 'Node.js • Cloud Functions',
+            databaseTitle: 'Persistência', database: 'PostgreSQL • InfluxDB (IoT)',
+            securityTitle: 'Criptografia', security: 'OAuth2 • AES-256'
         },
         financials: {
             title: 'Investimento Estratégico',
@@ -1337,15 +2120,46 @@ export const translations = {
                 { name: 'Provisionamento de Ambiente Inicial', cost: '$1,500.00', type: 'Setup' },
                 { name: 'Licença Core SaaS (Anual)', cost: '$12,000.00', type: 'Licensing' },
                 { name: 'Infraestrutura Cloud Mensal', cost: '$450.00', type: 'Hosting' },
-                { name: 'Treinamento e Documentação', cost: '$3,200.00', type: 'Services' },
+                { name: 'Treinamento e Documentação de Pessoal', cost: '$3,200.00', type: 'Services' },
                 { name: 'Manutenção e Suporte (Mensal)', cost: '$800.00', type: 'Retainer' }
             ]
+        },
+        roadmap: {
+            title: 'Escalabilidade Empresarial',
+            auth: 'SSO de Identidade', authDesc: 'Integração com Azure AD.',
+            db: 'Cluster Global', dbDesc: 'Redundância multi-região.',
+            email: 'SMTP Automatizado', emailDesc: 'Relatórios transacionais.',
+            hosting: 'Nuvem Híbrida', hostingDesc: 'Capacidade On-prem + Azure.'
+        },
+        aiFeatures: {
+            title: 'Inteligência Gemini',
+            chatbot: 'Chatbot Consultor de Segurança 24/7.',
+            reporting: 'Resumos Executivos Automatizados.'
+        },
+        futureUpdates: {
+            title: 'Capacidades Futuras',
+            moduleA: 'Módulo A - Sincronização ERP Avançada',
+            moduleB: 'Módulo B - Gateway de Hardware IoT'
+        },
+        enhancedCaps: {
+            title: 'Resiliência Empresarial',
+            mobileVerify: { desc: 'Validação QR pronta para campo via app móvel.' },
+            autoBooking: { desc: 'Renovações de formação sem tempo de inatividade.' },
+            massData: { desc: 'Importação de mais de 10k registos em segundos.' }
+        },
+        conclusion: {
+            title: 'Zero Danos via Código',
+            text: 'A tecnologia é a salvaguarda derradeira. Deixe-nos arquitetar o seu futuro de segurança.'
         },
         thankYou: {
             title: 'Gratidão',
             contact: 'info@digitecinternational.com',
             phone: '+258 84 547 9481'
         }
+    },
+    ai: {
+        systemPromptAdvice: 'Você é um Consultor de Segurança da SAFETEQ. Aconselhe sobre {rac} em {language}.',
+        systemPromptReport: 'Você é um Diretor de Segurança. Resuma as estatísticas de segurança em {language}.'
     }
   }
 };
