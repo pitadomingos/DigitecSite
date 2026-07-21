@@ -1,0 +1,23 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "apphosting": {
+    "backends": {
+      "seth-backend": {
+        "framework": "nextjs",
+        "source": "."
+      }
+    },
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "seth-backend"
+      }
+    ]
+  }
+}
