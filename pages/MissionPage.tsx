@@ -1,22 +1,18 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { 
-  ArrowLeft, Globe, Zap, Target, ShieldCheck, Cpu, 
-  HardHat, Shield, Activity, Code
+  Zap, Target, ShieldCheck, Cpu, 
+  HardHat, Shield, Activity
 } from 'lucide-react';
+import PublicNavbar from '../components/PublicNavbar';
+import PublicFooter from '../components/PublicFooter';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const MissionPage: React.FC = () => {
-  const navigate = useNavigate();
-  const { t, language, setLanguage } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt' : 'en');
-  };
 
   const values = [
     { 
@@ -40,32 +36,21 @@ const MissionPage: React.FC = () => {
   ];
 
   return (
-    <div className="font-sans text-slate-800 bg-white min-h-screen selection:bg-blue-500/30 overflow-x-hidden">
+    <div className="font-sans text-slate-800 bg-[#020617] min-h-screen selection:bg-blue-500/30 overflow-x-hidden flex flex-col">
+      <PublicNavbar />
       
       {/* --- HEADER --- */}
-      <header className="bg-slate-900 text-white pt-24 pb-48 relative overflow-hidden">
+      <header className="bg-slate-900 text-white pt-32 pb-48 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[100%] bg-blue-600 rounded-full blur-[150px] opacity-20 animate-pulse-slow"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <nav className="absolute top-[-60px] left-6 right-6 flex items-center justify-between">
-             <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-bold text-sm bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-                <ArrowLeft size={16} /> {t.portfolio.back}
-             </button>
-             
-             {/* Language Toggle */}
-             <button onClick={toggleLanguage} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-black text-xs bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md uppercase tracking-widest text-center">
-                <Globe size={14} />
-                {language}
-             </button>
-          </nav>
-
           <div className="text-center max-w-4xl mx-auto flex flex-col items-center">
             <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-5 py-2 text-blue-400 text-xs font-black uppercase tracking-widest mb-8 animate-fade-in-down">
               <Shield size={14} /> {t.publicMission.hero.badge}
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter animate-fade-in-up">
-              SAFETEQ Enterprise Risk Management
+              Digitec Engineering
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 leading-relaxed animate-fade-in-up font-light" style={{ animationDelay: '0.1s' }}>
               {t.publicMission.hero.desc}
@@ -176,16 +161,7 @@ const MissionPage: React.FC = () => {
           </div>
       </section>
 
-      <footer className="bg-white py-12 text-center text-slate-400 text-xs border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                  <Code size={16} />
-                  <span className="font-bold text-slate-900 tracking-widest uppercase">Digitec Enterprise</span>
-              </div>
-              <p>&copy; {new Date().getFullYear()} Digitec. {t.common.rights}</p>
-          </div>
-      </footer>
-
+      <PublicFooter />
     </div>
   );
 };

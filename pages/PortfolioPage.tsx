@@ -2,31 +2,20 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  ArrowLeft, GraduationCap, Activity, Wallet, Wrench, CreditCard, 
-  ChevronRight, Zap, ShieldCheck, Globe, Monitor, Radio
+  GraduationCap, Activity, Wallet, Wrench, CreditCard, 
+  ChevronRight, Zap, ShieldCheck, Monitor, Radio
 } from 'lucide-react';
+import PublicNavbar from '../components/PublicNavbar';
+import PublicFooter from '../components/PublicFooter';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const PortfolioPage: React.FC = () => {
   const navigate = useNavigate();
-  const { t, language, setLanguage } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt' : 'en');
-  };
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        navigate('/');
-    }
-  };
 
   const products = [
     {
@@ -129,121 +118,157 @@ const PortfolioPage: React.FC = () => {
       industries: [t.portfolio.industries.retail, t.portfolio.industries.security],
       tags: [t.portfolio.tags.scalable, t.portfolio.tags.secure, t.portfolio.tags.cloud],
       badgeLabel: t.portfolio.labels.ready
+    },
+    {
+      id: 'smartres',
+      name: t.portfolio.items.smartres.name,
+      category: t.portfolio.items.smartres.category,
+      description: t.portfolio.items.smartres.desc,
+      icon: Monitor,
+      color: 'cyan',
+      gradient: 'from-cyan-500 to-blue-600',
+      industries: [t.portfolio.industries.residential, t.portfolio.industries.security],
+      tags: [t.portfolio.tags.iot, t.portfolio.tags.scalable, t.portfolio.tags.secure],
+      badgeLabel: t.portfolio.labels.ready
     }
   ];
 
   return (
-    <div className="font-sans text-slate-800 bg-slate-50 min-h-screen">
+    <div className="font-sans text-slate-300 bg-[#020617] min-h-screen flex flex-col selection:bg-cyan-500/30">
+      <PublicNavbar />
       
-      {/* --- HEADER --- */}
-      <header className="bg-slate-900 text-white pt-24 pb-32 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
-        <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[100%] bg-blue-600 rounded-full blur-[150px] opacity-30"></div>
+      {/* --- INDUSTRIAL HEADER --- */}
+      <header className="pt-40 pb-24 border-b border-white/5 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-cyan-500/10 blur-[120px] pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <nav className="absolute top-[-60px] left-6 right-6 flex items-center justify-between">
-             <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-bold text-sm bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-                <ArrowLeft size={16} /> {t.portfolio.back}
-             </button>
-             
-             {/* Language Toggle */}
-             <button onClick={toggleLanguage} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-black text-xs bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md uppercase tracking-widest">
-                <Globe size={14} />
-                {language}
-             </button>
-          </nav>
-
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-6 animate-fade-in-up">
-              <Zap size={14} fill="currentColor" /> {t.portfolio.hero.badge}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded text-cyan-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                <Zap size={12} fill="currentColor" /> {t.portfolio.hero.badge}
+              </div>
+              <h1 className="text-5xl md:text-8xl font-black text-white mb-6 tracking-tighter uppercase leading-none">
+                Ecosystem <br/><span className="text-cyan-500">Inventory</span>
+              </h1>
+              <p className="text-lg text-slate-400 leading-relaxed max-w-xl font-medium">
+                {t.portfolio.hero.desc}
+              </p>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              {t.portfolio.hero.title}
-            </h1>
-            <p className="text-xl text-slate-400 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              {t.portfolio.hero.desc}
-            </p>
+            
+            <div className="hidden lg:flex flex-col items-end text-right border-l border-white/10 pl-8">
+              <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Global Status</div>
+              <div className="text-2xl font-mono text-cyan-400 font-bold">OPERATIONAL</div>
+              <div className="flex gap-1 mt-2">
+                {[...Array(12)].map((_, i) => (
+                  <div key={i} className={`w-1 h-4 ${i < 10 ? 'bg-cyan-500' : 'bg-white/10'}`}></div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </header>
 
-      {/* --- PORTFOLIO GRID --- */}
-      <div className="max-w-7xl mx-auto px-6 -mt-20 relative z-20 pb-24">
-        <div className="grid grid-cols-1 gap-8">
-          {products.map((product, index) => (
-            <div 
-              key={product.id} 
-              className={`bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row hover:shadow-2xl transition-all duration-300 group animate-fade-in-up ${product.id === 'safeteq' ? 'ring-4 ring-blue-500/20' : ''}`}
-              style={{ animationDelay: `${0.3 + (index * 0.1)}s` }}
-            >
-              {/* Icon / Image Section */}
-              <div className={`md:w-1/3 bg-gradient-to-br ${product.gradient} p-10 flex flex-col justify-between text-white relative overflow-hidden`}>
-                 <div className="absolute top-0 right-0 p-10 opacity-10 transform scale-150 group-hover:scale-125 transition-transform duration-700">
-                    <product.icon size={140} />
-                 </div>
-                 <div className="relative z-10">
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 shadow-inner">
-                       <product.icon size={32} />
-                    </div>
-                    <div className="text-xs font-bold uppercase tracking-widest opacity-80 mb-2">{product.category}</div>
-                    <h3 className="text-3xl font-black">{product.name}</h3>
-                 </div>
-                 <div className="relative z-10 mt-4 flex flex-wrap gap-2">
-                    {product.industries?.map(ind => (
-                        <span key={ind} className="bg-black/20 text-[10px] px-2 py-1 rounded-full border border-white/20 font-bold uppercase">{ind}</span>
-                    ))}
-                 </div>
-                 <div className="relative z-10 mt-8">
-                    <button 
-                      onClick={() => navigate(`/portfolio/${product.id}`)}
-                      className="flex items-center gap-2 text-sm font-bold hover:gap-3 transition-all"
-                    >
-                       {t.portfolio.btnCaseStudy} <ChevronRight size={16} />
-                    </button>
-                 </div>
-              </div>
-
-              {/* Content Section */}
-              <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
-                 <h4 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                    {product.name}
-                    <span className={`text-[10px] px-3 py-1 rounded-full font-black uppercase bg-slate-100 text-slate-600 border border-slate-200`}>
-                        {product.badgeLabel}
-                    </span>
-                 </h4>
-                 <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                    {product.description}
-                 </p>
-                 
-                 <div className="flex flex-wrap gap-4">
-                    {product.tags.map(tag => (
-                       <span key={tag} className="px-4 py-2 bg-slate-50 text-slate-500 rounded-lg text-xs font-black uppercase border border-slate-200">
-                          {tag}
-                       </span>
-                    ))}
-                 </div>
-              </div>
+      {/* --- PORTFOLIO INVENTORY LIST --- */}
+      <main className="flex-grow py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 gap-1">
+            {/* Table Header - Visible on MD+ */}
+            <div className="hidden md:grid grid-cols-12 gap-4 px-6 py-4 border-b border-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500">
+              <div className="col-span-1">ID</div>
+              <div className="col-span-4">System Name / Specification</div>
+              <div className="col-span-3">Target Industry</div>
+              <div className="col-span-2">Deployment Status</div>
+              <div className="col-span-2 text-right">Action</div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* --- FOOTER CTA --- */}
-      <section className="bg-slate-900 py-24 text-center">
-         <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">{t.portfolio.footer.title}</h2>
-            <p className="text-slate-400 text-lg mb-8">
-               {t.portfolio.footer.desc}
-            </p>
+            {products.map((product, index) => (
+              <div 
+                key={product.id}
+                className="group relative grid grid-cols-1 md:grid-cols-12 gap-4 px-6 py-8 items-center border-b border-white/5 hover:bg-white/[0.02] transition-colors"
+              >
+                {/* Technical ID */}
+                <div className="col-span-1 font-mono text-xs text-slate-600 group-hover:text-cyan-500 transition-colors">
+                  #{product.id.substring(0, 3).toUpperCase()}-{index + 101}
+                </div>
+
+                {/* System Name & Description */}
+                <div className="col-span-1 md:col-span-4">
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 rounded bg-gradient-to-br ${product.gradient} flex items-center justify-center text-white shrink-0 shadow-lg shadow-black/20`}>
+                      <product.icon size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{product.name}</h3>
+                      <p className="text-sm text-slate-500 line-clamp-1 mt-0.5">{product.category}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Target Industry */}
+                <div className="col-span-1 md:col-span-3">
+                  <div className="flex flex-wrap gap-1.5">
+                    {product.industries?.slice(0, 2).map(ind => (
+                      <span key={ind} className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-[9px] font-black uppercase tracking-wider text-slate-400">
+                        {ind}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Status Indicator */}
+                <div className="col-span-1 md:col-span-2 flex items-center gap-2">
+                  <div className={`w-1.5 h-1.5 rounded-full ${product.id === 'safeteq' ? 'bg-cyan-500 animate-pulse' : 'bg-emerald-500'}`}></div>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">{product.badgeLabel}</span>
+                </div>
+
+                {/* Technical Action */}
+                <div className="col-span-1 md:col-span-2 text-right">
+                  <button 
+                    onClick={() => navigate(`/portfolio/${product.id}`)}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded font-bold text-xs hover:bg-cyan-500 hover:text-white hover:border-cyan-500 transition-all group/btn"
+                  >
+                    {t.portfolio.btnCaseStudy}
+                    <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+
+      {/* --- INDUSTRIAL FOOTER CTA --- */}
+      <section className="py-32 bg-[#050a1f] border-t border-white/5 relative">
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <div className="w-12 h-12 bg-cyan-500/20 border border-cyan-500/30 rounded flex items-center justify-center mx-auto mb-8">
+            <Zap size={24} className="text-cyan-400" fill="currentColor" />
+          </div>
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight uppercase leading-none">
+            Scale Your <br/><span className="text-cyan-500">Operation</span>
+          </h2>
+          <p className="text-lg text-slate-400 mb-10 leading-relaxed font-medium">
+            {t.portfolio.footer.desc}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button 
-              onClick={() => scrollToSection('contact')}
-              className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-blue-500/30"
+              onClick={() => navigate('/contact')}
+              className="w-full sm:w-auto px-10 py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded font-black text-sm uppercase tracking-widest transition-all shadow-xl shadow-cyan-900/20"
             >
                {t.portfolio.footer.btn}
             </button>
-         </div>
+            <button 
+              onClick={() => navigate('/mission')}
+              className="w-full sm:w-auto px-10 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded font-black text-sm uppercase tracking-widest transition-all"
+            >
+               Our Philosophy
+            </button>
+          </div>
+        </div>
       </section>
 
+      <PublicFooter />
     </div>
   );
 };

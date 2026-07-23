@@ -89,31 +89,31 @@ export const translations = {
         title1: 'Architecting',
         title2: 'Enterprise',
         title3: 'Future',
-        desc: 'Digitec delivers a unified software ecosystem for industry titans. From heavy industry safety to real-time financial orchestration.',
+        desc: 'Digitec delivers a unified software ecosystem for industry titans, dynamic startups, and residential projects. From heavy industry safety to custom operational orchestration.',
         btnExplore: 'Explore Ecosystem',
         btnEnter: 'Enter Client Hub'
       },
       about: {
         title: 'Custom Software Engineering',
-        subtitle: 'Digitec engineers bespoke digital ecosystems for global industries. We transform complex operational logic into mission-critical software that safeguards assets and empowers workforces.',
+        subtitle: 'Digitec engineers bespoke digital ecosystems for global industries, innovative startups, and modern residential developments. We transform complex operational needs into mission-critical software that empowers businesses of all scales.',
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - Our flagship compliance engine for Critical Activity Requirements.',
           edudesk: 'Industrial Learning Management System digitizing training lifecycles.',
           h365: 'Integrated Health informatics for remote and high-risk site operations.',
           microfin: 'Automated financial orchestration for industrial contractor networks.',
-          websites: 'Precision-engineered corporate portals for engineering and logistics.'
+          websites: 'Precision-engineered portals for startups, residences, and individual companies.'
         }
       },
       vision: {
         title: 'Our Vision',
-        headline: 'Autonomous Industrial Excellence.',
-        desc: 'We are bridging the gap between heavy industrial operations and intelligent safety orchestration through high-fidelity digital ecosystems.',
+        headline: 'Intelligent Digital Ecosystems.',
+        desc: 'We are bridging the gap between physical operations and intelligent digital orchestration through high-fidelity software tailored for industry, retail, and residence.',
         mission: 'Our Strategic Mission',
         missionHeadline: 'Transforming Complexity into Precision',
         goals: [
-          'Unify fragmented legacy data into actionable safety intelligence.',
-          'Deliver real-time validation for RAC 01-11 safety standards.',
-          'Automate gate access via digital passports to protect life and assets.'
+          'Unify fragmented legacy data into actionable operational intelligence.',
+          'Develop custom software tailored to specific startup and residential needs.',
+          'Deliver world-class technology solutions homegrown in Africa for the world.'
         ]
       },
       partners: {
@@ -125,7 +125,7 @@ export const translations = {
       },
       contact: {
         title: 'Architect your manual process to a fully digitized process',
-        desc: 'Request a consultation for site-specific digital transformation of RAC workflows.',
+        desc: 'Request a consultation for custom digital transformation of your specific operational needs.',
         emailLabel: 'Direct Email',
         callLabel: 'Operations Line',
         form: {
@@ -139,12 +139,12 @@ export const translations = {
     publicMission: {
         hero: {
             badge: 'Strategic Mandate',
-            title: 'Mission-Critical Industrial Ecosystems',
-            desc: 'To engineer resilient, mission-critical digital ecosystems that transform complex manual industrial logic into precise, automated orchestration, safeguarding assets and empowering the global workforce.'
+            title: 'Mission-Critical Digital Ecosystems',
+            desc: 'To engineer resilient, mission-critical digital ecosystems that transform complex manual logic into precise, automated orchestration, safeguarding assets and empowering businesses of all scales.'
         },
         manifesto: {
-            title: 'The Safety Manifesto',
-            text: 'We believe that software in heavy industry must be as rugged as the hardware it manages. To safeguard every life, we rigorously digitalize Critical Activity Requisitions, ensuring every operator is certified, compliant, and empowered by RAC 01 standards.'
+            title: 'The Digital Manifesto',
+            text: 'We believe that software must be as resilient as the operations it supports. From heavy industry to residential systems, we digitalize complex logic to ensure safety, efficiency, and empowerment for every user.'
         },
         values: {
             title: 'Operational Pillars',
@@ -178,7 +178,7 @@ export const translations = {
       hero: {
         badge: 'Enterprise Ecosystem',
         title: 'Solutions Portfolio',
-        desc: 'Robust, scalable, and mission-critical software designed for the unique demands of the mining and manufacturing sectors.'
+        desc: 'Robust, scalable, and mission-critical software designed for industry titans, dynamic startups, and bespoke residential operational needs.'
       },
       btnCaseStudy: 'View Specs',
       back: 'Return Home',
@@ -228,6 +228,11 @@ export const translations = {
           name: 'SwiftPOS Retail',
           category: 'Inventory Security',
           desc: 'Point of Sale integrated with CCTV and warehouse alarms for total operational visibility.'
+        },
+        smartres: {
+          name: 'HomeNexus',
+          category: 'Residential Automation',
+          desc: 'Custom smart home ecosystems for modern residences, unifying security, lighting, and climate control into a single interface.'
         }
       },
       industries: {
@@ -240,6 +245,7 @@ export const translations = {
         finance: 'Banking',
         retail: 'Retail',
         logistics: 'Supply Chain',
+        residential: 'Residential',
         gov: 'Public Sector',
         clinical: 'Medical',
         banking: 'Fintech',
@@ -382,6 +388,17 @@ export const translations = {
             { label: 'Shrinkage', desc: 'Major reduction in inventory loss.' },
             { label: 'Security', desc: 'Instant alert on anomalous sales.' },
             { label: 'Control', desc: 'Unified view across all branches.' }
+          ]
+      },
+      smartres: {
+          subtitle: 'Custom Residential Automation',
+          challenge: 'Modern luxury residences required a unified, secure system to manage complex lighting, climate, and high-end security protocols.',
+          solution: 'HomeNexus provides a centralized, industrial-grade automation engine tailored for high-end residential operational needs.',
+          features: ['Unified Security Hub', 'Adaptive Climate Logic', 'Biometric Access Control', 'Energy Consumption Analytics'],
+          impact: [
+            { label: 'Energy Efficiency', desc: 'Optimized consumption via smart logic.' },
+            { label: 'Security Response', desc: 'Instant biometric validation.' },
+            { label: 'User Experience', desc: 'Single-interface orchestration.' }
           ]
       }
     },
@@ -1164,31 +1181,31 @@ export const translations = {
         title1: 'Arquitetando',
         title2: 'Futuro',
         title3: 'Empresarial',
-        desc: 'A Digitec entrega um ecossistema de software unificado para gigantes da indústria. Da segurança na indústria pesada à orquestração financeira em tempo real.',
+        desc: 'A Digitec entrega um ecossistema de software unificado para gigantes da indústria, startups dinâmicas e projetos residenciais. Da segurança industrial a orquestração operacional personalizada.',
         btnExplore: 'Explorar Ecossistema',
         btnEnter: 'Central do Cliente'
       },
       about: {
-        title: 'Orquestração de Segurança',
-        subtitle: 'Projetamos o sistema nervoso digital para os ambientes industriais mais desafiadores do mundo, especializados em RAC 01.',
+        title: 'Engenharia de Software Personalizada',
+        subtitle: 'Projetamos ecossistemas digitais sob medida para indústrias globais, startups inovadoras e desenvolvimentos residenciais modernos. Transformamos necessidades operacionais complexas em software de missão crítica.',
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - O padrão para Requisitos de Atividades Críticas.',
           edudesk: 'Gestão de campus para centros de educação industrial.',
           h365: 'Sistemas de saúde para mineração focados em conformidade.',
           microfin: 'Orquestração financeira para cadeias industriais.',
-          websites: 'Presença web estratégica para engenharia e logística.'
+          websites: 'Portais de precisão para startups, residências e empresas individuais.'
         }
       },
       vision: {
         title: 'Nossa Visão',
-        headline: 'Excelência Industrial Autónoma.',
-        desc: 'Estamos a colmatar a lacuna entre as operações industriais pesadas e a orquestração de segurança inteligente através de ecossistemas digitais de alta fidelidade.',
+        headline: 'Ecossistemas Digitais Inteligentes.',
+        desc: 'Estamos a colmatar a lacuna entre as operações físicas e a orquestração digital inteligente através de software de alta fidelidade adaptado para indústria, retalho e residência.',
         mission: 'Nossa Missão Estratégica',
         missionHeadline: 'Transformando Complexidade em Precisão',
         goals: [
-          'Unificar dados legados fragmentados em inteligência de segurança acionável.',
-          'Fornecer validação em tempo real para os padrões de segurança RAC 01-11.',
-          'Automatizar o acesso ao local por meio de passaportes digitais para proteger vidas e ativos.'
+          'Unificar dados legados fragmentados em inteligência operacional acionável.',
+          'Desenvolver software personalizado para necessidades específicas de startups e residências.',
+          'Entregar soluções tecnológicas de classe mundial criadas em África para o mundo.'
         ]
       },
       partners: {
@@ -1200,7 +1217,7 @@ export const translations = {
       },
       contact: {
         title: 'Arquitetar o seu processo manual para um processo totalmente digitalizado',
-        desc: 'Solicite uma consulta para transformação digital específica do local de fluxos de trabalho RAC.',
+        desc: 'Solicite uma consulta para transformação digital personalizada das suas necessidades operacionais específicas.',
         emailLabel: 'E-mail Direto',
         callLabel: 'Linha de Operações',
         form: {
@@ -1214,12 +1231,12 @@ export const translations = {
     publicMission: {
         hero: {
             badge: 'Mandato Estratégico',
-            title: 'Ecossistemas Industriais de Missão Crítica',
-            desc: 'Projetar ecossistemas digitais resilientes e de missão crítica que transformam a lógica industrial manual complexa em orquestração precisa e automatizada, protegendo ativos e capacitando a força de trabalho global.'
+            title: 'Ecossistemas Digitais de Missão Crítica',
+            desc: 'Projetar ecossistemas digitais resilientes e de missão crítica que transformam a lógica manual complexa em orquestração precisa e automatizada, protegendo ativos e capacitando negócios de todas as escalas.'
         },
         manifesto: {
-            title: 'O Manifesto da Segurança',
-            text: 'Acreditamos que o software na indústria pesada deve ser tão robusto quanto o hardware que gere. Para salvaguardar cada vida, digitalizamos rigorosamente as Requisições de Atividades Críticas, garantindo que cada operador seja certificado e conforme aos padrões RAC 01.'
+            title: 'O Manifesto Digital',
+            text: 'Acreditamos que o software deve ser tão resiliente quanto as operações que suporta. Da indústria pesada aos sistemas residenciais, digitalizamos lógicas complexas para garantir segurança, eficiência e capacitação para cada utilizador.'
         },
         values: {
             title: 'Pilares Operacionais',
@@ -1253,7 +1270,7 @@ export const translations = {
       hero: {
         badge: 'Ecossistema Empresarial',
         title: 'Portfólio de Soluções',
-        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas dos sectores mineiro e industrial.'
+        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas da indústria, startups e necessidades residenciais.'
       },
       btnCaseStudy: 'Ver Especificações',
       back: 'Voltar ao Início',
@@ -1303,6 +1320,11 @@ export const translations = {
           name: 'SwiftPOS Retail',
           category: 'Segurança de Inventário',
           desc: 'Ponto de Venda integrado com CCTV e alarmes de armazém para visibilidade operacional total.'
+        },
+        smartres: {
+          name: 'HomeNexus',
+          category: 'Automação Residencial',
+          desc: 'Ecossistemas de casa inteligente personalizados para residências modernas, unificando segurança, iluminação e climatização numa única interface.'
         }
       },
       industries: {
@@ -1315,6 +1337,7 @@ export const translations = {
         finance: 'Banca',
         retail: 'Retalho',
         logistics: 'Cadeia de Suprimentos',
+        residential: 'Residencial',
         gov: 'Sector Público',
         clinical: 'Médico',
         banking: 'Fintech',
@@ -1457,6 +1480,17 @@ export const translations = {
             { label: 'Perdas (Shrinkage)', desc: 'Grande redução na perda de inventário.' },
             { label: 'Segurança', desc: 'Alerta instantâneo sobre vendas anómalas.' },
             { label: 'Controlo', desc: 'Vista unificada em todas as sucursais.' }
+          ]
+      },
+      smartres: {
+          subtitle: 'Automação Residencial Personalizada',
+          challenge: 'Residências de luxo modernas exigiam um sistema unificado e seguro para gerir iluminação, climatização e protocolos de segurança de alto nível.',
+          solution: 'O HomeNexus fornece um motor de automação centralizado de nível industrial adaptado às necessidades operacionais residenciais.',
+          features: ['Hub de Segurança Unificado', 'Lógica de Climatização Adaptativa', 'Controlo de Acesso Biométrico', 'Analítica de Consumo de Energia'],
+          impact: [
+            { label: 'Eficiência Energética', desc: 'Consumo otimizado via lógica inteligente.' },
+            { label: 'Resposta de Segurança', desc: 'Validação biométrica instantânea.' },
+            { label: 'Experiência do Utilizador', desc: 'Orquestração de interface única.' }
           ]
       }
     },

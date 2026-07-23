@@ -27,6 +27,11 @@ import TechnicalDocs from './pages/TechnicalDocs';
 import FeedbackAdminPage from './pages/FeedbackAdminPage';
 import MessageLogPage from './pages/MessageLogPage';
 import PortfolioPage from './pages/PortfolioPage';
+import AboutPage from './pages/AboutPage';
+import VisionPage from './pages/VisionPage';
+import MissionPage from './pages/MissionPage';
+import PartnersPage from './pages/PartnersPage';
+import ContactPage from './pages/ContactPage';
 import CaseStudyPage from './pages/CaseStudyPage';
 import LaunchpadPage from './pages/LaunchpadPage';
 import SafeteqLoginPage from './pages/SafeteqLoginPage';
@@ -265,6 +270,11 @@ const App: React.FC = () => {
           <Routes>
             {/* PUBLIC PAGES */}
             <Route path="/" element={<PublicHome />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/vision" element={<VisionPage />} />
+            <Route path="/mission" element={<MissionPage />} />
+            <Route path="/partners" element={<PartnersPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/portfolio/:id" element={<CaseStudyPage isAuthenticated={true} />} />
             <Route path="/verify/:recordId" element={<VerificationPage bookings={bookings} requirements={requirements} racDefinitions={racDefinitions} sessions={sessions} />} />

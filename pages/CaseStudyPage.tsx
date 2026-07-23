@@ -1,12 +1,14 @@
 import React, { useEffect, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { 
-  ArrowLeft, CheckCircle2, Layout, Zap, Users, BarChart3, 
-  Target, Globe, ShieldCheck, Smartphone, GraduationCap, 
+  CheckCircle2, Layout, Zap, Users, BarChart3, 
+  Target, ShieldCheck, Smartphone, GraduationCap, 
   Activity, Wallet, Wrench, CreditCard, ChevronRight, Rocket,
   Server, Shield, Box, Database, TrendingUp, Search, Lock, Monitor,
   Radio
 } from 'lucide-react';
+import PublicNavbar from '../components/PublicNavbar';
+import PublicFooter from '../components/PublicFooter';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface CaseStudyPageProps {
@@ -16,15 +18,11 @@ interface CaseStudyPageProps {
 const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { t, language, setLanguage } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt' : 'en');
-  };
 
   const studiesData = useMemo(() => {
     const labels = t.caseStudies.labels;
@@ -173,6 +171,24 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
           gradient: 'from-emerald-500 to-teal-500',
           appPath: '#',
           isAvailable: false
+      },
+      smartres: {
+          title: 'HomeNexus',
+          subtitle: t.caseStudies.smartres.subtitle,
+          challenge: t.caseStudies.smartres.challenge,
+          solution: t.caseStudies.smartres.solution,
+          features: t.caseStudies.smartres.features,
+          impact: [
+            { label: t.caseStudies.smartres.impact?.[0]?.label || '', value: '-18%', desc: t.caseStudies.smartres.impact?.[0]?.desc || '' },
+            { label: t.caseStudies.smartres.impact?.[1]?.label || '', value: '< 1s', desc: t.caseStudies.smartres.impact?.[1]?.desc || '' },
+            { label: t.caseStudies.smartres.impact?.[2]?.label || '', value: 'Unified', desc: t.caseStudies.smartres.impact?.[2]?.desc || '' }
+          ],
+          stack: ['Next.js', 'KNX Protocol', 'Node-RED', 'PostgreSQL', 'HomeKit'],
+          color: 'cyan',
+          icon: Monitor,
+          gradient: 'from-cyan-500 to-blue-600',
+          appPath: '#',
+          isAvailable: false
       }
     };
   }, [t]);
@@ -184,10 +200,11 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
   const labels = t.caseStudies.labels;
 
   return (
-    <div className="font-sans text-slate-800 bg-white min-h-screen">
+    <div className="font-sans text-slate-800 bg-[#020617] min-h-screen flex flex-col">
+      <PublicNavbar />
       
       {/* --- HERO SECTION --- */}
-      <header className={`relative bg-slate-900 text-white pt-24 pb-48 overflow-hidden`}>
+      <header className={`relative bg-slate-900 text-white pt-32 pb-48 overflow-hidden`}>
           <div className="absolute inset-0 opacity-20">
               <div className={`absolute top-[-20%] right-[-10%] w-[60%] h-[60%] bg-${currentStudy.color}-600 rounded-full blur-[150px]`}></div>
               <div className={`absolute bottom-[-20%] left-[-10%] w-[60%] h-[60%] bg-${currentStudy.color}-50 rounded-full blur-[150px]`}></div>
@@ -195,17 +212,6 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
           <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px', opacity: 0.05 }}></div>
 
           <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-             <div className="absolute top-[-60px] left-6 right-6 flex items-center justify-between">
-                <button onClick={() => navigate('/portfolio')} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-bold text-sm bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-                    <ArrowLeft size={16} /> {t.portfolio.back}
-                </button>
-                
-                {/* Language Toggle */}
-                <button onClick={toggleLanguage} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-black text-xs bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md uppercase tracking-widest text-center">
-                    <Globe size={14} />
-                    {language}
-                </button>
-             </div>
              
              <div className={`w-20 h-20 bg-gradient-to-br ${currentStudy.gradient} rounded-3xl flex items-center justify-center mb-8 shadow-2xl shadow-black/50 transform animate-float`}>
                 <ProductIcon size={40} className="text-white" />
@@ -320,17 +326,7 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         </div>
       </div>
 
-      <footer className="bg-slate-50 py-24 text-center border-t border-slate-100">
-         <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl font-black text-slate-900 mb-6">{labels.ready}</h2>
-            <p className="text-slate-500 text-lg mb-8">
-               {labels.readyDesc}
-            </p>
-            <button onClick={() => navigate('/')} className="bg-slate-900 text-white px-10 py-4 rounded-full font-bold transition-all hover:bg-slate-800">
-               {labels.contact}
-            </button>
-         </div>
-      </footer>
+      <PublicFooter />
     </div>
   );
 };
