@@ -55,29 +55,29 @@ const AboutPage: React.FC = () => {
              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                    <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-                     Beyond Code. <br/>
-                     <span className="text-blue-400 font-black">Digital Intelligence.</span>
+                     {t.publicHome.about.beyondCode} <br/>
+                     <span className="text-blue-400 font-black">{t.publicHome.about.digitalIntelligence}</span>
                    </h2>
                    <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                     We don't just build apps; we build intelligent ecosystems tailored to the unique complexities of heavy industry, dynamic startups, and modern residential operations.
+                     {t.publicHome.about.beyondDesc}
                    </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
                       <div className="text-3xl font-black text-white mb-1">10+</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">Years Experience</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t.publicHome.about.stats.experience}</div>
                    </div>
                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
                       <div className="text-3xl font-black text-white mb-1">50k+</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">Users Managed</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t.publicHome.about.stats.users}</div>
                    </div>
                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
                       <div className="text-3xl font-black text-white mb-1">99.9%</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">System Uptime</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t.publicHome.about.stats.uptime}</div>
                    </div>
                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
                       <div className="text-3xl font-black text-white mb-1">24/7</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">Expert Support</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t.publicHome.about.stats.support}</div>
                    </div>
                 </div>
              </div>

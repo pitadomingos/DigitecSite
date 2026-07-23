@@ -72,10 +72,13 @@ export const translations = {
       noNotifications: 'No notifications',
       clearAll: 'Clear All',
       legal: 'Legal',
+      privacy: 'Privacy Policy',
+      connect: 'Connect',
       rights: 'All rights reserved.'
     },
     publicHome: {
       nav: {
+        home: 'Home',
         portfolio: 'Portfolio',
         about: 'About',
         vision: 'Vision',
@@ -96,6 +99,15 @@ export const translations = {
       about: {
         title: 'Custom Software Engineering',
         subtitle: 'Digitec engineers bespoke digital ecosystems for global industries, innovative startups, and modern residential developments. We transform complex operational needs into mission-critical software that empowers businesses of all scales.',
+        beyondCode: 'Beyond Code.',
+        digitalIntelligence: 'Digital Intelligence.',
+        beyondDesc: 'We don\'t just build apps; we build intelligent ecosystems tailored to the unique complexities of heavy industry, dynamic startups, and modern residential operations.',
+        stats: {
+          experience: 'Years Experience',
+          users: 'Users Managed',
+          uptime: 'System Uptime',
+          support: 'Expert Support'
+        },
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - Our flagship compliance engine for Critical Activity Requirements.',
           edudesk: 'Industrial Learning Management System digitizing training lifecycles.',
@@ -133,6 +145,26 @@ export const translations = {
           email: 'info@digitecinternational.com',
           details: 'Scope of work...',
           btn: 'Send Brief'
+        }
+      },
+      capabilities: {
+        title: 'Bespoke Digital',
+        titleAccent: 'Engineering',
+        desc: 'We translate complex operational requirements into resilient, mission-critical ecosystems for the world\'s most demanding environments.',
+        industry: {
+          title: 'Heavy Industry',
+          desc: 'Mission-critical safety compliance, risk management, and real-time operational orchestration for mining and manufacturing.',
+          tags: ['Compliance', 'IoT']
+        },
+        startups: {
+          title: 'Dynamic Startups',
+          desc: 'Rapidly scalable infrastructure, custom API orchestration, and high-performance web/mobile ecosystems for the next generation of business.',
+          tags: ['Scalable', 'Agile']
+        },
+        residence: {
+          title: 'Modern Residence',
+          desc: 'Intelligent automation, unified security orchestration, and bespoke home-management interfaces for luxury developments.',
+          tags: ['Automation', 'Security']
         }
       }
     },
@@ -178,11 +210,21 @@ export const translations = {
       hero: {
         badge: 'Enterprise Ecosystem',
         title: 'Solutions Portfolio',
-        desc: 'Robust, scalable, and mission-critical software designed for industry titans, dynamic startups, and bespoke residential operational needs.'
+        title1: 'Ecosystem',
+        titleAccent: 'Inventory',
+        desc: 'Robust, scalable, and mission-critical software designed for industry titans, dynamic startups, and bespoke residential operational needs.',
+        statusLabel: 'Global Status',
+        statusValue: 'OPERATIONAL'
       },
       btnCaseStudy: 'View Specs',
       back: 'Return Home',
+      btnPhilosophy: 'Our Philosophy',
       labels: {
+        id: 'ID',
+        system: 'System Name / Specification',
+        industry: 'Target Industry',
+        status: 'Deployment Status',
+        action: 'Action',
         flagship: 'Primary Standard',
         ready: 'Production Ready',
         webSolution: 'Corporate Digital',
@@ -1163,11 +1205,14 @@ export const translations = {
       notifications: 'Notificações',
       noNotifications: 'Sem notificações',
       clearAll: 'Limpar Tudo',
-      legal: 'Legal',
+      legal: 'Aviso Legal',
+      privacy: 'Política de Privacidade',
+      connect: 'Conectar',
       rights: 'Todos os direitos reservados.'
     },
     publicHome: {
       nav: {
+        home: 'Início',
         portfolio: 'Portfólio',
         about: 'Sobre',
         vision: 'Visão',
@@ -1188,6 +1233,15 @@ export const translations = {
       about: {
         title: 'Engenharia de Software Personalizada',
         subtitle: 'Projetamos ecossistemas digitais sob medida para indústrias globais, startups inovadoras e desenvolvimentos residenciais modernos. Transformamos necessidades operacionais complexas em software de missão crítica.',
+        beyondCode: 'Além do Código.',
+        digitalIntelligence: 'Inteligência Digital.',
+        beyondDesc: 'Não apenas construímos aplicações; construímos ecossistemas inteligentes adaptados às complexidades únicas da indústria pesada, startups dinâmicas e operações residenciais modernas.',
+        stats: {
+          experience: 'Anos de Experiência',
+          users: 'Usuários Gerenciados',
+          uptime: 'Uptime do Sistema',
+          support: 'Suporte Especializado'
+        },
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - O padrão para Requisitos de Atividades Críticas.',
           edudesk: 'Gestão de campus para centros de educação industrial.',
@@ -1225,6 +1279,26 @@ export const translations = {
           email: 'info@digitecinternational.com',
           details: 'Escopo do trabalho...',
           btn: 'Enviar Resumo'
+        }
+      },
+      capabilities: {
+        title: 'Engenharia Digital',
+        titleAccent: 'Sob Medida',
+        desc: 'Traduzimos requisitos operacionais complexos em ecossistemas resilientes e de missão crítica para os ambientes mais exigentes do mundo.',
+        industry: {
+          title: 'Indústria Pesada',
+          desc: 'Conformidade de segurança de missão crítica, gestão de risco e orquestração operacional em tempo real para mineração e manufatura.',
+          tags: ['Conformidade', 'IoT']
+        },
+        startups: {
+          title: 'Startups Dinâmicas',
+          desc: 'Infraestrutura rapidamente escalável, orquestração de API personalizada e ecossistemas web/móveis de alto desempenho para a próxima geração de negócios.',
+          tags: ['Escalável', 'Ágil']
+        },
+        residence: {
+          title: 'Residência Moderna',
+          desc: 'Automação inteligente, orquestração de segurança unificada e interfaces de gestão doméstica personalizadas para desenvolvimentos de luxo.',
+          tags: ['Automação', 'Segurança']
         }
       }
     },
@@ -1270,11 +1344,21 @@ export const translations = {
       hero: {
         badge: 'Ecossistema Empresarial',
         title: 'Portfólio de Soluções',
-        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas da indústria, startups e necessidades residenciais.'
+        title1: 'Inventário do',
+        titleAccent: 'Ecossistema',
+        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas da indústria, startups e necessidades residenciais.',
+        statusLabel: 'Status Global',
+        statusValue: 'OPERACIONAL'
       },
       btnCaseStudy: 'Ver Especificações',
       back: 'Voltar ao Início',
+      btnPhilosophy: 'Nossa Filosofia',
       labels: {
+        id: 'ID',
+        system: 'Nome do Sistema / Especificação',
+        industry: 'Indústria Alvo',
+        status: 'Status de Implantação',
+        action: 'Ação',
         flagship: 'Padrão Primário',
         ready: 'Pronto para Produção',
         webSolution: 'Digital Corporativo',

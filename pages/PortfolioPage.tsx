@@ -149,7 +149,7 @@ const PortfolioPage: React.FC = () => {
                 <Zap size={12} fill="currentColor" /> {t.portfolio.hero.badge}
               </div>
               <h1 className="text-5xl md:text-8xl font-black text-white mb-6 tracking-tighter uppercase leading-none">
-                Ecosystem <br/><span className="text-cyan-500">Inventory</span>
+                {t.portfolio.hero.title1} <br/><span className="text-cyan-500">{t.portfolio.hero.titleAccent}</span>
               </h1>
               <p className="text-lg text-slate-400 leading-relaxed max-w-xl font-medium">
                 {t.portfolio.hero.desc}
@@ -157,8 +157,8 @@ const PortfolioPage: React.FC = () => {
             </div>
             
             <div className="hidden lg:flex flex-col items-end text-right border-l border-white/10 pl-8">
-              <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Global Status</div>
-              <div className="text-2xl font-mono text-cyan-400 font-bold">OPERATIONAL</div>
+              <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">{t.portfolio.hero.statusLabel}</div>
+              <div className="text-2xl font-mono text-cyan-400 font-bold">{t.portfolio.hero.statusValue}</div>
               <div className="flex gap-1 mt-2">
                 {[...Array(12)].map((_, i) => (
                   <div key={i} className={`w-1 h-4 ${i < 10 ? 'bg-cyan-500' : 'bg-white/10'}`}></div>
@@ -175,11 +175,11 @@ const PortfolioPage: React.FC = () => {
           <div className="grid grid-cols-1 gap-1">
             {/* Table Header - Visible on MD+ */}
             <div className="hidden md:grid grid-cols-12 gap-4 px-6 py-4 border-b border-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500">
-              <div className="col-span-1">ID</div>
-              <div className="col-span-4">System Name / Specification</div>
-              <div className="col-span-3">Target Industry</div>
-              <div className="col-span-2">Deployment Status</div>
-              <div className="col-span-2 text-right">Action</div>
+              <div className="col-span-1">{t.portfolio.labels.id}</div>
+              <div className="col-span-4">{t.portfolio.labels.system}</div>
+              <div className="col-span-3">{t.portfolio.labels.industry}</div>
+              <div className="col-span-2">{t.portfolio.labels.status}</div>
+              <div className="col-span-2 text-right">{t.portfolio.labels.action}</div>
             </div>
 
             {products.map((product, index) => (
@@ -262,7 +262,7 @@ const PortfolioPage: React.FC = () => {
               onClick={() => navigate('/mission')}
               className="w-full sm:w-auto px-10 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded font-black text-sm uppercase tracking-widest transition-all"
             >
-               Our Philosophy
+               {t.portfolio.btnPhilosophy}
             </button>
           </div>
         </div>

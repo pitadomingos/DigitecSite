@@ -144,10 +144,10 @@ const PublicHome: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight uppercase">
-              Bespoke Digital <br/><span className="text-blue-600">Engineering</span>
+              {t.publicHome.capabilities.title} <br/><span className="text-blue-600">{t.publicHome.capabilities.titleAccent}</span>
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed font-medium">
-              We translate complex operational requirements into resilient, mission-critical ecosystems for the world's most demanding environments.
+              {t.publicHome.capabilities.desc}
             </p>
           </div>
 
@@ -157,13 +157,14 @@ const PublicHome: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform">
                 <Zap size={32} fill="currentColor" />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">Heavy Industry</h3>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">{t.publicHome.capabilities.industry.title}</h3>
               <p className="text-slate-500 leading-relaxed font-medium mb-8">
-                Mission-critical safety compliance, risk management, and real-time operational orchestration for mining and manufacturing.
+                {t.publicHome.capabilities.industry.desc}
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded">Compliance</span>
-                <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded">IoT</span>
+                {t.publicHome.capabilities.industry.tags.map(tag => (
+                  <span key={tag} className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded">{tag}</span>
+                ))}
               </div>
             </div>
 
@@ -172,13 +173,14 @@ const PublicHome: React.FC = () => {
               <div className="w-16 h-16 bg-cyan-500 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform">
                 <ArrowRight size={32} />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">Dynamic Startups</h3>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">{t.publicHome.capabilities.startups.title}</h3>
               <p className="text-slate-500 leading-relaxed font-medium mb-8">
-                Rapidly scalable infrastructure, custom API orchestration, and high-performance web/mobile ecosystems for the next generation of business.
+                {t.publicHome.capabilities.startups.desc}
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-[10px] font-black uppercase tracking-widest text-cyan-600 bg-cyan-50 px-3 py-1 rounded">Scalable</span>
-                <span className="text-[10px] font-black uppercase tracking-widest text-cyan-600 bg-cyan-50 px-3 py-1 rounded">Agile</span>
+                {t.publicHome.capabilities.startups.tags.map(tag => (
+                  <span key={tag} className="text-[10px] font-black uppercase tracking-widest text-cyan-600 bg-cyan-50 px-3 py-1 rounded">{tag}</span>
+                ))}
               </div>
             </div>
 
@@ -187,13 +189,14 @@ const PublicHome: React.FC = () => {
               <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-slate-900/30 group-hover:scale-110 transition-transform">
                 <Zap size={32} className="rotate-45" />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">Modern Residence</h3>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">{t.publicHome.capabilities.residence.title}</h3>
               <p className="text-slate-500 leading-relaxed font-medium mb-8">
-                Intelligent automation, unified security orchestration, and bespoke home-management interfaces for luxury developments.
+                {t.publicHome.capabilities.residence.desc}
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-[10px] font-black uppercase tracking-widest text-slate-600 bg-slate-200 px-3 py-1 rounded">Automation</span>
-                <span className="text-[10px] font-black uppercase tracking-widest text-slate-600 bg-slate-200 px-3 py-1 rounded">Security</span>
+                {t.publicHome.capabilities.residence.tags.map(tag => (
+                  <span key={tag} className="text-[10px] font-black uppercase tracking-widest text-slate-600 bg-slate-200 px-3 py-1 rounded">{tag}</span>
+                ))}
               </div>
             </div>
           </div>

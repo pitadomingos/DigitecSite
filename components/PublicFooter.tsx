@@ -14,7 +14,7 @@ const PublicFooter: React.FC = () => {
           
           <div className="flex gap-8">
             <div className="flex flex-col gap-2">
-                <span className="text-white font-black text-[10px] uppercase tracking-widest mb-2">Connect</span>
+                <span className="text-white font-black text-[10px] uppercase tracking-widest mb-2">{t.common.connect}</span>
                 <div className="flex gap-4">
                     <a href="#" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
                     <a href="#" className="hover:text-white transition-colors"><Twitter size={18} /></a>
@@ -32,7 +32,7 @@ const PublicFooter: React.FC = () => {
           </div>
           <div className="flex gap-6 text-[10px] font-black uppercase tracking-widest">
             <a href="#" className="hover:text-white transition-colors">{t.common.legal}</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">{t.common.privacy}</a>
           </div>
         </div>
       </div>
