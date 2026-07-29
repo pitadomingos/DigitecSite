@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PublicNavbar from '../components/PublicNavbar';
 import PublicFooter from '../components/PublicFooter';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const PartnersPage: React.FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +70,10 @@ const PartnersPage: React.FC = () => {
                 <p className="text-white/80 text-xl max-w-2xl mx-auto mb-12 font-medium">
                   Become part of a network that values precision, safety, and African excellence.
                 </p>
-                <button className="bg-white text-blue-600 px-12 py-5 rounded-full font-black text-lg hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95 shadow-2xl">
+                <button 
+                  onClick={() => navigate('/contact')}
+                  className="bg-white text-blue-600 px-12 py-5 rounded-full font-black text-lg hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95 shadow-2xl"
+                >
                   Become a Partner
                 </button>
              </div>

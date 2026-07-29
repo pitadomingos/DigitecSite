@@ -83,6 +83,7 @@ export const translations = {
         about: 'About',
         vision: 'Vision',
         mission: 'Mission',
+        team: 'Team',
         partners: 'Partners',
         contact: 'Contact',
         enterHub: 'Enter Client Hub'
@@ -165,6 +166,40 @@ export const translations = {
           title: 'Modern Residence',
           desc: 'Intelligent automation, unified security orchestration, and bespoke home-management interfaces for luxury developments.',
           tags: ['Automation', 'Security']
+        }
+      }
+    },
+    team: {
+      hero: {
+        badge: 'Leadership & Vision',
+        title: 'The Minds Behind',
+        titleAccent: 'Digitec',
+        desc: 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, and global business development.'
+      },
+      members: {
+        pita: {
+          name: 'Pita Domingos',
+          role: 'Chief Executive Officer (CEO)',
+          experience: '25+ years driving innovation',
+          specialization: 'Mining systems development',
+          expertise: 'Full-stack Data Scientist',
+          bio: 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.'
+        },
+        derco: {
+          name: 'Dercio Nguenze',
+          role: 'Chief Technology Officer (CTO)',
+          experience: '10+ years leading technical teams',
+          specialization: 'Enterprise infrastructure',
+          expertise: 'Advanced systems management',
+          bio: 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.'
+        },
+        fernandell: {
+          name: 'Fernandel Chambal',
+          role: 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
+          experience: '15+ years in strategic growth',
+          specialization: 'Business development & marketing',
+          expertise: 'Global trade & logistics',
+          bio: 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.'
         }
       }
     },
@@ -1217,6 +1252,7 @@ export const translations = {
         about: 'Sobre',
         vision: 'Visão',
         mission: 'Missão',
+        team: 'Equipa',
         partners: 'Parceiros',
         contact: 'Contato',
         enterHub: 'Central do Cliente'
@@ -1299,6 +1335,40 @@ export const translations = {
           title: 'Residência Moderna',
           desc: 'Automação inteligente, orquestração de segurança unificada e interfaces de gestão doméstica personalizadas para desenvolvimentos de luxo.',
           tags: ['Automação', 'Segurança']
+        }
+      }
+    },
+    team: {
+      hero: {
+        badge: 'Liderança e Visão',
+        title: 'As Mentes por Trás da',
+        titleAccent: 'Digitec',
+        desc: 'Nossa equipe de liderança combina décadas de experiência especializada em sistemas de mineração, infraestrutura empresarial e desenvolvimento de negócios globais.'
+      },
+      members: {
+        pita: {
+          name: 'Pita Domingos',
+          role: 'Chief Executive Officer (CEO)',
+          experience: '25+ anos impulsionando inovação',
+          specialization: 'Desenvolvimento de sistemas de mineração',
+          expertise: 'Data Scientist Full-stack',
+          bio: 'Pita traz mais de um quarto de século de profunda experiência no setor para nossa equipe de liderança. Ele é especialista em projetar estruturas complexas de desenvolvimento de sistemas de mineração. Como Data Scientist full-stack, ele une análise de dados avançada com estratégias operacionais para escalar o crescimento corporativo.'
+        },
+        derco: {
+          name: 'Dercio Nguenze',
+          role: 'Chief Technology Officer (CTO)',
+          experience: '10+ anos liderando equipes técnicas',
+          specialization: 'Infraestrutura empresarial',
+          expertise: 'Gestão avançada de sistemas',
+          bio: 'Dercio supervisiona a visão técnica, a infraestrutura e o roteiro de engenharia da empresa. Com mais de uma década de experiência especializada em gestão de sistemas, ele garante que nossa arquitetura seja segura, escalável e construída sobre padrões de framework de ponta.'
+        },
+        fernandell: {
+          name: 'Fernandel Chambal',
+          role: 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
+          experience: '15+ anos em crescimento estratégico',
+          specialization: 'Desenvolvimento de negócios e marketing',
+          expertise: 'Comércio global e logística',
+          bio: 'Fernandell lidera nossa expansão comercial e parcerias estratégicas. Com vasta experiência em comércio global e marketing, ele garante que nossas soluções cheguem aos mercados certos, mantendo fortes relacionamentos corporativos e crescimento sustentável.'
         }
       }
     },

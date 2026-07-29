@@ -36,6 +36,7 @@ import CaseStudyPage from './pages/CaseStudyPage';
 import LaunchpadPage from './pages/LaunchpadPage';
 import SafeteqLoginPage from './pages/SafeteqLoginPage';
 import SourceControlPage from './pages/SourceControlPage'; // NEW
+import TeamPage from './pages/TeamPage';
 import GeminiAdvisor from './components/GeminiAdvisor';
 import FeedbackModal from './components/FeedbackModal';
 import { AdvisorProvider } from './contexts/AdvisorContext';
@@ -273,6 +274,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/vision" element={<VisionPage />} />
             <Route path="/mission" element={<MissionPage />} />
+            <Route path="/team" element={<TeamPage />} />
             <Route path="/partners" element={<PartnersPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />

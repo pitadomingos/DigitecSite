@@ -115,8 +115,8 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         color: 'rose',
         icon: Activity,
         gradient: 'from-rose-500 to-pink-500',
-        appPath: '#',
-        isAvailable: false
+        appPath: 'https://h365-new.vercel.app/',
+        isAvailable: true
       },
       microfin: {
           title: 'MicroFin',

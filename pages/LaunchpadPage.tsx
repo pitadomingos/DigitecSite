@@ -51,9 +51,9 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName, isPre
       icon: Activity,
       color: 'rose',
       gradient: 'from-rose-500 to-pink-500',
-      status: t.launchpad?.status?.access || 'Request Access',
-      path: '/portfolio/h365',
-      isAvailable: false
+      status: t.launchpad?.status?.active || 'Active',
+      path: 'https://h365-new.vercel.app/',
+      isAvailable: true
     },
     {
       id: 'microfin',

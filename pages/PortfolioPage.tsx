@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   GraduationCap, Activity, Wallet, Wrench, CreditCard, 
-  ChevronRight, Zap, ShieldCheck, Monitor, Radio
+  ChevronRight, Zap, ShieldCheck, Monitor, Radio, ExternalLink
 } from 'lucide-react';
 import PublicNavbar from '../components/PublicNavbar';
 import PublicFooter from '../components/PublicFooter';
@@ -33,7 +33,8 @@ const PortfolioPage: React.FC = () => {
         t.portfolio.industries.manufacturing
       ],
       tags: [t.portfolio.tags.iot, t.portfolio.tags.saas, t.portfolio.tags.security, t.portfolio.tags.offline],
-      badgeLabel: t.portfolio.labels.flagship
+      badgeLabel: t.portfolio.labels.flagship,
+      appUrl: 'https://rac-s.vercel.app'
     },
     {
         id: 'minesite',
@@ -81,7 +82,8 @@ const PortfolioPage: React.FC = () => {
       gradient: 'from-rose-500 to-pink-500',
       industries: [t.portfolio.industries.healthcare, t.portfolio.industries.clinical],
       tags: [t.portfolio.tags.scalable, t.portfolio.tags.secure, t.portfolio.tags.cloud],
-      badgeLabel: t.portfolio.labels.ready
+      badgeLabel: t.portfolio.labels.ready,
+      appUrl: 'https://h365-new.vercel.app/'
     },
     {
       id: 'microfin',
@@ -223,10 +225,22 @@ const PortfolioPage: React.FC = () => {
                 </div>
 
                 {/* Technical Action */}
-                <div className="col-span-1 md:col-span-2 text-right">
+                <div className="col-span-1 md:col-span-2 flex items-center justify-end gap-2">
+                  {product.appUrl && (
+                    <a
+                      href={product.appUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-2 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded font-bold text-xs hover:bg-cyan-500 hover:text-white transition-all shrink-0"
+                      title="Access App"
+                    >
+                      <ExternalLink size={14} />
+                      <span>App</span>
+                    </a>
+                  )}
                   <button 
                     onClick={() => navigate(`/portfolio/${product.id}`)}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded font-bold text-xs hover:bg-cyan-500 hover:text-white hover:border-cyan-500 transition-all group/btn"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded font-bold text-xs hover:bg-cyan-500 hover:text-white hover:border-cyan-500 transition-all group/btn shrink-0"
                   >
                     {t.portfolio.btnCaseStudy}
                     <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />

@@ -28,6 +28,7 @@ const PublicNavbar: React.FC = () => {
     { name: 'about', path: '/about' },
     { name: 'mission', path: '/mission' },
     { name: 'vision', path: '/vision' },
+    { name: 'team', path: '/team' },
     { name: 'partners', path: '/partners' },
     { name: 'portfolio', path: '/portfolio' },
     { name: 'contact', path: '/contact' },
