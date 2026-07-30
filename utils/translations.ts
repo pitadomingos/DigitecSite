@@ -210,7 +210,16 @@ export const translations = {
         badge: 'Leadership & Vision',
         title: 'The Minds Behind',
         titleAccent: 'Digitec',
-        desc: 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, and global business development.'
+        desc: 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, healthcare digitization, and global business development.'
+      },
+      labels: {
+        verifiedLead: 'VERIFIED LEAD',
+        contact: 'Contact'
+      },
+      culture: {
+        title: 'Build Sovereign Systems With Us',
+        desc: 'Our multidisciplinary team combines data science, cloud architecture, and industrial domain knowledge to build Africa\'s next generation of digital tools.',
+        btn: 'Get In Touch'
       },
       members: {
         pita: {
@@ -219,7 +228,9 @@ export const translations = {
           experience: '25+ years driving innovation',
           specialization: 'Mining systems development',
           expertise: 'Full-stack Data Scientist',
-          bio: 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.'
+          bio: 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.',
+          badge: 'Data Scientist & Executive',
+          skills: ['Mining Systems', 'Enterprise Frameworks', 'Data Science', 'Operational Strategy']
         },
         derco: {
           name: 'Dercio Nguenze',
@@ -227,7 +238,9 @@ export const translations = {
           experience: '10+ years leading technical teams',
           specialization: 'Enterprise infrastructure',
           expertise: 'Advanced systems management',
-          bio: 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.'
+          bio: 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
+          badge: 'Systems Architect',
+          skills: ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering']
         },
         fernandell: {
           name: 'Fernandel Chambal',
@@ -235,7 +248,9 @@ export const translations = {
           experience: '15+ years in strategic growth',
           specialization: 'Business development & marketing',
           expertise: 'Global trade & logistics',
-          bio: 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.'
+          bio: 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
+          badge: 'Commercial Strategy',
+          skills: ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations']
         }
       }
     },
@@ -279,27 +294,41 @@ export const translations = {
     },
     portfolio: {
       hero: {
-        badge: 'Enterprise Ecosystem',
+        badge: 'Enterprise Sovereign Ecosystem',
         title: 'Solutions Portfolio',
-        title1: 'Ecosystem',
-        titleAccent: 'Inventory',
-        desc: 'Robust, scalable, and mission-critical software designed for industry titans, dynamic startups, and bespoke residential operational needs.',
-        statusLabel: 'Global Status',
-        statusValue: 'OPERATIONAL'
+        title1: 'Sovereign Systems &',
+        titleAccent: 'Industrial Portfolio',
+        desc: 'Production-ready, cloud-native, and offline-first software engines designed for national healthcare networks, industrial giants, and education systems.',
+        statusLabel: 'Ecosystem Status',
+        statusValue: '99.98% OPERATIONAL',
+        activeDeployments: '8+ Active Platforms',
+        totalFacilities: '1,500+ Facilities'
       },
       btnCaseStudy: 'View Specs',
       back: 'Return Home',
       btnPhilosophy: 'Our Philosophy',
+      filters: {
+        all: 'All Systems',
+        flagship: 'Flagship Sovereign',
+        industrial: 'Industrial & Safety',
+        healthEd: 'Healthcare & EdTech',
+        enterprise: 'Enterprise & Finance'
+      },
+      searchPlaceholder: 'Search platforms by name, keyword, or technology...',
+      viewMode: {
+        grid: 'Visual Cards',
+        table: 'Technical Spec List'
+      },
       labels: {
-        id: 'ID',
+        id: 'SYSTEM ID',
         system: 'System Name / Specification',
-        industry: 'Target Industry',
-        status: 'Deployment Status',
-        action: 'Action',
-        flagship: 'Primary Standard',
-        ready: 'Production Ready',
-        webSolution: 'Corporate Digital',
-        iotSolution: 'Advanced Telemetry'
+        industry: 'Target Sector',
+        status: 'Operational Status',
+        action: 'Actions',
+        flagship: 'Sovereign Flagship',
+        ready: 'Production Active',
+        webSolution: 'Corporate Portal',
+        iotSolution: 'IoT Telemetry Daemon'
       },
       items: {
         safeteq: {
@@ -1444,7 +1473,16 @@ export const translations = {
         badge: 'Liderança e Visão',
         title: 'As Mentes por Trás da',
         titleAccent: 'Digitec',
-        desc: 'Nossa equipe de liderança combina décadas de experiência especializada em sistemas de mineração, infraestrutura empresarial e desenvolvimento de negócios globais.'
+        desc: 'Nossa equipe de liderança combina décadas de experiência especializada em sistemas de mineração, infraestrutura empresarial, digitalização da saúde e desenvolvimento de negócios globais.'
+      },
+      labels: {
+        verifiedLead: 'LÍDER VERIFICADO',
+        contact: 'Contactar'
+      },
+      culture: {
+        title: 'Construa Sistemas Soberanos Connosco',
+        desc: 'Nossa equipe multidisciplinar combina ciência de dados, arquitetura em nuvem e conhecimento de domínio industrial para construir a próxima geração de ferramentas digitais de África.',
+        btn: 'Entrar em Contacto'
       },
       members: {
         pita: {
@@ -1453,7 +1491,9 @@ export const translations = {
           experience: '25+ anos impulsionando inovação',
           specialization: 'Desenvolvimento de sistemas de mineração',
           expertise: 'Data Scientist Full-stack',
-          bio: 'Pita traz mais de um quarto de século de profunda experiência no setor para nossa equipe de liderança. Ele é especialista em projetar estruturas complexas de desenvolvimento de sistemas de mineração. Como Data Scientist full-stack, ele une análise de dados avançada com estratégias operacionais para escalar o crescimento corporativo.'
+          bio: 'Pita traz mais de um quarto de século de profunda experiência no setor para nossa equipe de liderança. Ele é especialista em projetar estruturas complexas de desenvolvimento de sistemas de mineração. Como Data Scientist full-stack, ele une análise de dados avançada com estratégias operacionais para escalar o crescimento corporativo.',
+          badge: 'Cientista de Dados e Executivo',
+          skills: ['Sistemas de Mineração', 'Frameworks Empresariais', 'Ciência de Dados', 'Estratégia Operacional']
         },
         derco: {
           name: 'Dercio Nguenze',
@@ -1461,7 +1501,9 @@ export const translations = {
           experience: '10+ anos liderando equipes técnicas',
           specialization: 'Infraestrutura empresarial',
           expertise: 'Gestão avançada de sistemas',
-          bio: 'Dercio supervisiona a visão técnica, a infraestrutura e o roteiro de engenharia da empresa. Com mais de uma década de experiência especializada em gestão de sistemas, ele garante que nossa arquitetura seja segura, escalável e construída sobre padrões de framework de ponta.'
+          bio: 'Dercio supervisiona a visão técnica, a infraestrutura e o roteiro de engenharia da empresa. Com mais de uma década de experiência especializada em gestão de sistemas, ele garante que nossa arquitetura seja segura, escalável e construída sobre padrões de framework de ponta.',
+          badge: 'Arquiteto de Sistemas',
+          skills: ['Infraestrutura em Nuvem', 'LAN Offline-First', 'Segurança de Sistemas', 'Engenharia Full-Stack']
         },
         fernandell: {
           name: 'Fernandel Chambal',
@@ -1469,7 +1511,9 @@ export const translations = {
           experience: '15+ anos em crescimento estratégico',
           specialization: 'Desenvolvimento de negócios e marketing',
           expertise: 'Comércio global e logística',
-          bio: 'Fernandell lidera nossa expansão comercial e parcerias estratégicas. Com vasta experiência em comércio global e marketing, ele garante que nossas soluções cheguem aos mercados certos, mantendo fortes relacionamentos corporativos e crescimento sustentável.'
+          bio: 'Fernandell lidera nossa expansão comercial e parcerias estratégicas. Com vasta experiência em comércio global e marketing, ele garante que nossas soluções cheguem aos mercados certos, mantendo fortes relacionamentos corporativos e crescimento sustentável.',
+          badge: 'Estratégia Comercial',
+          skills: ['Comércio Global', 'Parcerias Estratégicas', 'Expansão de Mercado', 'Relações com Clientes']
         }
       }
     },
@@ -1513,27 +1557,41 @@ export const translations = {
     },
     portfolio: {
       hero: {
-        badge: 'Ecossistema Empresarial',
+        badge: 'Ecossistema Soberano Empresarial',
         title: 'Portfólio de Soluções',
-        title1: 'Inventário do',
-        titleAccent: 'Ecossistema',
-        desc: 'Software robusto, escalável e de missão crítica, concebido para as exigências únicas da indústria, startups e necessidades residenciais.',
-        statusLabel: 'Status Global',
-        statusValue: 'OPERACIONAL'
+        title1: 'Sistemas Soberanos e',
+        titleAccent: 'Portfólio Industrial',
+        desc: 'Motores de software prontos para produção, nativos em nuvem e offline-first desenvolvidos para redes nacionais de saúde, gigantes industriais e sistemas de ensino.',
+        statusLabel: 'Estado do Ecossistema',
+        statusValue: '99.98% OPERACIONAL',
+        activeDeployments: '8+ Plataformas Ativas',
+        totalFacilities: '1.500+ Unidades'
       },
       btnCaseStudy: 'Ver Especificações',
       back: 'Voltar ao Início',
       btnPhilosophy: 'Nossa Filosofia',
+      filters: {
+        all: 'Todos os Sistemas',
+        flagship: 'Plataformas Principais',
+        industrial: 'Industrial e Segurança',
+        healthEd: 'Saúde e Educação',
+        enterprise: 'Empresarial e Finanças'
+      },
+      searchPlaceholder: 'Pesquisar plataformas por nome, palavras-chave ou tecnologia...',
+      viewMode: {
+        grid: 'Cartões Visuais',
+        table: 'Lista Técnica'
+      },
       labels: {
-        id: 'ID',
+        id: 'ID DO SISTEMA',
         system: 'Nome do Sistema / Especificação',
-        industry: 'Indústria Alvo',
-        status: 'Status de Implantação',
-        action: 'Ação',
-        flagship: 'Padrão Primário',
-        ready: 'Pronto para Produção',
-        webSolution: 'Digital Corporativo',
-        iotSolution: 'Telemetria Avançada'
+        industry: 'Setor Alvo',
+        status: 'Estado Operacional',
+        action: 'Ações',
+        flagship: 'Soberano Principal',
+        ready: 'Produção Ativa',
+        webSolution: 'Portal Corporativo',
+        iotSolution: 'Daemon Telemetria IoT'
       },
       items: {
         safeteq: {

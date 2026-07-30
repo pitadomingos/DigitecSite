@@ -19,38 +19,38 @@ const TeamPage: React.FC = () => {
   const members = [
     {
       id: 'pita',
-      name: t.team.members.pita.name || 'Pita Domingos',
-      role: t.team.members.pita.role || 'Chief Executive Officer (CEO)',
-      experience: t.team.members.pita.experience || '25+ years driving innovation',
-      specialization: t.team.members.pita.specialization || 'Mining systems development',
-      expertise: t.team.members.pita.expertise || 'Full-stack Data Scientist',
-      bio: t.team.members.pita.bio || 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.',
-      badge: 'Data Scientist & Executive',
-      skills: ['Mining Systems', 'Enterprise Frameworks', 'Data Science', 'Operational Strategy'],
+      name: t.team?.members?.pita?.name || 'Pita Domingos',
+      role: t.team?.members?.pita?.role || 'Chief Executive Officer (CEO)',
+      experience: t.team?.members?.pita?.experience || '25+ years driving innovation',
+      specialization: t.team?.members?.pita?.specialization || 'Mining systems development',
+      expertise: t.team?.members?.pita?.expertise || 'Full-stack Data Scientist',
+      bio: t.team?.members?.pita?.bio || 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.',
+      badge: t.team?.members?.pita?.badge || 'Data Scientist & Executive',
+      skills: t.team?.members?.pita?.skills || ['Mining Systems', 'Enterprise Frameworks', 'Data Science', 'Operational Strategy'],
       color: 'blue'
     },
     {
       id: 'derco',
-      name: t.team.members.derco.name || 'Dercio Nguenze',
-      role: t.team.members.derco.role || 'Chief Technology Officer (CTO)',
-      experience: t.team.members.derco.experience || '10+ years leading technical teams',
-      specialization: t.team.members.derco.specialization || 'Enterprise infrastructure',
-      expertise: t.team.members.derco.expertise || 'Advanced systems management',
-      bio: t.team.members.derco.bio || 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
-      badge: 'Systems Architect',
-      skills: ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering'],
+      name: t.team?.members?.derco?.name || 'Dercio Nguenze',
+      role: t.team?.members?.derco?.role || 'Chief Technology Officer (CTO)',
+      experience: t.team?.members?.derco?.experience || '10+ years leading technical teams',
+      specialization: t.team?.members?.derco?.specialization || 'Enterprise infrastructure',
+      expertise: t.team?.members?.derco?.expertise || 'Advanced systems management',
+      bio: t.team?.members?.derco?.bio || 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
+      badge: t.team?.members?.derco?.badge || 'Systems Architect',
+      skills: t.team?.members?.derco?.skills || ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering'],
       color: 'cyan'
     },
     {
       id: 'fernandell',
-      name: t.team.members.fernandell.name || 'Fernandel Chambal',
-      role: t.team.members.fernandell.role || 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
-      experience: t.team.members.fernandell.experience || '15+ years in strategic growth',
-      specialization: t.team.members.fernandell.specialization || 'Business development & marketing',
-      expertise: t.team.members.fernandell.expertise || 'Global trade & logistics',
-      bio: t.team.members.fernandell.bio || 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
-      badge: 'Commercial Strategy',
-      skills: ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations'],
+      name: t.team?.members?.fernandell?.name || 'Fernandel Chambal',
+      role: t.team?.members?.fernandell?.role || 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
+      experience: t.team?.members?.fernandell?.experience || '15+ years in strategic growth',
+      specialization: t.team?.members?.fernandell?.specialization || 'Business development & marketing',
+      expertise: t.team?.members?.fernandell?.expertise || 'Global trade & logistics',
+      bio: t.team?.members?.fernandell?.bio || 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
+      badge: t.team?.members?.fernandell?.badge || 'Commercial Strategy',
+      skills: t.team?.members?.fernandell?.skills || ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations'],
       color: 'indigo'
     }
   ];
@@ -64,14 +64,17 @@ const TeamPage: React.FC = () => {
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-black uppercase tracking-widest mb-6">
-              <Sparkles size={14} /> {t.team.hero.badge || 'Leadership & Vision'}
+              <Sparkles size={14} /> {t.team?.hero?.badge || 'Leadership & Vision'}
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight uppercase">
-              The Minds Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Digitec</span>
+              {t.team?.hero?.title || 'The Minds Behind'}{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                {t.team?.hero?.titleAccent || 'Digitec'}
+              </span>
             </h1>
             <div className="w-24 h-2 bg-blue-600 mx-auto rounded-full mb-8 shadow-lg shadow-blue-500/50"></div>
             <p className="text-xl text-slate-300 leading-relaxed font-medium">
-              {t.team.hero.desc || 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, healthcare digitization, and global business development.'}
+              {t.team?.hero?.desc || 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, healthcare digitization, and global business development.'}
             </p>
           </div>
 
@@ -126,13 +129,13 @@ const TeamPage: React.FC = () => {
                 {/* Footer Action */}
                 <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
                   <span className="flex items-center gap-1.5 text-emerald-400 font-bold">
-                    <CheckCircle2 size={14} /> VERIFIED LEAD
+                    <CheckCircle2 size={14} /> {t.team?.labels?.verifiedLead || 'VERIFIED LEAD'}
                   </span>
                   <button 
                     onClick={() => navigate('/contact')}
                     className="text-cyan-400 hover:text-white flex items-center gap-1 font-sans font-bold transition-colors"
                   >
-                    Contact <ArrowRight size={14} />
+                    {t.team?.labels?.contact || 'Contact'} <ArrowRight size={14} />
                   </button>
                 </div>
               </div>
@@ -143,16 +146,16 @@ const TeamPage: React.FC = () => {
           <section className="text-center bg-gradient-to-r from-blue-900/60 via-slate-900 to-indigo-900/60 p-12 md:p-20 rounded-[3.5rem] border border-blue-500/30 overflow-hidden shadow-2xl relative">
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight uppercase">
-                Build Sovereign Systems With Us
+                {t.team?.culture?.title || 'Build Sovereign Systems With Us'}
               </h2>
               <p className="text-slate-300 text-lg mb-10 font-medium">
-                Our multidisciplinary team combines data science, cloud architecture, and industrial domain knowledge to build Africa's next generation of digital tools.
+                {t.team?.culture?.desc || 'Our multidisciplinary team combines data science, cloud architecture, and industrial domain knowledge to build Africa\'s next generation of digital tools.'}
               </p>
               <button 
                 onClick={() => navigate('/contact')}
                 className="bg-blue-600 text-white px-10 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/30 hover:scale-105 active:scale-95"
               >
-                Get In Touch
+                {t.team?.culture?.btn || 'Get In Touch'}
               </button>
             </div>
           </section>

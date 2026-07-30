@@ -49,10 +49,9 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
       color: 'blue',
       gradient: 'from-blue-600 via-indigo-600 to-cyan-600',
       status: t.launchpad?.status?.enterprise || 'Enterprise Active',
-      path: '/dashboard',
-      externalPath: 'https://rac-s.vercel.app',
+      path: 'https://rac-s.vercel.app',
       caseStudyPath: '/portfolio/safeteq',
-      isExternal: false,
+      isExternal: true,
       stats: t.launchpad?.stats?.safeteq || '6,000+ Workers • RAC 01-11 & Gate Lockout Daemon',
       tags: t.launchpad?.tags?.safeteq || ['RAC 01-11', 'Gate Lockout', 'Alcohol IoT', 'ASO Sync'],
       isAvailable: true
@@ -270,25 +269,14 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
                                     {app.isExternal ? <ExternalLink size={14} /> : <ArrowRight size={14} />}
                                   </button>
 
-                                  {/* Secondary Specs / Vault Route */}
-                                  {app.id === 'safeteq' && app.externalPath ? (
-                                    <button
-                                      onClick={() => window.open(app.externalPath, '_blank')}
-                                      className="w-full sm:w-auto py-3 px-4 rounded-2xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-bold text-xs uppercase tracking-wider border border-white/10 flex items-center justify-center gap-1.5 transition-all"
-                                      title="Open SAFETEQ External Cloud Vault"
-                                    >
-                                      <span>Cloud</span>
-                                      <ExternalLink size={12} />
-                                    </button>
-                                  ) : (
-                                    <button
-                                      onClick={() => navigate(app.caseStudyPath)}
-                                      className="w-full sm:w-auto py-3 px-4 rounded-2xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-bold text-xs uppercase tracking-wider border border-white/10 flex items-center justify-center gap-1.5 transition-all"
-                                    >
-                                      <FileText size={14} />
-                                      <span>{t.launchpad?.btnSpecs || 'Specs'}</span>
-                                    </button>
-                                  )}
+                                  {/* Secondary Specs / Case Study Route */}
+                                  <button
+                                    onClick={() => navigate(app.caseStudyPath)}
+                                    className="w-full sm:w-auto py-3 px-4 rounded-2xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-bold text-xs uppercase tracking-wider border border-white/10 flex items-center justify-center gap-1.5 transition-all"
+                                  >
+                                    <FileText size={14} />
+                                    <span>{t.launchpad?.btnSpecs || 'Specs'}</span>
+                                  </button>
                                 </div>
                             </div>
                         </div>
