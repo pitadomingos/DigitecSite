@@ -302,7 +302,7 @@ async function verifyWorkforceSafetyGate(workerId: string) {
               <Cpu size={14} /> {t.publicHome.capabilities?.title || 'Core Product Inventory'}
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight mb-6">
-              Flagship <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Digital Ecosystems</span>
+              {t.publicHome.aboutPage?.flagshipTitle || 'Flagship'} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">{t.publicHome.aboutPage?.flagshipHighlight || 'Digital Ecosystems'}</span>
             </h2>
             <p className="text-slate-400 text-base md:text-lg font-medium leading-relaxed">
               {t.publicHome.capabilities?.desc || 'Every system is built from the ground up for high reliability, offline-first resilience, and domain-specific automation.'}
@@ -320,26 +320,26 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                     <Activity size={32} />
                   </div>
                   <span className="px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-rose-500/10 text-rose-400 border border-rose-500/20">
-                    National Health Infra
+                    {t.publicHome.aboutPage?.solutions?.h365?.tag || 'National Health Infra'}
                   </span>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-3 tracking-tight group-hover:text-rose-400 transition-colors">
-                  H365 Digital Health Ecosystem
+                  {t.publicHome.aboutPage?.solutions?.h365?.title || 'H365 Digital Health Ecosystem'}
                 </h3>
                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium mb-6">
                   {t.publicHome.about?.cards?.h365}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">28+ Clinical Modules</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">CHAEM 7-Step AMA</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">MISAU DHIS2 Sync</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.h365?.highlights?.[0] || '28+ Clinical Modules'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.h365?.highlights?.[1] || 'CHAEM 7-Step AMA'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.h365?.highlights?.[2] || 'MISAU DHIS2 Sync'}</span>
                 </div>
               </div>
               <button 
                 onClick={() => navigate('/portfolio/h365')}
                 className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-rose-600 hover:text-white text-rose-400 font-black text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 group-hover:border-rose-500"
               >
-                {t.publicHome.hero?.btnExplore || 'Explore H365 Ecosystem'} <ChevronRight size={16} />
+                {t.publicHome.aboutPage?.exploreH365 || 'Explore H365 Ecosystem'} <ChevronRight size={16} />
               </button>
             </div>
 
@@ -352,26 +352,26 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                     <GraduationCap size={32} />
                   </div>
                   <span className="px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                    AI Education Platform
+                    {t.publicHome.aboutPage?.solutions?.edudesk?.tag || 'AI Education Platform'}
                   </span>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-3 tracking-tight group-hover:text-indigo-400 transition-colors">
-                  EduDesk AI School Management
+                  {t.publicHome.aboutPage?.solutions?.edudesk?.title || 'EduDesk AI School Management'}
                 </h3>
                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium mb-6">
                   {t.publicHome.about?.cards?.edudesk}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">AI Lesson Planner</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">AI Test Generator</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Multi-School Dashboard</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.edudesk?.highlights?.[0] || 'AI Lesson Planner'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.edudesk?.highlights?.[1] || 'AI Test Generator'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.edudesk?.highlights?.[2] || 'Multi-School Dashboard'}</span>
                 </div>
               </div>
               <button 
                 onClick={() => navigate('/portfolio/edudesk')}
                 className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-indigo-600 hover:text-white text-indigo-400 font-black text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 group-hover:border-indigo-500"
               >
-                {t.publicHome.hero?.btnExplore || 'Explore EduDesk AI'} <ChevronRight size={16} />
+                {t.publicHome.aboutPage?.exploreEduDesk || 'Explore EduDesk AI'} <ChevronRight size={16} />
               </button>
             </div>
 
@@ -384,26 +384,26 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                     <ShieldCheck size={32} />
                   </div>
                   <span className="px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    Industrial Safety & Risk
+                    {t.publicHome.aboutPage?.solutions?.safeteq?.tag || 'Industrial Safety & Risk'}
                   </span>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-3 tracking-tight group-hover:text-emerald-400 transition-colors">
-                  SAFETEQ Risk Management
+                  {t.publicHome.aboutPage?.solutions?.safeteq?.title || 'SAFETEQ Risk Management'}
                 </h3>
                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium mb-6">
                   {t.publicHome.about?.cards?.safeteq}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Critical Risk Rules (CRM/LSR) Matrix</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Gate Lockout Daemon</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Contractor Verification</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.safeteq?.highlights?.[0] || 'Critical Risk Rules (CRM/LSR) Matrix'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.safeteq?.highlights?.[1] || 'Gate Lockout Daemon'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.safeteq?.highlights?.[2] || 'Contractor Verification'}</span>
                 </div>
               </div>
               <button 
                 onClick={() => navigate('/portfolio/safeteq')}
                 className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-emerald-600 hover:text-white text-emerald-400 font-black text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 group-hover:border-emerald-500"
               >
-                {t.publicHome.hero?.btnExplore || 'Explore SAFETEQ Specs'} <ChevronRight size={16} />
+                {t.publicHome.aboutPage?.exploreSafeteq || 'Explore SAFETEQ Specs'} <ChevronRight size={16} />
               </button>
             </div>
 
@@ -416,26 +416,26 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                     <Wallet size={32} />
                   </div>
                   <span className="px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-                    Fintech & Payroll
+                    {t.publicHome.aboutPage?.solutions?.microfin?.tag || 'Fintech & Payroll'}
                   </span>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-3 tracking-tight group-hover:text-cyan-400 transition-colors">
-                  MicroFin Contractor Orchestration
+                  {t.publicHome.aboutPage?.solutions?.microfin?.title || 'MicroFin Contractor Orchestration'}
                 </h3>
                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium mb-6">
                   {t.publicHome.about?.cards?.microfin}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Contractor Payroll</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Real-Time Clearance</span>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Audit Trails</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.microfin?.highlights?.[0] || 'Contractor Payroll'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.microfin?.highlights?.[1] || 'Real-Time Clearance'}</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">{t.publicHome.aboutPage?.solutions?.microfin?.highlights?.[2] || 'Audit Trails'}</span>
                 </div>
               </div>
               <button 
                 onClick={() => navigate('/portfolio/microfin')}
                 className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-cyan-600 hover:text-white text-cyan-400 font-black text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 group-hover:border-cyan-500"
               >
-                {t.publicHome.hero?.btnExplore || 'Explore MicroFin Specs'} <ChevronRight size={16} />
+                {t.publicHome.aboutPage?.exploreMicrofin || 'Explore MicroFin Specs'} <ChevronRight size={16} />
               </button>
             </div>
           </div>

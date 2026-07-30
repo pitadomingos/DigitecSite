@@ -16,7 +16,7 @@ const VisionPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const roadmapPhases = [
+  const roadmapPhases = t.publicHome.vision?.roadmapPhases || [
     {
       phase: 'Phase 01',
       title: 'Foundation & Core Ecosystem Deployment',
@@ -138,10 +138,10 @@ const VisionPage: React.FC = () => {
           <div className="mb-24">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <span className="text-xs font-black uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20 inline-block mb-3">
-                Strategic Horizon
+                {t.publicHome.vision?.horizonBadge || 'Strategic Horizon'}
               </span>
               <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
-                Technology Roadmap
+                {t.publicHome.vision?.roadmapTitle || 'Technology Roadmap'}
               </h2>
             </div>
 
@@ -189,16 +189,16 @@ const VisionPage: React.FC = () => {
           <section className="text-center bg-gradient-to-r from-blue-900/60 via-slate-900 to-indigo-900/60 p-12 md:p-20 rounded-[3.5rem] border border-blue-500/30 overflow-hidden shadow-2xl relative">
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight uppercase">
-                Shape the Future of African Engineering
+                {t.publicHome.vision?.cta?.title || 'Shape the Future of African Engineering'}
               </h2>
               <p className="text-slate-300 text-lg mb-10 font-medium">
-                Collaborate with Digitec to build sovereign digital systems for your institution.
+                {t.publicHome.vision?.cta?.subtitle || 'Collaborate with Digitec to build sovereign digital systems for your institution.'}
               </p>
               <button 
                 onClick={() => navigate('/contact')}
                 className="bg-blue-600 text-white px-10 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/30 hover:scale-105 active:scale-95"
               >
-                Connect With Us
+                {t.publicHome.vision?.cta?.btn || t.publicHome.contact?.form?.btn || 'Connect With Us'}
               </button>
             </div>
           </section>

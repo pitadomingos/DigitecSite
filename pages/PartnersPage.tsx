@@ -98,7 +98,7 @@ const PartnersPage: React.FC = () => {
               <Award size={14} /> {t.publicHome?.partners?.title || 'Strategic Industrial & Institutional Partners'}
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight uppercase">
-              Industrial <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Partners</span>
+              {t.publicHome?.partners?.headerTitle || 'Industrial'} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">{t.publicHome?.partners?.headerHighlight || 'Partners'}</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed font-medium">
               {t.publicHome?.partners?.subtitle || 'Our systems power mission-critical operations, health networks, safety protocols, and supply chains for industry leaders and public infrastructure.'}

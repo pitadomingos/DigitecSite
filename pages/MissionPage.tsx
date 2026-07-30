@@ -28,9 +28,9 @@ const MissionPage: React.FC = () => {
               <Sparkles size={14} /> {t.publicMission.hero.badge || 'Strategic Mandate'}
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight uppercase">
-              Mission-Critical <br />
+              {t.publicMission.hero?.title1 || 'Mission-Critical'} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
-                Digital Ecosystems
+                {t.publicMission.hero?.title2 || 'Digital Ecosystems'}
               </span>
             </h1>
             <div className="w-24 h-2 bg-blue-600 mx-auto rounded-full mb-8 shadow-lg shadow-blue-500/50"></div>

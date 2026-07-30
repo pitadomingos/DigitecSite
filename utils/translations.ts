@@ -146,6 +146,12 @@ export const translations = {
         suiteTitle: 'Our Sovereign',
         suiteHighlight: 'Software Suite',
         suiteDesc: 'Tailored digital solutions built for Africa\'s most demanding enterprise environments.',
+        flagshipTitle: 'Flagship',
+        flagshipHighlight: 'Digital Ecosystems',
+        exploreH365: 'Explore H365 Ecosystem',
+        exploreEduDesk: 'Explore EduDesk AI',
+        exploreSafeteq: 'Explore SAFETEQ Specs',
+        exploreMicrofin: 'Explore MicroFin Specs',
         viewSpecs: 'View Ecosystem Specs',
         homegrown: 'Homegrown Excellence',
         beyondCode: 'Beyond Code.',
@@ -202,6 +208,8 @@ export const translations = {
         pioneering: 'Pioneering',
         sovereignInfra: 'Sovereign Digital Infrastructure',
         subtitle: 'We are bridging physical operations with intelligent, offline-resilient, AI-empowered digital ecosystems tailored for healthcare networks, education systems, heavy industry, and enterprise logistics.',
+        horizonBadge: 'Strategic Horizon',
+        roadmapTitle: 'Technology Roadmap',
         goalsList: [
           {
             title: '01. Eliminate Operational Friction',
@@ -216,6 +224,65 @@ export const translations = {
             desc: 'Delivering world-class software engineered in Mozambique to empower African enterprises and global industrial operators.'
           }
         ],
+        roadmapPhases: [
+          {
+            phase: 'Phase 01',
+            title: 'Foundation & Core Ecosystem Deployment',
+            timeline: 'Current Status (2026)',
+            status: 'Active',
+            desc: 'Deploying H365 Digital Health Ecosystem (SaaS Command Center, CHAEM, Patient Portal) across 1,500+ health facilities, alongside EduDesk AI School Management and SAFETEQ Mining Safety.',
+            milestones: [
+              'H365 28+ Clinical Modules & CHAEM 7-Step AMA',
+              'EduDesk AI Lesson Planner & Test Generator',
+              'SAFETEQ Critical Risk Standards (CRM/LSR) Gate Lockout Verification',
+              'Offline-First Local LAN (L-LAN) Infrastructure'
+            ]
+          },
+          {
+            phase: 'Phase 02',
+            title: 'Federated Master Patient Index & Multi-School Governance',
+            timeline: 'Q3 2026',
+            status: 'In Progress',
+            desc: 'Federating Master Patient Index (MPI) with National NID validation across 11 provinces, and scaling EduDesk AI to multi-school group management dashboards.',
+            milestones: [
+              'National Master Patient Index (MPI) Federation',
+              'Multi-School Centralized Administrative Dashboard',
+              'Real-time Telemetry Integration with CLN & Vulcan',
+              'Enhanced Biometric Patient Verification'
+            ]
+          },
+          {
+            phase: 'Phase 03',
+            title: 'National Federation & MISAU DHIS2 Integration',
+            timeline: 'Q4 2026',
+            status: 'Upcoming',
+            desc: 'Real-time API integration with Mozambique Ministry of Health (MISAU) DHIS2 for automated epidemiological disease surveillance (Malaria, Cholera, Mpox).',
+            milestones: [
+              'Direct MISAU DHIS2 Epidemiological Sync',
+              'Digital Medical Certificate NID Verification',
+              'Automated Supply Chain & Pharmacy Restock Alerts',
+              'Cross-Sector Occupational Health Analytics'
+            ]
+          },
+          {
+            phase: 'Phase 04',
+            title: 'Predictive AI & Autonomous Governance',
+            timeline: '2027+',
+            status: 'Target',
+            desc: 'Deploying Gemini-powered predictive models for early-warning disease outbreak detection, hospital beds/resource optimization, and AI personalized student tutoring.',
+            milestones: [
+              'Predictive Epidemic Outbreak Early Warning System',
+              'Gemini-Driven Hospital Capacity Optimization',
+              'Adaptive AI Student Tutoring Engine',
+              'Zero-Latency Sovereign Cloud Sync'
+            ]
+          }
+        ],
+        cta: {
+          title: 'Shape the Future of African Engineering',
+          subtitle: 'Collaborate with Digitec to build sovereign digital systems for your institution.',
+          btn: 'Get in Touch'
+        },
         desc: 'We are bridging the gap between physical operations and intelligent digital orchestration through high-fidelity software tailored for industry, retail, and residence.',
         mission: 'Our Strategic Mission',
         missionHeadline: 'Transforming Complexity into Precision',
@@ -227,6 +294,10 @@ export const translations = {
       },
       partners: {
         title: 'Strategic Industrial & Institutional Partners',
+        headerTitle: 'Industrial',
+        headerHighlight: 'Partners',
+        trustTitle: 'Ecosystem Trust',
+        viewAll: 'View All Partners & Specs',
         subtitle: 'Our systems power mission-critical operations, health networks, safety protocols, and supply chains for industry leaders and public infrastructure.',
         filters: {
           all: 'All Partners',
@@ -374,6 +445,8 @@ export const translations = {
         hero: {
             badge: 'Strategic Mandate',
             title: 'Mission-Critical Digital Ecosystems',
+            title1: 'Mission-Critical',
+            title2: 'Digital Ecosystems',
             desc: 'To engineer resilient, mission-critical digital ecosystems that transform complex manual logic into precise, automated orchestration, safeguarding assets and empowering businesses of all scales.'
         },
         pillars: {
@@ -546,8 +619,10 @@ export const translations = {
       },
       footer: {
         title: 'Custom Architecture Needed?',
-        desc: "We build bespoke software for complex industrial logic. Contact our solutions desk.",
-        btn: 'Request Consultation'
+        title1: 'Scale Your Operational',
+        titleAccent: 'Infrastructure',
+        desc: "Digitec engineers bespoke enterprise software, offline-first L-LAN mesh systems, and dedicated SLA contracts for mining, healthcare, and education platforms.",
+        btn: 'Contact Solutions Architect'
       }
     },
     caseStudies: {
@@ -1559,6 +1634,12 @@ export const translations = {
         suiteTitle: 'A Nossa Suíte',
         suiteHighlight: 'Soberana de Software',
         suiteDesc: 'Soluções digitais personalizadas construídas para os ambientes empresariais mais exigentes de África.',
+        flagshipTitle: 'Principais',
+        flagshipHighlight: 'Ecossistemas Digitais',
+        exploreH365: 'Explorar Ecossistema H365',
+        exploreEduDesk: 'Explorar EduDesk AI',
+        exploreSafeteq: 'Explorar Especificações SAFETEQ',
+        exploreMicrofin: 'Explorar Especificações MicroFin',
         viewSpecs: 'Ver Especificações do Ecossistema',
         homegrown: 'Excelência Nacional',
         beyondCode: 'Além do Código.',
@@ -1615,6 +1696,8 @@ export const translations = {
         pioneering: 'Pioneirismo em',
         sovereignInfra: 'Infraestrutura Digital Soberana',
         subtitle: 'Estamos a conectar operações físicas com ecossistemas digitais inteligentes, resilientes offline e capacitados por IA, personalizados para redes de saúde, sistemas educacionais, indústria pesada e logística empresarial.',
+        horizonBadge: 'Horizonte Estratégico',
+        roadmapTitle: 'Roteiro Tecnológico',
         goalsList: [
           {
             title: '01. Eliminar o Atrito Operacional',
@@ -1629,6 +1712,65 @@ export const translations = {
             desc: 'Entregando software de classe mundial desenvolvido em Moçambique para capacitar empresas africanas e operadores industriais globais.'
           }
         ],
+        roadmapPhases: [
+          {
+            phase: 'Fase 01',
+            title: 'Fundação e Implantação do Ecossistema Principal',
+            timeline: 'Status Atual (2026)',
+            status: 'Ativo',
+            desc: 'Implantação do Ecossistema de Saúde Digital H365 (Centro de Comando SaaS, CHAEM, Portal do Paciente) em mais de 1.500 unidades sanitárias, juntamente com a Gestão Escolar EduDesk AI e Segurança Mineira SAFETEQ.',
+            milestones: [
+              'H365 28+ Módulos Clínicos e CHAEM 7 Etapas AMA',
+              'Planeador de Aulas por IA EduDesk e Gerador de Testes',
+              'Verificação de Bloqueio de Portaria com Regras de Riscos Críticos SAFETEQ (CRM/LSR)',
+              'Infraestrutura Local LAN (L-LAN) Offline-First'
+            ]
+          },
+          {
+            phase: 'Fase 02',
+            title: 'Índice Mestre de Pacientes Federado e Governança Multiescolar',
+            timeline: '3º Trimestre de 2026',
+            status: 'Em Progresso',
+            desc: 'Federação do Índice Mestre de Pacientes (MPI) com validação do NID Nacional em 11 províncias e expansão do EduDesk AI para painéis de gestão de grupos multiescolares.',
+            milestones: [
+              'Federação do Índice Mestre de Pacientes (MPI) Nacional',
+              'Painel Administrativo Centralizado Multiescolar',
+              'Integração de Telemetria em Tempo Real com CLN e Vulcan',
+              'Verificação Biométrica de Pacientes Aprimorada'
+            ]
+          },
+          {
+            phase: 'Fase 03',
+            title: 'Federação Nacional e Integração MISAU DHIS2',
+            timeline: '4º Trimestre de 2026',
+            status: 'Próximo',
+            desc: 'Integração de API em tempo real com o Ministério da Saúde de Moçambique (MISAU) DHIS2 para vigilância epidemiológica automatizada de doenças (Malária, Cólera, Mpox).',
+            milestones: [
+              'Sincronização Epidemiológica Direta MISAU DHIS2',
+              'Verificação de NID do Atestado Médico Digital',
+              'Alertas Automatizados de Reabastecimento da Cadeia de Suprimentos e Farmácia',
+              'Análise de Saúde Ocupacional Intersetorial'
+            ]
+          },
+          {
+            phase: 'Fase 04',
+            title: 'IA Preditiva e Governança Autónoma',
+            timeline: '2027+',
+            status: 'Meta',
+            desc: 'Implantação de modelos preditivos alimentados pelo Gemini para deteção precoce de surtos epidémicos, otimização de leitos/recursos hospitalares e tutoria personalizada de alunos por IA.',
+            milestones: [
+              'Sistema de Alerta Precoce Preditivo de Surtos Epidémicos',
+              'Otimização de Capacidade Hospitalar Liderada pelo Gemini',
+              'Motor de Tutoria de Alunos Adaptativo por IA',
+              'Sincronização em Nuvem Soberana de Latência Zero'
+            ]
+          }
+        ],
+        cta: {
+          title: 'Mode o Futuro da Engenharia Africana',
+          subtitle: 'Colabore com a Digitec para construir sistemas digitais soberanos para a sua instituição.',
+          btn: 'Entrar em Contacto'
+        },
         desc: 'Estamos a colmatar a lacuna entre as operações físicas e a orquestração digital inteligente através de software de alta fidelidade adaptado para indústria, retalho e residência.',
         mission: 'Nossa Missão Estratégica',
         missionHeadline: 'Transformando Complexidade em Precisão',
@@ -1640,6 +1782,10 @@ export const translations = {
       },
       partners: {
         title: 'Parceiros Estratégicos Industriais e Institucionais',
+        headerTitle: 'Parceiros',
+        headerHighlight: 'Industriais',
+        trustTitle: 'Confiança no Ecossistema',
+        viewAll: 'Ver Todos os Parceiros e Especificações',
         subtitle: 'Nossos sistemas alimentam operações de missão crítica, redes de saúde, protocolos de segurança e cadeias de suprimentos para líderes industriais e infraestrutura pública.',
         filters: {
           all: 'Todos os Parceiros',
@@ -1787,6 +1933,8 @@ export const translations = {
         hero: {
             badge: 'Mandato Estratégico',
             title: 'Ecossistemas Digitais de Missão Crítica',
+            title1: 'Ecossistemas Digitais',
+            title2: 'de Missão Crítica',
             desc: 'Projetar ecossistemas digitais resilientes e de missão crítica que transformam a lógica manual complexa em orquestração precisa e automatizada, protegendo ativos e capacitando negócios de todas as escalas.'
         },
         pillars: {
@@ -1959,8 +2107,10 @@ export const translations = {
       },
       footer: {
         title: 'Necessita de Arquitetura Personalizada?',
-        desc: "Construímos software por medida para lógica industrial complexa. Contacte o nosso balcão de soluções.",
-        btn: 'Solicitar Consulta'
+        title1: 'Escale Sua Infraestrutura',
+        titleAccent: 'Operacional',
+        desc: "A Digitec desenvolve software empresarial personalizado, sistemas de malha L-LAN offline-first e contratos SLA dedicados para plataformas de mineração, saúde e educação.",
+        btn: 'Contactar Arquiteto de Soluções'
       }
     },
     caseStudies: {

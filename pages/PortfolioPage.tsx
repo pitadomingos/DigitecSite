@@ -592,7 +592,7 @@ const PortfolioPage: React.FC = () => {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight uppercase leading-none">
-            Scale Your Operational <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Infrastructure</span>
+            {t.portfolio?.footer?.title1 || 'Scale Your Operational'} <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">{t.portfolio?.footer?.titleAccent || 'Infrastructure'}</span>
           </h2>
 
           <p className="text-slate-300 text-base md:text-lg mb-10 leading-relaxed font-medium max-w-2xl mx-auto">
