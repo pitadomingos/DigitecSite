@@ -78,7 +78,7 @@ const SafeteqLoginPage: React.FC<SafeteqLoginPageProps> = ({ onLogin }) => {
           <form onSubmit={handleLogin} className="space-y-6">
             
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Identity (Username)</label>
+              <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">{t.auth?.safeteq?.identity || 'Identity (Username)'}</label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-500 group-focus-within:text-blue-500 transition-colors">
                   <User size={18} />
@@ -95,7 +95,7 @@ const SafeteqLoginPage: React.FC<SafeteqLoginPageProps> = ({ onLogin }) => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Access Key (Password)</label>
+              <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">{t.auth?.safeteq?.accessKey || 'Access Key (Password)'}</label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-500 group-focus-within:text-blue-500 transition-colors">
                   <Lock size={18} />
@@ -125,7 +125,7 @@ const SafeteqLoginPage: React.FC<SafeteqLoginPageProps> = ({ onLogin }) => {
               {isLoading ? (
                 <Loader2 size={24} className="animate-spin" />
               ) : (
-                <>Sign In to Vault <ArrowRight size={20}/></>
+                <>{t.auth?.safeteq?.signIn || 'Sign In to Vault'} <ArrowRight size={20}/></>
               )}
             </button>
 
@@ -136,14 +136,14 @@ const SafeteqLoginPage: React.FC<SafeteqLoginPageProps> = ({ onLogin }) => {
                   <Lock size={16} />
               </div>
               <p className="text-[10px] text-slate-500 font-medium leading-relaxed uppercase tracking-wider">
-                  Access is logged and audited. <br/>Authorized personnel only.
+                  {t.auth?.safeteq?.auditNotice || 'Access is logged and audited. Authorized personnel only.'}
               </p>
           </div>
         </div>
 
         <div className="p-6 bg-black/20 text-center border-t border-slate-800/50">
           <p className="text-[10px] text-slate-600 font-bold uppercase tracking-[0.2em]">
-            Safety Compliance Ecosystem
+            {t.auth?.safeteq?.systemTag || 'Safety Compliance Ecosystem'}
           </p>
         </div>
       </div>

@@ -34,20 +34,20 @@ const PresentationPage: React.FC = () => {
   // Define Slides Structure
   const slides = [
     { id: 'title', type: 'title' },
-    { id: 'aboutMe', type: 'aboutMe', title: t.proposal.aboutMe.title },
-    { id: 'scenario', type: 'scenario', title: 'Real World Scenario' },
-    { id: 'summary', type: 'content', title: t.proposal.execSummary.title },
-    { id: 'objectives', type: 'objectives', title: t.proposal.objectives.title },
-    { id: 'integration', type: 'integration', title: 'Unified Data Integration' }, // NEW SLIDE
-    { id: 'organogram', type: 'organogram', title: t.proposal.organogram.title },
-    { id: 'timeline', type: 'timeline', title: t.proposal.timeline.title },
-    { id: 'tech', type: 'tech', title: t.proposal.techStack.title },
-    { id: 'financials', type: 'financials', title: t.proposal.financials.title },
-    { id: 'roadmap', type: 'roadmap', title: t.proposal.roadmap.title },
-    { id: 'alcohol', type: 'alcohol', title: t.proposal.futureUpdates.title },
-    { id: 'enhanced', type: 'enhanced', title: t.proposal.enhancedCaps.title },
-    { id: 'conclusion', type: 'conclusion', title: t.proposal.conclusion.title },
-    { id: 'thankYou', type: 'thankYou', title: t.proposal.thankYou.title },
+    { id: 'aboutMe', type: 'aboutMe', title: t.proposal.aboutMe?.title || 'Solutions Architect' },
+    { id: 'scenario', type: 'scenario', title: t.proposal.scenarioTitle || 'Real World Scenario' },
+    { id: 'summary', type: 'content', title: t.proposal.execSummary?.title || 'Executive Summary' },
+    { id: 'objectives', type: 'objectives', title: t.proposal.objectives?.title || 'Strategic Objectives' },
+    { id: 'integration', type: 'integration', title: t.proposal.integrationTitle || 'Unified Data Integration' },
+    { id: 'organogram', type: 'organogram', title: t.proposal.organogram?.title || 'Project Structure' },
+    { id: 'timeline', type: 'timeline', title: t.proposal.timeline?.title || 'Implementation Timeline' },
+    { id: 'tech', type: 'tech', title: t.proposal.techStack?.title || 'Technology Stack' },
+    { id: 'financials', type: 'financials', title: t.proposal.financials?.title || 'Commercial Proposal' },
+    { id: 'roadmap', type: 'roadmap', title: t.proposal.roadmap?.title || 'Technology Roadmap' },
+    { id: 'alcohol', type: 'alcohol', title: t.proposal.futureUpdates?.title || 'Future Extensions' },
+    { id: 'enhanced', type: 'enhanced', title: t.proposal.enhancedCaps?.title || 'Enhanced Capabilities' },
+    { id: 'conclusion', type: 'conclusion', title: t.proposal.conclusion?.title || 'Conclusion' },
+    { id: 'thankYou', type: 'thankYou', title: t.proposal.thankYou?.title || 'Thank You' },
   ];
 
   const toggleFullScreen = async () => {
@@ -490,7 +490,7 @@ const PresentationPage: React.FC = () => {
                   <div className="bg-slate-900/40 p-8 rounded-3xl border border-red-500/30 backdrop-blur-sm relative ml-0 hover:bg-slate-900/60 transition-colors group">
                       <h3 className="text-2xl font-bold text-red-400 mb-3">The Risk</h3>
                       <p className="text-lg text-slate-300 leading-relaxed">
-                          Operator <strong>Paulo Manjate</strong> has a Critical RAC 02 certification expiring in <strong className="text-white bg-red-500/20 px-2 py-0.5 rounded border border-red-500/30">3 days</strong>.
+                          Operator <strong>Paulo Manjate</strong> has a Critical LSR 02 (Mobile Equipment & Vehicles) certification expiring in <strong className="text-white bg-red-500/20 px-2 py-0.5 rounded border border-red-500/30">3 days</strong>.
                           Access denial is imminent.
                       </p>
                   </div>

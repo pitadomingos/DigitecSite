@@ -35,11 +35,11 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         solution: t.caseStudies.safeteq.solution,
         features: t.caseStudies.safeteq.features,
         impact: [
-          { label: t.caseStudies.safeteq.impact?.[0]?.label || '', value: '98%', desc: t.caseStudies.safeteq.impact?.[0]?.desc || '' },
-          { label: t.caseStudies.safeteq.impact?.[1]?.label || '', value: '0%', desc: t.caseStudies.safeteq.impact?.[1]?.desc || '' },
-          { label: t.caseStudies.safeteq.impact?.[2]?.label || '', value: '-60%', desc: t.caseStudies.safeteq.impact?.[2]?.desc || '' }
+          { label: t.caseStudies.safeteq.impact?.[0]?.label || '', value: '100x', desc: t.caseStudies.safeteq.impact?.[0]?.desc || '' },
+          { label: t.caseStudies.safeteq.impact?.[1]?.label || '', value: '100%', desc: t.caseStudies.safeteq.impact?.[1]?.desc || '' },
+          { label: t.caseStudies.safeteq.impact?.[2]?.label || '', value: 'Proactive', desc: t.caseStudies.safeteq.impact?.[2]?.desc || '' }
         ],
-        stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'MQTT'],
+        stack: ['React 18', 'TypeScript', 'Node.js', 'PostgreSQL', 'SafeSite SSMA', 'Gate Security QR', 'Multi-Tenant SaaS'],
         color: 'blue',
         icon: ShieldCheck,
         gradient: 'from-blue-600 to-indigo-700',

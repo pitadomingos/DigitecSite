@@ -43,7 +43,7 @@ const ContactPage: React.FC = () => {
                    </div>
                    <div>
                      <div className="text-[10px] text-slate-500 uppercase font-black tracking-widest mb-1">{t.publicHome.contact.callLabel}</div>
-                     <div className="font-black text-white text-xl">+258 84 547 9481</div>
+                     <div className="font-black text-white text-xl">{t.publicHome.contact.phone}</div>
                    </div>
                  </div>
 
@@ -52,28 +52,28 @@ const ContactPage: React.FC = () => {
                      <MapPin size={28} />
                    </div>
                    <div>
-                     <div className="text-[10px] text-slate-500 uppercase font-black tracking-widest mb-1">Office</div>
-                     <div className="font-black text-white text-xl">Moatize, Tete, Mozambique</div>
+                     <div className="text-[10px] text-slate-500 uppercase font-black tracking-widest mb-1">{t.publicHome.contact.officeLabel}</div>
+                     <div className="font-black text-white text-xl">{t.publicHome.contact.address}</div>
                    </div>
                  </div>
                </div>
             </div>
 
             <div className="bg-white/5 backdrop-blur-xl p-10 md:p-16 rounded-[3rem] border border-white/10 shadow-2xl">
-               <h3 className="text-3xl font-black text-white mb-8 tracking-tight">Send a message</h3>
+               <h3 className="text-3xl font-black text-white mb-8 tracking-tight">{t.publicHome.contact.sendMessage}</h3>
                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">Full Name</label>
+                       <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">{t.publicHome.contact.fullNameLabel}</label>
                        <input type="text" className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-4 text-white font-bold focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder={t.publicHome.contact.form.name} />
                     </div>
                     <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">Email Address</label>
+                       <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">{t.publicHome.contact.emailAddressLabel}</label>
                        <input type="email" className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-4 text-white font-bold focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder={t.publicHome.contact.form.email} />
                     </div>
                  </div>
                  <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">Project Details</label>
+                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-500 ml-1">{t.publicHome.contact.projectDetailsLabel}</label>
                     <textarea className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-4 text-white h-40 resize-none font-bold focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder={t.publicHome.contact.form.details}></textarea>
                  </div>
                  <button className="w-full bg-blue-600 text-white font-black py-5 rounded-2xl hover:bg-blue-700 transition-all shadow-xl active:scale-95 uppercase tracking-[0.2em] flex items-center justify-center gap-3">

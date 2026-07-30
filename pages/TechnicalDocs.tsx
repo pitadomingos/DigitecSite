@@ -495,14 +495,14 @@ interface EmployeeRequirement {
                                   <h5 className="font-bold text-purple-800 dark:text-purple-300 text-sm mb-2">Trigger 1: Booking Confirmation</h5>
                                   <p className="text-xs text-purple-700 dark:text-purple-400">
                                       Event: <code>{"database.ref('/bookings/{id}').onCreate"}</code><br/>
-                                      Action: Send "You are booked for RAC01 on [Date] at [Room]."
+                                      Action: Send "You are booked for LSR 01 / CRM (Working at Height) on [Date] at [Room]."
                                   </p>
                               </div>
                               <div className="p-4 rounded-xl border border-red-200 bg-red-50 dark:bg-red-900/20 dark:border-red-800">
                                   <h5 className="font-bold text-red-800 dark:text-red-300 text-sm mb-2">Trigger 2: Expiry Warning</h5>
                                   <p className="text-xs text-red-700 dark:text-red-400">
                                       Event: <code>Scheduled Cron Job (Daily 08:00)</code><br/>
-                                      Action: Query DB for expiry &lt; 30 days. Send "Your RAC01 expires in 30 days. Contact Admin."
+                                      Action: Query DB for expiry &lt; 30 days. Send "Your LSR 01 / CRM certification expires in 30 days. Contact Admin."
                                   </p>
                               </div>
                           </div>
@@ -520,7 +520,7 @@ interface EmployeeRequirement {
 
                       <div className="space-y-6">
                           <div className="p-4 bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-200 dark:border-yellow-900/30 rounded-xl">
-                              <h4 className="font-bold text-yellow-800 dark:text-yellow-400 mb-2 flex items-center gap-2"><AlertTriangle size={18}/> RAC 02 Driver License Logic</h4>
+                              <h4 className="font-bold text-yellow-800 dark:text-yellow-400 mb-2 flex items-center gap-2"><AlertTriangle size={18}/> LSR 02 / CRM (Vehicles & Mobile Equipment) Driver License Logic</h4>
                               <p className="text-sm text-slate-700 dark:text-slate-300">
                                   In <code>TrainerInputPage.tsx</code> and <code>BookingForm.tsx</code>, special logic exists for "RAC02".
                                   <br/>

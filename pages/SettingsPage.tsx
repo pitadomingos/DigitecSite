@@ -325,7 +325,7 @@ const SettingsPage: React.FC<SettingsPageProps> = ({
                             className={`w-full text-left px-4 py-4 rounded-xl text-sm font-bold transition-all flex items-center gap-4 group mb-1 ${activeTab === tab ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg' : 'text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50'}`}
                         >
                             {tab === 'Diagnostics' ? <Activity size={20} /> : <Box size={20} />}
-                            <span>{tab}</span>
+                            <span>{tab === 'RACs' ? 'Critical Risk Rules (CRM/LSR)' : tab}</span>
                         </button>
                     ))}
                 </nav>

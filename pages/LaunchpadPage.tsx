@@ -44,7 +44,7 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
       id: 'safeteq',
       name: t.portfolio?.items?.safeteq?.name || 'SAFETEQ Enterprise Risk Management',
       category: t.portfolio?.items?.safeteq?.category || 'Industrial Risk & Safety Compliance',
-      desc: t.portfolio?.items?.safeteq?.desc || 'Compliance & risk management engine automating Critical Activity Requirements (RAC 01-11), gate lockout daemons, alcohol IoT testing, and digital safety passports.',
+      desc: t.portfolio?.items?.safeteq?.desc || 'All-in-one Risk Management & Workforce Mobilization SaaS unifying 7 core modules: Onboarding & Mobilization, Training & Certifications, SafeSite Incident Management, SSMA Ecosystem (ISO 45001), EPI & Asset Tracking, Master Strategy Risk, and Baseline Risk.',
       icon: ShieldCheck,
       color: 'blue',
       gradient: 'from-blue-600 via-indigo-600 to-cyan-600',
@@ -52,8 +52,8 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
       path: 'https://rac-s.vercel.app',
       caseStudyPath: '/portfolio/safeteq',
       isExternal: true,
-      stats: t.launchpad?.stats?.safeteq || '6,000+ Workers • RAC 01-11 & Gate Lockout Daemon',
-      tags: t.launchpad?.tags?.safeteq || ['RAC 01-11', 'Gate Lockout', 'Alcohol IoT', 'ASO Sync'],
+      stats: t.launchpad?.stats?.safeteq || '6,000+ Workers • Critical Risk Rules (LSR/CRM) & Gate Security',
+      tags: t.launchpad?.tags?.safeteq || ['Workforce Mobilization', 'Gate Security QR', 'SafeSite SSMA', 'Multi-Tenant SaaS'],
       isAvailable: true
     },
     {
@@ -194,7 +194,7 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
           <div className="mb-20">
             <h2 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
               <Cpu size={16} className="text-blue-400" />
-              <span>Core Operational Flagships</span>
+              <span>{t.launchpad?.coreFlagships || 'Core Operational Flagships'}</span>
               <div className="flex-1 h-px bg-slate-800/80 ml-2"></div>
             </h2>
 
@@ -289,7 +289,7 @@ const LaunchpadPage: React.FC<LaunchpadPageProps> = ({ userRole, userName }) => 
           <div className="mb-20">
             <h2 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
               <Server size={16} className="text-indigo-400" />
-              <span>Specialized Enterprise Modules & Beta Extensions</span>
+              <span>{t.launchpad?.specializedModules || 'Specialized Enterprise Modules & Beta Extensions'}</span>
               <div className="flex-1 h-px bg-slate-800/80 ml-2"></div>
             </h2>
 

@@ -68,23 +68,23 @@ async function generateAILessonPlan(courseId: string, gradeLevel: number) {
   
   await SchoolPortal.publishToTeacherDashboard(lessonPlan);
 }`,
-      safeteq: isPt ? `// SAFETEQ Gestão de Risco Empresarial — Bloqueio de Portaria RAC 01
+      safeteq: isPt ? `// SAFETEQ Gestão de Risco Empresarial — Bloqueio de Portaria Regras Críticas (LSR/CRM 01)
 async function verificarSegurancaTrabalhador(trabalhadorId: string) {
   const credencial = await SAFETEQ_Vault.obter(trabalhadorId);
-  const rac01Valido = credencial.validadeRac01 > Date.now();
+  const lsr01Valido = credencial.validadeLsr01 > Date.now();
   const asoValido = await CHAEM_Ocupacional.verificarASO(trabalhadorId);
 
-  if (!rac01Valido || !asoValido) {
-    await PortariaFisica.ativarBloqueio(trabalhadorId, "RAC01_EXPIRADO");
+  if (!lsr01Valido || !asoValido) {
+    await PortariaFisica.ativarBloqueio(trabalhadorId, "LSR01_EXPIRADO");
   }
-}` : `// SAFETEQ Enterprise Risk Management — RAC 01 Gate Lockout
+}` : `// SAFETEQ Enterprise Risk Management — LSR 01 Critical Risk Gate Lockout
 async function verifyWorkforceSafetyGate(workerId: string) {
   const credential = await SAFETEQ_Vault.fetch(workerId);
-  const rac01Valid = credential.rac01Expiry > Date.now();
+  const lsr01Valid = credential.lsr01Expiry > Date.now();
   const asoValid = await CHAEM_Occupational.checkASO(workerId);
 
-  if (!rac01Valid || !asoValid) {
-    await PhysicalGate.triggerLockout(workerId, "RAC01_EXPIRED");
+  if (!lsr01Valid || !asoValid) {
+    await PhysicalGate.triggerLockout(workerId, "LSR01_EXPIRED");
   }
 }`
     };
@@ -394,7 +394,7 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                   {t.publicHome.about?.cards?.safeteq}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">RAC 01-11 Matrix</span>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Critical Risk Rules (CRM/LSR) Matrix</span>
                   <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Gate Lockout Daemon</span>
                   <span className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">Contractor Verification</span>
                 </div>

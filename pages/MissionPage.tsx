@@ -50,9 +50,9 @@ const MissionPage: React.FC = () => {
                 <span className="text-[10px] font-black uppercase tracking-widest text-rose-400 bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20 inline-block mb-3">
                   Pillar 01
                 </span>
-                <h3 className="text-2xl font-black text-white mb-3">Healthcare Sovereignty</h3>
+                <h3 className="text-2xl font-black text-white mb-3">{t.publicMission.pillars?.p1Title || 'Healthcare Sovereignty'}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6">
-                  {t.publicMission.hero.desc || 'Digitizing Mozambique\'s national health infrastructure across 1,500+ facilities with H365 SaaS, CHAEM 7-step occupational health, and Gemini 2.5 Flash AI assistance.'}
+                  {t.publicMission.pillars?.p1Desc || 'Digitizing Mozambique\'s national health infrastructure across 1,500+ facilities with H365 SaaS, CHAEM 7-step occupational health, and Gemini 2.5 Flash AI assistance.'}
                 </p>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs text-rose-400 font-mono font-bold flex items-center gap-1.5">
@@ -69,9 +69,9 @@ const MissionPage: React.FC = () => {
                 <span className="text-[10px] font-black uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20 inline-block mb-3">
                   Pillar 02
                 </span>
-                <h3 className="text-2xl font-black text-white mb-3">Educational Empowerment</h3>
+                <h3 className="text-2xl font-black text-white mb-3">{t.publicMission.pillars?.p2Title || 'Educational Empowerment'}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6">
-                  {t.publicHome.about.cards.edudesk || 'Empowering educators and engaging communities with EduDesk AI\'s automated lesson planning, test generation, admissions lifecycle, and parent portals.'}
+                  {t.publicMission.pillars?.p2Desc || 'Empowering educators and engaging communities with EduDesk AI\'s automated lesson planning, test generation, admissions lifecycle, and parent portals.'}
                 </p>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs text-indigo-400 font-mono font-bold flex items-center gap-1.5">
@@ -88,13 +88,13 @@ const MissionPage: React.FC = () => {
                 <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 inline-block mb-3">
                   Pillar 03
                 </span>
-                <h3 className="text-2xl font-black text-white mb-3">Industrial Zero-Harm</h3>
+                <h3 className="text-2xl font-black text-white mb-3">{t.publicMission.pillars?.p3Title || 'Industrial Zero-Harm'}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6">
-                  {t.publicHome.about.cards.safeteq || 'Automating Critical Activity Requirements (RAC 01-11) safety compliance, gate lockout daemons, and workforce health verification across heavy mining operations.'}
+                  {t.publicMission.pillars?.p3Desc || 'Automating Critical Risk Management (CRM / LSR) safety compliance, gate lockout daemons, and workforce health verification across heavy mining operations.'}
                 </p>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs text-emerald-400 font-mono font-bold flex items-center gap-1.5">
-                <CheckCircle2 size={14} /> SAFETEQ RAC Engine
+                <CheckCircle2 size={14} /> SAFETEQ CRM Engine
               </div>
             </div>
 
@@ -107,9 +107,9 @@ const MissionPage: React.FC = () => {
                 <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20 inline-block mb-3">
                   Pillar 04
                 </span>
-                <h3 className="text-2xl font-black text-white mb-3">Financial Transparency</h3>
+                <h3 className="text-2xl font-black text-white mb-3">{t.publicMission.pillars?.p4Title || 'Financial Transparency'}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6">
-                  {t.publicHome.about.cards.microfin || 'Streamlining contractor clearing, automated payroll, micro-disbursements, and audit logging for industrial supply chain networks.'}
+                  {t.publicMission.pillars?.p4Desc || 'Streamlining contractor clearing, automated payroll, micro-disbursements, and audit logging for industrial supply chain networks.'}
                 </p>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs text-cyan-400 font-mono font-bold flex items-center gap-1.5">
@@ -134,16 +134,16 @@ const MissionPage: React.FC = () => {
                   <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex items-start gap-3">
                     <Lock size={20} className="text-blue-400 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-black text-white mb-1">Offline-First L-LAN Resiliency</h4>
-                      <p className="text-xs text-slate-400">Clinics and mining sites operate uninterrupted even without satellite connectivity.</p>
+                      <h4 className="text-sm font-black text-white mb-1">{t.publicMission.manifestoCards?.offlineTitle || 'Offline-First L-LAN Resiliency'}</h4>
+                      <p className="text-xs text-slate-400">{t.publicMission.manifestoCards?.offlineDesc || 'Clinics and mining sites operate uninterrupted even without satellite connectivity.'}</p>
                     </div>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex items-start gap-3">
                     <Server size={20} className="text-cyan-400 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-black text-white mb-1">MISAU DHIS2 & National MPI Federation</h4>
-                      <p className="text-xs text-slate-400">Real-time epidemiological data sync and biometrically validated patient records.</p>
+                      <h4 className="text-sm font-black text-white mb-1">{t.publicMission.manifestoCards?.misauTitle || 'MISAU DHIS2 & National MPI Federation'}</h4>
+                      <p className="text-xs text-slate-400">{t.publicMission.manifestoCards?.misauDesc || 'Real-time epidemiological data sync and biometrically validated patient records.'}</p>
                     </div>
                   </div>
                 </div>
@@ -204,16 +204,16 @@ const MissionPage: React.FC = () => {
           <section className="text-center bg-blue-600 p-12 md:p-20 rounded-[3.5rem] relative overflow-hidden shadow-2xl">
              <div className="relative z-10 max-w-3xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight uppercase">
-                  Partner with Us for Precision Engineering
+                  {t.publicMission.cta?.title || 'Partner with Us for Precision Engineering'}
                 </h2>
                 <p className="text-white/90 text-lg mb-10 font-medium">
-                  Let us design and deploy your custom enterprise software ecosystem.
+                  {t.publicMission.cta?.desc || 'Let us design and deploy your custom enterprise software ecosystem.'}
                 </p>
                 <button 
                   onClick={() => navigate('/contact')}
                   className="bg-white text-blue-600 px-10 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-50 transition-all shadow-xl hover:scale-105 active:scale-95"
                 >
-                  Schedule Consultation
+                  {t.publicMission.cta?.btn || 'Schedule Consultation'}
                 </button>
              </div>
           </section>

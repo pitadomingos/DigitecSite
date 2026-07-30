@@ -67,17 +67,17 @@ export const PERMISSION_KEYS = ['EMI_PTS', 'APR_ART', 'DONO_AREA_PTS', 'EXEC'];
 
 // Explicitly define RACs with specific requirements
 export const INITIAL_RAC_DEFINITIONS: RacDef[] = [
-    { id: '0', code: 'RAC01', name: 'RAC 01 - Working at Height', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '1', code: 'RAC02', name: 'RAC 02 - Vehicles and Mobile Equipment', validityMonths: 24, requiresDriverLicense: true, requiresPractical: true },
-    { id: '2', code: 'RAC03', name: 'RAC 03 - Mobile Equipment Lockout', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '3', code: 'RAC04', name: 'RAC 04 - Machine Guarding', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '4', code: 'RAC05', name: 'RAC 05 - Confined Space', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '5', code: 'RAC06', name: 'RAC 06 - Lifting Operations', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '6', code: 'RAC07', name: 'RAC 07 - Ground Stability', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '7', code: 'RAC08', name: 'RAC 08 - Electricity', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '8', code: 'RAC09', name: 'RAC 09 - Explosives', validityMonths: 12, requiresPractical: true, requiresDriverLicense: false },
-    { id: '9', code: 'RAC10', name: 'RAC 10 - Liquid Metal', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
-    { id: '10', code: 'RAC11', name: 'RAC 11 - Mine Traffic & Traffic Rules', validityMonths: 24, requiresPractical: false, requiresDriverLicense: true },
+    { id: '0', code: 'RAC01', name: 'LSR 01 / CRM - Working at Height', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '1', code: 'RAC02', name: 'LSR 02 / CRM - Vehicles and Mobile Equipment', validityMonths: 24, requiresDriverLicense: true, requiresPractical: true },
+    { id: '2', code: 'RAC03', name: 'LSR 03 / CRM - Mobile Equipment Lockout', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '3', code: 'RAC04', name: 'LSR 04 / CRM - Machine Guarding', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '4', code: 'RAC05', name: 'LSR 05 / CRM - Confined Space', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '5', code: 'RAC06', name: 'LSR 06 / CRM - Lifting Operations', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '6', code: 'RAC07', name: 'LSR 07 / CRM - Ground Stability', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '7', code: 'RAC08', name: 'LSR 08 / CRM - Electricity', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '8', code: 'RAC09', name: 'LSR 09 / CRM - Explosives', validityMonths: 12, requiresPractical: true, requiresDriverLicense: false },
+    { id: '9', code: 'RAC10', name: 'LSR 10 / CRM - Liquid Metal', validityMonths: 24, requiresPractical: true, requiresDriverLicense: false },
+    { id: '10', code: 'RAC11', name: 'LSR 11 / CRM - Mine Traffic & Traffic Rules', validityMonths: 24, requiresPractical: false, requiresDriverLicense: true },
     { id: '11', code: 'PTS', name: 'PTS - Permissão de Trabalho Seguro', validityMonths: 12, requiresPractical: false, requiresDriverLicense: false },
     { id: '12', code: 'ART', name: 'ART - Análise de Risco da Tarefa', validityMonths: 12, requiresPractical: false, requiresDriverLicense: false },
     { id: '13', code: 'LIB_OPS', name: 'LIB-OPS - Liberação Operacional', validityMonths: 12, requiresPractical: false, requiresDriverLicense: false },
@@ -100,23 +100,23 @@ const getPastDate = (daysToSubtract: number) => {
 // Mock Initial Data
 export const MOCK_SESSIONS: TrainingSession[] = [
   // Past sessions
-  { id: 'S001', racType: 'RAC01 - Working at Height', date: '2023-11-15', startTime: '08:00', location: 'Room A', instructor: 'John Doe', capacity: 20, sessionLanguage: 'English' },
-  { id: 'S002', racType: 'RAC02 - Vehicles and Mobile Equipment', date: '2023-11-20', startTime: '09:00', location: 'Field B', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
-  { id: 'S003', racType: 'RAC05 - Confined Space', date: '2023-12-01', startTime: '13:00', location: 'Room C', instructor: 'Mike Brown', capacity: 10, sessionLanguage: 'Portuguese' },
+  { id: 'S001', racType: 'LSR 01 / CRM - Working at Height', date: '2023-11-15', startTime: '08:00', location: 'Room A', instructor: 'John Doe', capacity: 20, sessionLanguage: 'English' },
+  { id: 'S002', racType: 'LSR 02 / CRM - Vehicles and Mobile Equipment', date: '2023-11-20', startTime: '09:00', location: 'Field B', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
+  { id: 'S003', racType: 'LSR 05 / CRM - Confined Space', date: '2023-12-01', startTime: '13:00', location: 'Room C', instructor: 'Mike Brown', capacity: 10, sessionLanguage: 'Portuguese' },
   
   // Future sessions
-  { id: 'S004', racType: 'RAC08 - Electricity', date: getFutureDate(2), startTime: '08:30', location: 'Lab 2', instructor: 'Sarah Connor', capacity: 12, sessionLanguage: 'English' },
-  { id: 'S005', racType: 'RAC02 - Vehicles and Mobile Equipment', date: getFutureDate(5), startTime: '08:00', location: 'Field A', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
-  { id: 'S006', racType: 'RAC01 - Working at Height', date: getFutureDate(10), startTime: '10:00', location: 'Room B', instructor: 'John Doe', capacity: 20, sessionLanguage: 'Portuguese' },
-  { id: 'S007', racType: 'RAC10 - Liquid Metal', date: getFutureDate(12), startTime: '14:00', location: 'Room A', instructor: 'Mike Brown', capacity: 25, sessionLanguage: 'English' },
-  { id: 'S013', racType: 'RAC11 - Mine Traffic', date: getFutureDate(14), startTime: '09:00', location: 'Simulator Room', instructor: 'Jane Smith', capacity: 10, sessionLanguage: 'Portuguese' },
+  { id: 'S004', racType: 'LSR 08 / CRM - Electricity', date: getFutureDate(2), startTime: '08:30', location: 'Lab 2', instructor: 'Sarah Connor', capacity: 12, sessionLanguage: 'English' },
+  { id: 'S005', racType: 'LSR 02 / CRM - Vehicles and Mobile Equipment', date: getFutureDate(5), startTime: '08:00', location: 'Field A', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
+  { id: 'S006', racType: 'LSR 01 / CRM - Working at Height', date: getFutureDate(10), startTime: '10:00', location: 'Room B', instructor: 'John Doe', capacity: 20, sessionLanguage: 'Portuguese' },
+  { id: 'S007', racType: 'LSR 10 / CRM - Liquid Metal', date: getFutureDate(12), startTime: '14:00', location: 'Room A', instructor: 'Mike Brown', capacity: 25, sessionLanguage: 'English' },
+  { id: 'S013', racType: 'LSR 11 / CRM - Mine Traffic', date: getFutureDate(14), startTime: '09:00', location: 'Simulator Room', instructor: 'Jane Smith', capacity: 10, sessionLanguage: 'Portuguese' },
 
   // Extra sessions for logic tests
-  { id: 'S008', racType: 'RAC01 - Working at Height', date: getFutureDate(3), startTime: '08:00', location: 'Room A', instructor: 'John Doe', capacity: 20, sessionLanguage: 'Portuguese' },
-  { id: 'S009', racType: 'RAC05 - Confined Space', date: getFutureDate(4), startTime: '09:00', location: 'Room C', instructor: 'Mike Brown', capacity: 15, sessionLanguage: 'English' },
-  { id: 'S010', racType: 'RAC02 - Vehicles and Mobile Equipment', date: getFutureDate(6), startTime: '08:00', location: 'Field B', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
-  { id: 'S011', racType: 'RAC08 - Electricity', date: getFutureDate(8), startTime: '13:00', location: 'Lab 1', instructor: 'Sarah Connor', capacity: 10, sessionLanguage: 'English' },
-  { id: 'S012', racType: 'RAC02 - Vehicles and Mobile Equipment', date: getFutureDate(1), startTime: '14:00', location: 'Field Training Area', instructor: 'Jane Smith', capacity: 8, sessionLanguage: 'Portuguese' },
+  { id: 'S008', racType: 'LSR 01 / CRM - Working at Height', date: getFutureDate(3), startTime: '08:00', location: 'Room A', instructor: 'John Doe', capacity: 20, sessionLanguage: 'Portuguese' },
+  { id: 'S009', racType: 'LSR 05 / CRM - Confined Space', date: getFutureDate(4), startTime: '09:00', location: 'Room C', instructor: 'Mike Brown', capacity: 15, sessionLanguage: 'English' },
+  { id: 'S010', racType: 'LSR 02 / CRM - Vehicles and Mobile Equipment', date: getFutureDate(6), startTime: '08:00', location: 'Field B', instructor: 'Jane Smith', capacity: 15, sessionLanguage: 'Portuguese' },
+  { id: 'S011', racType: 'LSR 08 / CRM - Electricity', date: getFutureDate(8), startTime: '13:00', location: 'Lab 1', instructor: 'Sarah Connor', capacity: 10, sessionLanguage: 'English' },
+  { id: 'S012', racType: 'LSR 02 / CRM - Vehicles and Mobile Equipment', date: getFutureDate(1), startTime: '14:00', location: 'Field Training Area', instructor: 'Jane Smith', capacity: 8, sessionLanguage: 'Portuguese' },
 ];
 
 export const MOCK_EMPLOYEES: Employee[] = [

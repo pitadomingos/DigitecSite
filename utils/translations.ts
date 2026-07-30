@@ -114,16 +114,108 @@ export const translations = {
           support: 'Expert Support'
         },
         cards: {
-          safeteq: 'SAFETEQ Enterprise Risk Management - Our flagship compliance engine for Critical Activity Requirements.',
+          safeteq: 'SAFETEQ Enterprise Risk Management — Flagship compliance SaaS uniting 7 core modules: Onboarding & Mobilization, Training & Certifications, SafeSite Incident Management, SSMA Ecosystem (ISO 45001), EPI & Asset Tracking, Master Strategy Risk Management, and Baseline Risk (HIRA/APR).',
           edudesk: 'EduDesk — All-in-one AI-powered School Management System empowering educators with AI lesson planning, test generation, admissions, and parent/student portals.',
-          h365: 'H365 Digital Health Ecosystem — National healthcare infrastructure uniting H365 SaaS (Hospital Command Center), CHAEM (Occupational Health), and Patient Portal across 1,500+ facilities.',
+          h365: 'H365 Digital Health Ecosystem — Sovereign healthcare infrastructure uniting H365 SaaS (Hospital Command Center), CHAEM (Occupational Health), and Patient Portal across 1,500+ facilities in Southern Africa and global emerging markets.',
           microfin: 'Automated financial orchestration for industrial contractor networks.',
           websites: 'Precision-engineered portals for startups, residences, and individual companies.'
+        }
+      },
+      aboutPage: {
+        badge: 'Custom Software Engineering',
+        title: 'About',
+        subtitle: 'Digitec engineers bespoke digital ecosystems for national healthcare networks, educational institutions, heavy mining operators, and industrial contractor chains. We transform complex operational logic into mission-critical software.',
+        challengesTitle: 'Three Core Operational Challenges We Eliminate',
+        challenges: [
+          {
+            num: '01',
+            title: 'Eliminating "O Atrito" (Clinical & Operational Friction)',
+            desc: 'Replacing paper record fragmentation across 1,500+ healthcare facilities with H365 SaaS Command Center, 28+ clinical modules, Master Patient Index (MPI), and Gemini 2.5 Flash AI assistance.'
+          },
+          {
+            num: '02',
+            title: 'Eliminating "O Ponto Cego" (Workforce Blind Spots)',
+            desc: 'Bridging industrial health & safety through CHAEM\'s 7-step digital AMA workflow across 6 key industrial sectors (Health, Mining, Construction, Transport, Food, Industry) and SAFETEQ RAC lockout matrices.'
+          },
+          {
+            num: '03',
+            title: 'Eliminating "A Desconexão" (Community Disconnection)',
+            desc: 'Empowering citizens with direct Patient Portal access to medical records, and parents & students with EduDesk AI\'s unified engagement portal for fee tracking, gradebooks, and academic guidance.'
+          }
+        ],
+        suiteTitle: 'Our Sovereign',
+        suiteHighlight: 'Software Suite',
+        suiteDesc: 'Tailored digital solutions built for Africa\'s most demanding enterprise environments.',
+        viewSpecs: 'View Ecosystem Specs',
+        homegrown: 'Homegrown Excellence',
+        beyondCode: 'Beyond Code.',
+        digitalIntelligence: 'Digital Intelligence.',
+        beyondDesc: 'We don\'t just build software applications — we design resilient, sovereign digital infrastructure tailored to Mozambique\'s unique healthcare requirements, industrial workforce safety standards, educational goals, and enterprise supply chain demands.',
+        strategicMission: 'Our Strategic Mission',
+        leadershipTeam: 'Leadership Team',
+        stats: {
+          expNum: '10+',
+          expLabel: 'Years Industry Expertise',
+          facNum: '1,500+',
+          facLabel: 'Health Facilities Digitized',
+          usersNum: '50k+',
+          usersLabel: 'Active System Users',
+          uptimeNum: '99.99%',
+          uptimeLabel: 'System Availability'
+        },
+        solutions: {
+          h365: {
+            title: 'H365 Digital Health Ecosystem',
+            tag: 'National Health Infra',
+            desc: 'H365 Digital Health Ecosystem — National healthcare infrastructure uniting H365 SaaS (Hospital Command Center), CHAEM (Occupational Health), and Patient Portal across 1,500+ facilities.',
+            highlights: ['28+ Clinical Modules', 'CHAEM 7-Step AMA', 'Master Patient Index (MPI)', 'Gemini 2.5 Flash AI Co-Pilot']
+          },
+          edudesk: {
+            title: 'EduDesk AI School Management',
+            tag: 'AI Education System',
+            desc: 'EduDesk — All-in-one AI-powered School Management System empowering educators with AI lesson planning, test generation, admissions, and parent/student portals.',
+            highlights: ['AI Lesson Planner', 'AI Test Generator', 'Parent/Student Portal', 'Multi-School Governance']
+          },
+          safeteq: {
+            title: 'SAFETEQ Enterprise Risk Management',
+            tag: 'Heavy Mining Safety',
+            desc: 'SAFETEQ Enterprise Risk Management — Flagship compliance SaaS uniting 7 core modules: Onboarding & Mobilization, Training & Certifications, SafeSite, SSMA Ecosystem, EPI & Assets, Risk Strategy, and Baseline Risk.',
+            highlights: ['Critical Risk Standards (CRM/LSR)', 'Physical Gate Lockout', 'Zero-Harm Matrix', 'Contractor Verification']
+          },
+          microfin: {
+            title: 'MicroFin Financial Orchestration',
+            tag: 'Contractor Fintech',
+            desc: 'Automated financial orchestration for industrial contractor networks.',
+            highlights: ['Contractor Payroll', 'Real-Time Clearing', 'Audit Logging', 'Tax & Compliance Sync']
+          },
+          bespoke: {
+            title: 'Bespoke Enterprise Engineering',
+            tag: 'Custom Platforms',
+            desc: 'Precision-engineered portals for startups, residences, and individual companies.',
+            highlights: ['High-Fidelity Web/Mobile', 'API Microservices', 'Custom Analytics', 'Offline-First Sync']
+          }
         }
       },
       vision: {
         title: 'Our Vision',
         headline: 'Intelligent Digital Ecosystems.',
+        pioneering: 'Pioneering',
+        sovereignInfra: 'Sovereign Digital Infrastructure',
+        subtitle: 'We are bridging physical operations with intelligent, offline-resilient, AI-empowered digital ecosystems tailored for healthcare networks, education systems, heavy industry, and enterprise logistics.',
+        goalsList: [
+          {
+            title: '01. Eliminate Operational Friction',
+            desc: 'Unifying fragmented legacy data into single, immutable digital records across healthcare facilities, schools, and industrial sites.'
+          },
+          {
+            title: '02. AI-Assistive Governance',
+            desc: 'Empowering doctors with Gemini 2.5 Flash clinical assistance, teachers with AI lesson generators, and safety officers with automated RAC gate lockouts.'
+          },
+          {
+            title: '03. Homegrown Global Standards',
+            desc: 'Delivering world-class software engineered in Mozambique to empower African enterprises and global industrial operators.'
+          }
+        ],
         desc: 'We are bridging the gap between physical operations and intelligent digital orchestration through high-fidelity software tailored for industry, retail, and residence.',
         mission: 'Our Strategic Mission',
         missionHeadline: 'Transforming Complexity into Precision',
@@ -136,6 +228,23 @@ export const translations = {
       partners: {
         title: 'Strategic Industrial & Institutional Partners',
         subtitle: 'Our systems power mission-critical operations, health networks, safety protocols, and supply chains for industry leaders and public infrastructure.',
+        filters: {
+          all: 'All Partners',
+          mining: 'Mining & Energy',
+          testing: 'Testing & Medical',
+          logistics: 'Rail & Port Logistics'
+        },
+        labels: {
+          integration: 'Integration:',
+          activePartner: 'Status: ACTIVE PARTNER',
+          viewSpecs: 'View Ecosystem Specs'
+        },
+        cta: {
+          title: 'Join Our Strategic Ecosystem',
+          desc: "Partner with Digitec to digitize your operations, enhance safety compliance, or connect to Mozambique's premier digital health and educational infrastructure.",
+          becomePartner: 'Become a Partner',
+          exploreSolutions: 'Explore All Solutions'
+        },
         stats: {
           records: 'Over 12,000+ Safety Credentials Managed',
           facilities: '1,500+ Health Facilities Digitized',
@@ -146,8 +255,8 @@ export const translations = {
             name: 'Vulcan Mining',
             industry: 'Heavy Mining & Extraction',
             location: 'Tete, Mozambique',
-            desc: 'Enterprise risk management with SAFETEQ RAC compliance, automated safety lockouts, and CHAEM occupational health tracking for 6,000+ workers.',
-            metrics: '6,000+ Workers • RAC 01-11 Compliance'
+            desc: 'Enterprise risk management with SAFETEQ Critical Risk Management (CRM/LSR) compliance, automated safety lockouts, and CHAEM occupational health tracking for 6,000+ workers.',
+            metrics: '6,000+ Workers • Critical Risk Standards (CRM/LSR)'
           },
           testing: {
             name: 'Testing',
@@ -177,6 +286,13 @@ export const translations = {
         desc: 'Request a consultation for custom digital transformation of your specific operational needs.',
         emailLabel: 'Direct Email',
         callLabel: 'Operations Line',
+        officeLabel: 'Office Location',
+        address: 'EN7 Matema, Tete - Mozambique',
+        phone: '+258 87 243 9954',
+        sendMessage: 'Send a message',
+        fullNameLabel: 'Full Name',
+        emailAddressLabel: 'Email Address',
+        projectDetailsLabel: 'Project Details',
         form: {
           name: 'Contact Name',
           email: 'info@digitecinternational.com',
@@ -260,9 +376,25 @@ export const translations = {
             title: 'Mission-Critical Digital Ecosystems',
             desc: 'To engineer resilient, mission-critical digital ecosystems that transform complex manual logic into precise, automated orchestration, safeguarding assets and empowering businesses of all scales.'
         },
+        pillars: {
+            p1Title: 'Healthcare Sovereignty',
+            p1Desc: "Digitizing Mozambique's national health infrastructure across 1,500+ facilities with H365 SaaS, CHAEM 7-step occupational health, and Gemini 2.5 Flash AI assistance.",
+            p2Title: 'Educational Empowerment',
+            p2Desc: "Empowering educators and engaging communities with EduDesk AI's automated lesson planning, test generation, admissions lifecycle, and parent portals.",
+            p3Title: 'Industrial Zero-Harm',
+            p3Desc: 'Automating Critical Risk Management (CRM / LSR) safety compliance, gate lockout daemons, and workforce health verification across heavy mining operations.',
+            p4Title: 'Financial Transparency',
+            p4Desc: 'Streamlining contractor clearing, automated payroll, micro-disbursements, and audit logging for industrial supply chain networks.'
+        },
         manifesto: {
             title: 'The Digital Manifesto',
             text: 'We believe that software must be as resilient as the operations it supports. From heavy industry to residential systems, we digitalize complex logic to ensure safety, efficiency, and empowerment for every user.'
+        },
+        manifestoCards: {
+            offlineTitle: 'Offline-First L-LAN Resiliency',
+            offlineDesc: 'Clinics and mining sites operate uninterrupted even without satellite connectivity.',
+            misauTitle: 'MISAU DHIS2 & National MPI Federation',
+            misauDesc: 'Real-time epidemiological data sync and biometrically validated patient records.'
         },
         values: {
             title: 'Operational Pillars',
@@ -290,6 +422,11 @@ export const translations = {
           lubDesc: 'Predictive lubrication tracking to prevent premature component failure and downtime.',
           daemonName: 'telemetry_daemon.v1',
           fetchEcm: '# Fetching ECM Parameters...'
+        },
+        cta: {
+          title: 'Partner with Us for Precision Engineering',
+          desc: 'Let us design and deploy your custom enterprise software ecosystem.',
+          btn: 'Schedule Consultation'
         }
     },
     portfolio: {
@@ -333,8 +470,8 @@ export const translations = {
       items: {
         safeteq: {
           name: 'SAFETEQ Enterprise Risk Management',
-          category: 'Critical Requisitions',
-          desc: 'The "Critical Activity Requirements System" (SAFETEQ). Automates training workflows, digital passports, and turnstile access control for a safer workforce.'
+          category: 'Workforce Mobilization & Risk SaaS',
+          desc: 'All-in-one Risk Management and Workforce Mobilization SaaS unifying 7 core modules: Onboarding & Mobilization (Recruitment Suite), Training & Certifications, SafeSite Incident Management, SSMA Ecosystem (ISO 45001), EPI & Asset Tracking, Master Strategy Risk Management, and Baseline Risk (HIRA/APR).'
         },
         minesite: {
           name: 'Minesite Vision',
@@ -353,8 +490,8 @@ export const translations = {
         },
         h365: {
           name: 'H365 Digital Health Ecosystem',
-          category: 'National Digital Health Infrastructure',
-          desc: 'Unified "One Platform, Three Apps" ecosystem (H365 SaaS, CHAEM Occupational Health, and Patient Portal) serving 1,500+ health facilities across all 11 provinces with 28+ clinical modules, Master Patient Index (MPI), Gemini 2.5 Flash AI Co-Pilot, and offline-first L-LAN architecture.'
+          category: 'Sovereign Digital Health Infrastructure',
+          desc: 'Unified "One Platform, Three Apps" ecosystem (H365 SaaS, CHAEM Occupational Health, and Patient Portal) serving 1,500+ health facilities across Mozambique, Southern Africa (Africa Austral), and developing nations worldwide with 28+ clinical modules, Master Patient Index (MPI), Gemini 2.5 Flash AI Co-Pilot, and offline-first L-LAN architecture.'
         },
         microfin: {
           name: 'MicroFin',
@@ -429,20 +566,22 @@ export const translations = {
         standardsDesc: "This system follows Digitec' High standards for industrial-grade resilience."
       },
       safeteq: {
-        subtitle: 'Critical Activity Requirements - SAFETEQ Enterprise Risk Management',
-        challenge: 'Large-scale mining operations struggled with certification silos. Expired credentials created life-threatening liability at site gates, where 10,000+ employees required individual verification daily.',
-        solution: 'SAFETEQ Enterprise Risk Management is a high-security compliance engine. It merges HR records with real-time training results to generate digital QR passports. If a requirement (RACS, ASO, or DL) is expired, access is blocked automatically.',
+        subtitle: 'All-in-One Risk Management & Workforce Mobilization SaaS Platform',
+        challenge: 'In high-risk industries such as mining, construction, and manufacturing, managing workforce safety and compliance is plagued by fragmented spreadsheets and paper forms. Disjointed mobilization delays candidate onboarding across HR, occupational health clinics, safety inductions (HSE), and gate security for weeks. Compliance blind spots at site gates allow unverified workers into hazardous zones, while siloed data forces reactive hazard management.',
+        solution: 'SAFETEQ is an end-to-end Risk Management and Workforce Mobilization SaaS platform that eliminates operational silos across 7 integrated core modules: Onboarding & Mobilization, Training & Certifications, SafeSite Incident Management, SSMA Ecosystem (ISO 45001), EPI & Asset Tracking, Master Strategy Risk Management, and Baseline Risk (HIRA/APR). It digitizes the entire candidate onboarding pipeline, issues scannable QR ID badges, empowers gatekeepers with real-time access validation, drives proactive risk prevention, and scales across complex multi-tenant enterprise operations.',
         features: [
-          'Multi-tenant architecture supporting global mining leaders.',
-          'Digital QR "Passports" for offline field verification.',
-          'Boolean logic engine for complex compliance matrices.',
-          'IoT Alcohol Control (breathalyzer) gate integration.',
-          'Automated training renewal queues and SMS alerts.'
+          'Onboarding & Mobilization (Recruitment Suite): Manage the recruit pipeline from requisition to ID verification, temporary access, clinical health checks, site safety induction, and AM confirmation.',
+          'Training & Certifications (SAFETEQ System): Schedule training sessions, track student enrollments, input test scores, verify RAC/LSR cards, run compliance reporting, and configure site governance criteria.',
+          'SafeSite (Incident Management): Intelligent mapping of unsafe conditions. Report incidents, assign responsible teams, process workflows, and track resolutions.',
+          'SSMA Ecosystem (Safety, Security & Medical Assurance): Dynamic integration of incidents, inspections, and master barrier bowties with full ISO 45001 lifecycle management in one portal.',
+          'EPI & Asset Tracking (Safety Logistics): Requisition safety equipment (PPE/EPI), monitor site stock levels, audit training compliance prerequisites, and log physical handouts.',
+          'Risk Management (Master Strategy): Monitor Master Strategy test executions, track inherent vs residual risk scores, and manage corrective actions.',
+          'Baseline Risk (Source of Truth): Foundational layer for HIRA, APR, and Inspections. Manage hazards, environmental compliance, and control efficacy.'
         ],
         impact: [
-          { label: 'Gate Throughput', desc: 'Faster verification time.' },
-          { label: 'Safety Adherence', desc: 'Compliance with SAFETEQ Enterprise Risk Management.' },
-          { label: 'Admin Errors', desc: 'Reduction in manual entry.' }
+          { label: 'Mobilization Speed', desc: 'Accelerates recruit pipeline & contractor onboarding from weeks to hours with zero compliance gaps.' },
+          { label: 'Gate Security Uptime', desc: '100% real-time verification of active medical clearances, RAC/LSR training & zone authorizations.' },
+          { label: 'Proactive Risk Control', desc: 'Eliminates safety blind spots across all 7 SAFETEQ modules from Baseline Risk to SSMA BowTie analysis.' }
         ]
       },
       minesite: {
@@ -497,9 +636,9 @@ export const translations = {
         ]
       },
       h365: {
-        subtitle: 'National Healthcare Architecture & Triad Ecosystem (H365 SaaS, CHAEM & Patient Portal)',
-        challenge: 'Mozambique’s healthcare system faced clinical friction ("O Atrito") from paper record fragmentation across 1,500+ facilities, industrial worker health blind spots ("O Ponto Cego"), and patient disconnection ("A Desconexão") from personal medical records.',
-        solution: 'H365 delivers Mozambique’s definitive "One Platform, Three Apps" digital health ecosystem: H365 SaaS as the Hospital Command Center (28+ clinical modules), CHAEM for 6-sector industrial occupational health (7-step digital AMA workflow), and the Citizen Empowerment Patient Portal with satellite sync, medication tracking, and Gemini 2.5 Flash AI clinical assistance.',
+        subtitle: 'Sovereign Digital Health Architecture & Triad Ecosystem (H365 SaaS, CHAEM & Patient Portal)',
+        challenge: 'Healthcare systems across Mozambique, Southern Africa (Africa Austral), and developing nations worldwide face severe clinical friction ("O Atrito") driven by chronic internet outages, remote infrastructure deficits, and paper record fragmentation across 1,500+ facilities, alongside industrial worker health blind spots ("O Ponto Cego") and patient disconnection ("A Desconexão") from personal medical records.',
+        solution: 'H365 delivers a sovereign, offline-first L-LAN (Local Area Network) "One Platform, Three Apps" digital health ecosystem engineered specifically for connectivity-constrained environments in Mozambique, Southern Africa (Africa Austral), and global developing nations: guaranteed 100% local clinical uptime via zero-dependency L-LAN servers with background cloud/satellite syncing, H365 SaaS Hospital Command Center (28+ modules), CHAEM industrial occupational health (7-step AMA workflow), and Citizen Patient Portal supported by Gemini 2.5 Flash AI clinical assistance.',
         features: [
           'H365 SaaS: 28+ Clinical Modules (Triage, Maternity PMTCT, Pharmacy, Ward)',
           'CHAEM: 7-Step Digital AMA Workflow for 6 Industrial Sectors',
@@ -570,6 +709,8 @@ export const translations = {
       hub: 'Client Hub',
       switchApp: 'Switch Application',
       flagshipBadge: 'Sovereign Flagship Platform',
+      coreFlagships: 'Core Operational Flagships',
+      specializedModules: 'Specialized Enterprise Modules & Beta Extensions',
       status: {
         active: 'Production Active',
         access: 'Standard Access',
@@ -580,12 +721,12 @@ export const translations = {
       },
       stats: {
         h365: '1,500+ Facilities • MISAU DHIS2 & L-LAN Active',
-        safeteq: '6,000+ Workers • RAC 01-11 & Gate Lockout Daemon',
+        safeteq: '6,000+ Workers • Critical Risk Rules (LSR/CRM) & Gate Security',
         edudesk: 'All-in-One AI • Lessons, Tests & Parent Portal'
       },
       tags: {
         h365: ['H365 SaaS', 'CHAEM 7-Step', 'Gemini 2.5 AI', 'Patient Portal'],
-        safeteq: ['RAC 01-11', 'Gate Lockout', 'Alcohol IoT', 'ASO Sync'],
+        safeteq: ['Workforce Mobilization', 'Gate Security QR', 'SafeSite SSMA', 'Multi-Tenant SaaS'],
         edudesk: ['Lesson AI', 'Test Gen', 'Admissions', 'Parent Portal']
       },
       footer: {
@@ -621,6 +762,13 @@ export const translations = {
       login: 'Sign In',
       logout: 'Exit Hub',
       poweredBy: 'Powered by',
+      safeteq: {
+        identity: 'Identity (Username)',
+        accessKey: 'Access Key (Password)',
+        signIn: 'Sign In to Vault',
+        auditNotice: 'Access is logged and audited. Authorized personnel only.',
+        systemTag: 'Safety Compliance Ecosystem'
+      },
       loginPage: {
         title: 'Enter Client Hub',
         subtitle: 'Secure Access to Digitec Ecosystem',
@@ -849,21 +997,21 @@ export const translations = {
         deleteRecord: 'Purge Record'
     },
     racDefs: {
-        RAC01: 'RAC 01 - Working at Height',
-        RAC02: 'RAC 02 - Vehicles and Mobile Equipment',
-        RAC03: 'RAC 03 - Mobile Equipment Lockout',
-        RAC04: 'RAC 04 - Machine Guarding',
-        RAC05: 'RAC 05 - Confined Space',
-        RAC06: 'RAC 06 - Lifting Operations',
-        RAC07: 'RAC 07 - Ground Stability',
-        RAC08: 'RAC 08 - Electricity',
-        RAC09: 'RAC 09 - Explosives',
-        RAC10: 'RAC 10 - Liquid Metal',
-        RAC11: 'RAC 11 - Mine Traffic',
-        PTS: 'PTS - Permissão de Trabalho Seguro',
-        ART: 'ART - Análise de Risco da Tarefa',
-        LIB_OPS: 'LIB-OPS - Liberação Operacional',
-        LIB_MOV: 'LIB-MOV - Liberação de Movimentação'
+        RAC01: 'LSR 01 / CRM - Working at Height',
+        RAC02: 'LSR 02 / CRM - Vehicles and Mobile Equipment',
+        RAC03: 'LSR 03 / CRM - Energy Isolation & Lockout',
+        RAC04: 'LSR 04 / CRM - Machine Guarding',
+        RAC05: 'LSR 05 / CRM - Confined Space Entry',
+        RAC06: 'LSR 06 / CRM - Lifting Operations',
+        RAC07: 'LSR 07 / CRM - Ground Stability & Excavation',
+        RAC08: 'LSR 08 / CRM - Electrical Safety',
+        RAC09: 'LSR 09 / CRM - Explosives & Blasting',
+        RAC10: 'LSR 10 / CRM - Molten Metal & Thermal Hazards',
+        RAC11: 'LSR 11 / CRM - Mine Traffic & Road Rules',
+        PTS: 'PTS - Permissão de Trabalho Seguro (Safe Work Permit)',
+        ART: 'ART - Análise de Risco da Tarefa (JSHA)',
+        LIB_OPS: 'LIB-OPS - Operational Clearance',
+        LIB_MOV: 'LIB-MOV - Equipment Movement Clearance'
     },
     advisor: {
       button: 'Safety Advisor',
@@ -1187,6 +1335,8 @@ export const translations = {
     },
     proposal: {
         digitalTrans: 'Digital Transformation Proposal',
+        scenarioTitle: 'Real World Scenario',
+        integrationTitle: 'Unified Data Integration',
         aboutMe: {
             title: 'Solutions Architect',
             name: 'Pita Domingos',
@@ -1267,7 +1417,7 @@ export const translations = {
         thankYou: {
             title: 'Gratitude',
             contact: 'info@digitecinternational.com',
-            phone: '+258 84 547 9481'
+            phone: '+258 87 243 9954'
         }
     },
     ai: {
@@ -1377,16 +1527,108 @@ export const translations = {
           support: 'Suporte Especializado'
         },
         cards: {
-          safeteq: 'SAFETEQ Enterprise Risk Management - O padrão para Requisitos de Atividades Críticas.',
+          safeteq: 'SAFETEQ Enterprise Risk Management — Plataforma SaaS líder que une 7 módulos principais: Onboarding e Mobilização, Formação e Certificações, SafeSite (Incidentes), Ecossistema SSMA (ISO 45001), EPI e Gestão de Ativos, Gestão de Risco (Master Strategy) e Risco de Linha de Base (HIRA/APR).',
           edudesk: 'EduDesk — Sistema Completo de Gestão Escolar com IA capacitando educadores com planeador de aulas, gerador de testes, admissões e portal de pais/alunos.',
-          h365: 'Ecossistema Digital de Saúde H365 — Infraestrutura nacional integrando H365 SaaS (Centro de Comando Hospitalar), CHAEM (Saúde Ocupacional) e Portal do Paciente em mais de 1.500 unidades.',
+          h365: 'Ecossistema Digital de Saúde H365 — Infraestrutura de saúde soberana unindo H365 SaaS (Centro de Comando Hospitalar), CHAEM (Saúde Ocupacional) e Portal do Paciente em mais de 1.500 unidades na África Austral e mercados emergentes globais.',
           microfin: 'Orquestração financeira para cadeias industriais.',
           websites: 'Portais de precisão para startups, residências e empresas individuais.'
+        }
+      },
+      aboutPage: {
+        badge: 'Engenharia de Software Personalizada',
+        title: 'Sobre a',
+        subtitle: 'A Digitec desenvolve ecossistemas digitais sob medida para redes nacionais de saúde, instituições de ensino, mineradoras e cadeias de empreiteiras industriais. Transformamos lógicas operacionais complexas em software de missão crítica.',
+        challengesTitle: 'Três Principais Desafios Operacionais Que Eliminamos',
+        challenges: [
+          {
+            num: '01',
+            title: 'Eliminando "O Atrito" (Fricção Clínica e Operacional)',
+            desc: 'Substituindo a fragmentação de registos em papel em mais de 1.500 unidades de saúde pelo H365 SaaS Command Center, 28+ módulos clínicos, Índice Mestre de Pacientes (MPI) e assistência de IA com Gemini 2.5 Flash.'
+          },
+          {
+            num: '02',
+            title: 'Eliminando "O Ponto Cego" (Pontos Cegos na Força de Trabalho)',
+            desc: 'Integrando saúde e segurança industrial através do fluxo digital AMA de 7 etapas da CHAEM em 6 sectores industriais chave (Saúde, Mineração, Construção, Transporte, Alimentação, Indústria) e matrizes de bloqueio SAFETEQ.'
+          },
+          {
+            num: '03',
+            title: 'Eliminando "A Desconexão" (Desconexão da Comunidade)',
+            desc: 'Capacitando cidadãos com acesso direto no Portal do Paciente aos seus registos médicos, e pais e alunos com o portal unificado do EduDesk AI para notas, propinas e acompanhamento académico.'
+          }
+        ],
+        suiteTitle: 'A Nossa Suíte',
+        suiteHighlight: 'Soberana de Software',
+        suiteDesc: 'Soluções digitais personalizadas construídas para os ambientes empresariais mais exigentes de África.',
+        viewSpecs: 'Ver Especificações do Ecossistema',
+        homegrown: 'Excelência Nacional',
+        beyondCode: 'Além do Código.',
+        digitalIntelligence: 'Inteligência Digital.',
+        beyondDesc: 'Não construímos apenas aplicações — projetamos infraestruturas digitais soberanas e resilientes adaptadas às exigências de saúde de Moçambique, normas de segurança industrial, metas educacionais e cadeias de suprimentos.',
+        strategicMission: 'Nossa Missão Estratégica',
+        leadershipTeam: 'Equipa de Liderança',
+        stats: {
+          expNum: '10+',
+          expLabel: 'Anos de Experiência Industrial',
+          facNum: '1.500+',
+          facLabel: 'Unidades de Saúde Digitalizadas',
+          usersNum: '50k+',
+          usersLabel: 'Utilizadores Ativos do Sistema',
+          uptimeNum: '99,99%',
+          uptimeLabel: 'Disponibilidade do Sistema'
+        },
+        solutions: {
+          h365: {
+            title: 'Ecossistema de Saúde Digital H365',
+            tag: 'Infraestrutura Nacional de Saúde',
+            desc: 'Ecossistema de Saúde Digital H365 — Infraestrutura de saúde soberana unindo H365 SaaS (Centro de Comando Hospitalar), CHAEM (Saúde Ocupacional) e Portal do Paciente em mais de 1.500 unidades.',
+            highlights: ['28+ Módulos Clínicos', 'CHAEM AMA de 7 Etapas', 'Índice Mestre de Pacientes (MPI)', 'Co-Piloto com IA Gemini 2.5 Flash']
+          },
+          edudesk: {
+            title: 'Gestão Escolar EduDesk AI',
+            tag: 'Sistema Educacional com IA',
+            desc: 'EduDesk — Sistema completo de Gestão Escolar com IA capacitando educadores com planeador de aulas, gerador de testes, admissões e portal de pais/alunos.',
+            highlights: ['Planeador de Aulas com IA', 'Gerador de Testes com IA', 'Portal de Pais/Alunos', 'Governança Multi-Escolas']
+          },
+          safeteq: {
+            title: 'SAFETEQ Enterprise Risk Management',
+            tag: 'Segurança em Mineração Pesada',
+            desc: 'SAFETEQ Enterprise Risk Management — Plataforma SaaS líder que une 7 módulos principais: Onboarding e Mobilização, Formação e Certificações, SafeSite, Ecossistema SSMA, EPI e Ativos, Estratégia de Risco e Risco de Linha de Base.',
+            highlights: ['Padrões de Risco Crítico (CRM/LSR)', 'Bloqueio Físico de Portaria', 'Matriz de Zero-Danos', 'Verificação de Empreiteiras']
+          },
+          microfin: {
+            title: 'Orquestração Financeira MicroFin',
+            tag: 'Fintech para Empreiteiras',
+            desc: 'Orquestração financeira automatizada para redes de empreiteiras industriais.',
+            highlights: ['Processamento de Salários', 'Compensação em Tempo Real', 'Registos de Auditoria', 'Sincronização Fiscal e Conformidade']
+          },
+          bespoke: {
+            title: 'Engenharia Empresarial Personalizada',
+            tag: 'Plataformas Sob Medida',
+            desc: 'Portais de alta precisão para startups, residências e empresas individuais.',
+            highlights: ['Web/Mobile de Alta Fidelidade', 'Microserviços API', 'Análises Personalizadas', 'Sincronização Offline-First']
+          }
         }
       },
       vision: {
         title: 'Nossa Visão',
         headline: 'Ecossistemas Digitais Inteligentes.',
+        pioneering: 'Pioneirismo em',
+        sovereignInfra: 'Infraestrutura Digital Soberana',
+        subtitle: 'Estamos a conectar operações físicas com ecossistemas digitais inteligentes, resilientes offline e capacitados por IA, personalizados para redes de saúde, sistemas educacionais, indústria pesada e logística empresarial.',
+        goalsList: [
+          {
+            title: '01. Eliminar o Atrito Operacional',
+            desc: 'Unificando dados legados fragmentados em registos digitais únicos e imutáveis em unidades de saúde, escolas e locais industriais.'
+          },
+          {
+            title: '02. Governança Assistida por IA',
+            desc: 'Capacitando médicos com assistência clínica do Gemini 2.5 Flash, professores com geradores de aulas por IA e oficiais de segurança com bloqueios automatizados de portaria.'
+          },
+          {
+            title: '03. Padrões Globais Desenvolvidos Localmente',
+            desc: 'Entregando software de classe mundial desenvolvido em Moçambique para capacitar empresas africanas e operadores industriais globais.'
+          }
+        ],
         desc: 'Estamos a colmatar a lacuna entre as operações físicas e a orquestração digital inteligente através de software de alta fidelidade adaptado para indústria, retalho e residência.',
         mission: 'Nossa Missão Estratégica',
         missionHeadline: 'Transformando Complexidade em Precisão',
@@ -1399,6 +1641,23 @@ export const translations = {
       partners: {
         title: 'Parceiros Estratégicos Industriais e Institucionais',
         subtitle: 'Nossos sistemas alimentam operações de missão crítica, redes de saúde, protocolos de segurança e cadeias de suprimentos para líderes industriais e infraestrutura pública.',
+        filters: {
+          all: 'Todos os Parceiros',
+          mining: 'Mineração e Energia',
+          testing: 'Testes e Medicina Ocupacional',
+          logistics: 'Logística Ferroviária e Portuária'
+        },
+        labels: {
+          integration: 'Integração:',
+          activePartner: 'Status: PARCEIRO ATIVO',
+          viewSpecs: 'Ver Especificações do Ecossistema'
+        },
+        cta: {
+          title: 'Junte-se ao Nosso Ecossistema Estratégico',
+          desc: 'Seja parceiro da Digitec para digitalizar suas operações, aprimorar a conformidade de segurança ou conectar-se à principal infraestrutura digital de saúde e educação de Moçambique.',
+          becomePartner: 'Tornar-se Parceiro',
+          exploreSolutions: 'Explorar Todas as Soluções'
+        },
         stats: {
           records: 'Mais de 12.000+ Credenciais de Segurança Gerenciadas',
           facilities: '1.500+ Unidades Sanitárias Digitalizadas',
@@ -1409,8 +1668,8 @@ export const translations = {
             name: 'Vulcan Mining',
             industry: 'Mineração Pesada e Extração',
             location: 'Tete, Moçambique',
-            desc: 'Gestão de risco empresarial com conformidade SAFETEQ RAC, bloqueios de segurança automatizados e rastreio de saúde ocupacional CHAEM para 6.000+ trabalhadores.',
-            metrics: '6.000+ Trabalhadores • Conformidade RAC 01-11'
+            desc: 'Gestão de risco empresarial com conformidade SAFETEQ com Regras Críticas de Risco (CRM / LSR), bloqueios de segurança automatizados e rastreio de saúde ocupacional CHAEM para 6.000+ trabalhadores.',
+            metrics: '6.000+ Trabalhadores • Conformidade de Regras Críticas (CRM / LSR)'
           },
           testing: {
             name: 'Testing',
@@ -1440,6 +1699,13 @@ export const translations = {
         desc: 'Solicite uma consulta para transformação digital personalizada das suas necessidades operacionais específicas.',
         emailLabel: 'E-mail Direto',
         callLabel: 'Linha de Operações',
+        officeLabel: 'Localização do Escritório',
+        address: 'EN7 Matema, Tete - Moçambique',
+        phone: '+258 87 243 9954',
+        sendMessage: 'Enviar uma mensagem',
+        fullNameLabel: 'Nome Completo',
+        emailAddressLabel: 'Endereço de E-mail',
+        projectDetailsLabel: 'Detalhes do Projeto',
         form: {
           name: 'Nome do Contato',
           email: 'info@digitecinternational.com',
@@ -1523,9 +1789,25 @@ export const translations = {
             title: 'Ecossistemas Digitais de Missão Crítica',
             desc: 'Projetar ecossistemas digitais resilientes e de missão crítica que transformam a lógica manual complexa em orquestração precisa e automatizada, protegendo ativos e capacitando negócios de todas as escalas.'
         },
+        pillars: {
+            p1Title: 'Soberania na Saúde',
+            p1Desc: 'Digitalização da infraestrutura nacional de saúde de Moçambique em mais de 1.500 unidades com H365 SaaS, saúde ocupacional CHAEM em 7 etapas e assistência de IA com Gemini 2.5 Flash.',
+            p2Title: 'Capacitação Educacional',
+            p2Desc: 'Capacitando educadores e engajando comunidades com o planeamento automatizado de aulas, gerador de testes, ciclo de admissões e portais de pais do EduDesk AI.',
+            p3Title: 'Zero Danos Industrial',
+            p3Desc: 'Automação da conformidade de segurança na Gestão de Riscos Críticos (CRM / LSR), daemons de bloqueio de portaria e verificação de saúde da força de trabalho em operações mineiras pesadas.',
+            p4Title: 'Transparência Financeira',
+            p4Desc: 'Otimização da liquidação de empreiteiros, processamento de salários automatizado, microdesembolsos e registos de auditoria para redes de cadeias de abastecimento industrial.'
+        },
         manifesto: {
             title: 'O Manifesto Digital',
             text: 'Acreditamos que o software deve ser tão resiliente quanto as operações que suporta. Da indústria pesada aos sistemas residenciais, digitalizamos lógicas complexas para garantir segurança, eficiência e capacitação para cada utilizador.'
+        },
+        manifestoCards: {
+            offlineTitle: 'Resiliência L-LAN Offline-First',
+            offlineDesc: 'Clínicas e explorações mineiras operam sem interrupções mesmo sem conetividade por satélite.',
+            misauTitle: 'Federação MISAU DHIS2 e MPI Nacional',
+            misauDesc: 'Sincronização de dados epidemiológicos em tempo real e registos de doentes validados biometricamente.'
         },
         values: {
             title: 'Pilares Operacionais',
@@ -1553,6 +1835,11 @@ export const translations = {
           lubDesc: 'Acompanhamento preditivo de lubrificação para evitar falhas prematuras de componentes e tempo de inatividade.',
           daemonName: 'telemetry_daemon.v1',
           fetchEcm: '# Extraindo Parâmetros ECM...'
+        },
+        cta: {
+          title: 'Seja Nosso Parceiro na Engenharia de Precisão',
+          desc: 'Permita-nos projetar e implementar o seu ecossistema personalizado de software empresarial.',
+          btn: 'Agendar Consulta'
         }
     },
     portfolio: {
@@ -1596,8 +1883,8 @@ export const translations = {
       items: {
         safeteq: {
           name: 'SAFETEQ Enterprise Risk Management',
-          category: 'Requisições Críticas',
-          desc: 'O "Sistema de Requisitos de Atividades Críticas" (SAFETEQ). Automatiza fluxos de trabalho de treinamento, passaportes digitais e controle de acesso para uma força de trabalho mais segura.'
+          category: 'Mobilização da Força de Trabalho e Gestão de Riscos SaaS',
+          desc: 'Plataforma SaaS de Gestão de Riscos e Mobilização unificando 7 módulos principais: Onboarding e Mobilização, Formação e Certificações, SafeSite (Incidentes), Ecossistema SSMA (ISO 45001), EPI e Gestão de Ativos, Gestão de Risco (Master Strategy) e Risco de Linha de Base (HIRA/APR).'
         },
         minesite: {
           name: 'Minesite Vision',
@@ -1616,8 +1903,8 @@ export const translations = {
         },
         h365: {
           name: 'Ecossistema Digital de Saúde H365',
-          category: 'Infraestrutura de Saúde Digital Nacional',
-          desc: 'Ecossistema unificado "Uma Plataforma, Três Apps" (H365 SaaS, Saúde Ocupacional CHAEM e Portal do Paciente) servindo mais de 1.500 unidades sanitárias nas 11 províncias com 28+ módulos clínicos, MPI, IA Gemini 2.5 Flash e arquitetura L-LAN offline-first.'
+          category: 'Infraestrutura Soberana de Saúde Digital',
+          desc: 'Ecossistema unificado "Uma Plataforma, Três Apps" (H365 SaaS, Saúde Ocupacional CHAEM e Portal do Paciente) servindo mais de 1.500 unidades sanitárias em Moçambique, na África Austral e em países em desenvolvimento com 28+ módulos clínicos, MPI, IA Gemini 2.5 Flash e arquitetura L-LAN offline-first.'
         },
         microfin: {
           name: 'MicroFin',
@@ -1692,20 +1979,22 @@ export const translations = {
         standardsDesc: "Este sistema segue os elevados padrões da Digitec para resiliência de nível industrial."
       },
       safeteq: {
-        subtitle: 'Requisitos de Atividades Críticas - SAFETEQ Enterprise Risk Management',
-        challenge: 'As operações mineiras de grande escala debatiam-se com silos de certificação. As credenciais expiradas criavam responsabilidades de risco de vida nos portões do local, onde mais de 10.000 funcionários necessitavam de verificação individual diária.',
-        solution: 'O SAFETEQ Enterprise Risk Management é um motor de conformidade de alta segurança. Funde registos de RH com resultados de formação em tempo real para gerar passaportes QR digitais. Se um requisito (RACS, ASO ou DL) expirar, o acesso é bloqueado automaticamente.',
+        subtitle: 'Plataforma SaaS Integrada de Gestão de Riscos e Mobilização da Força de Trabalho',
+        challenge: 'Em indústrias de alto risco como mineração, construção e manufatura, a gestão da segurança e conformidade da força de trabalho sofre com processos fragmentados, planilhas e formulários em papel. A mobilização desarticulada atrasa a integração de candidatos no RH, clínicas médicas ocupacionais, induções de segurança (SSMA) e portaria por semanas.',
+        solution: 'O SAFETEQ é uma plataforma SaaS completa de Gestão de Riscos e Mobilização da Força de Trabalho estruturada em 7 módulos principais: Onboarding e Mobilização, Formação e Certificações, SafeSite (Gestão de Incidentes), Ecossistema SSMA (ISO 45001), EPI e Gestão de Ativos, Gestão de Risco (Master Strategy) e Risco de Linha de Base (HIRA/APR). Digitaliza todo o pipeline de candidatos, emite crachás QR e capacita portarias com validação em tempo real.',
         features: [
-          'Arquitetura multi-tenant que suporta líderes globais de mineração.',
-          ' "Passaportes" QR digitais para verificação de campo offline.',
-          'Motor de lógica booleana para matrizes de conformidade complexas.',
-          'Integração de portão com Controlo de Álcool IoT (etiloteste).',
-          'Filas automatizadas de renovação de formação e alertas SMS.'
+          'Onboarding e Mobilização (Recruitment Suite): Gestão do pipeline de recrutamento desde a requisição até verificação de ID, acesso temporário, exames clínicos, indução de segurança e confirmação AM.',
+          'Formação e Certificações (Sistema SAFETEQ): Agendamento de formações, inscrições, registo de notas, verificação de cartões RAC/LSR, relatórios de conformidade e critérios de governança do site.',
+          'SafeSite (Gestão de Incidentes): Mapeamento inteligente de condições inseguras, reporte de incidentes, atribuição de equipas responsáveis, fluxos de trabalho e acompanhamento de resoluções.',
+          'Ecossistema SSMA (Segurança, Saúde e Meio Ambiente): Integração dinâmica de incidentes, inspeções e análise BowTie com gestão completa do ciclo de vida ISO 45001 num único portal.',
+          'EPI e Gestão de Ativos (Logística de Segurança): Requisição de equipamentos de proteção individual (EPI), monitorização de stocks no site, auditoria de pré-requisitos e registo de entregas físicas.',
+          'Gestão de Risco (Master Strategy): Monitorização de execuções de testes Master Strategy, rastreio de pontuações de risco inerente vs. residual e gestão de ações corretivas.',
+          'Risco de Linha de Base (Fonte da Verdade): Camada fundamental para HIRA, APR e Inspeções, gerindo perigos, conformidade ambiental e eficácia dos controlos.'
         ],
         impact: [
-          { label: 'Fluxo no Portão', desc: 'Tempo de verificação mais rápido.' },
-          { label: 'Aderência à Segurança', desc: 'Conformidade com o SAFETEQ Enterprise Risk Management.' },
-          { label: 'Erros Administrativos', desc: 'Redução na introdução manual.' }
+          { label: 'Velocidade de Mobilização', desc: 'Acelera a integração de trabalhadores e empreiteiros de semanas para horas sem lacunas de conformidade.' },
+          { label: 'Controlo de Portaria', desc: 'Verificação 100% em tempo real de exames médicos válidos, formações RAC/LSR e autorizações de zona.' },
+          { label: 'Prevenção Proativa de Risco', desc: 'Elimina pontos cegos através dos 7 módulos do SAFETEQ, desde o Risco de Linha de Base até à análise BowTie.' }
         ]
       },
       minesite: {
@@ -1760,9 +2049,9 @@ export const translations = {
         ]
       },
       h365: {
-        subtitle: 'Arquitetura Nacional de Saúde e Ecossistema em Tríade (H365 SaaS, CHAEM e Portal do Paciente)',
-        challenge: 'O sistema de saúde de Moçambique enfrentava atrito clínico ("O Atrito") devido à fragmentação de registos em papel em mais de 1.500 unidades sanitárias, pontos cegos na saúde do trabalhador industrial ("O Ponto Cego") e a desconexão do cidadão ("A Desconexão") do seu histórico médico.',
-        solution: 'O H365 entrega o definitivo ecossistema digital de saúde de Moçambique "Uma Plataforma, Três Apps": H365 SaaS como Centro de Comando Hospitalar (28+ módulos clínicos), CHAEM para saúde ocupacional em 6 setores industriais (fluxo digital AMA em 7 etapas) e o Portal do Paciente para acesso direto a histórico, sincronia e receitas, alimentados pelo co-piloto de IA Gemini 2.5 Flash.',
+        subtitle: 'Arquitetura Soberana de Saúde Digital e Ecossistema em Tríade (H365 SaaS, CHAEM e Portal do Paciente)',
+        challenge: 'Os sistemas de saúde em Moçambique, na África Austral e em países em desenvolvimento pelo mundo enfrentam um atrito clínico crítico ("O Atrito") impulsionado por falhas constantes de internet, défices de infraestrutura remota e a fragmentação de registos em papel em mais de 1.500 unidades sanitárias, além de pontos cegos na saúde do trabalhador industrial ("O Ponto Cego") e a desconexão do cidadão ("A Desconexão") do seu histórico médico.',
+        solution: 'O H365 entrega um ecossistema digital de saúde soberano, offline-first e baseado em L-LAN (Rede Local) "Uma Plataforma, Três Apps", desenvolvido especificamente para ambientes com restrições de conetividade em Moçambique, na África Austral e em países em desenvolvimento: 100% de disponibilidade clínica local garantida através de servidores L-LAN sem dependência de internet contínua e sincronização em segundo plano via nuvem/satélite, H365 SaaS (28+ módulos), CHAEM (saúde ocupacional em 7 etapas) e Portal do Paciente com IA Gemini 2.5 Flash.',
         features: [
           'H365 SaaS: 28+ Módulos Clínicos (Triagem, Maternidade PTV, Farmácia, Enfermarias)',
           'CHAEM: Fluxo Digital AMA em 7 Etapas para 6 Setores Industriais',
@@ -1833,6 +2122,8 @@ export const translations = {
       hub: 'Central do Cliente',
       switchApp: 'Mudar de Aplicação',
       flagshipBadge: 'Plataforma Soberana Principal',
+      coreFlagships: 'Plataformas Operacionais Principais',
+      specializedModules: 'Módulos Empresariais Especializados e Extensões Beta',
       status: {
         active: 'Produção Ativa',
         access: 'Acesso Padrão',
@@ -1843,12 +2134,12 @@ export const translations = {
       },
       stats: {
         h365: '1.500+ Unidades • MISAU DHIS2 e L-LAN Ativo',
-        safeteq: '6.000+ Trabalhadores • RAC 01-11 e Portaria Física',
+        safeteq: '6.000+ Trabalhadores • Regras Críticas (CRM / LSR) e Portaria Física',
         edudesk: 'Tudo-em-Um com IA • Aulas, Testes e Portal de Pais'
       },
       tags: {
         h365: ['H365 SaaS', 'CHAEM 7 Passos', 'IA Gemini 2.5', 'Portal Paciente'],
-        safeteq: ['RAC 01-11', 'Bloqueio Portaria', 'IoT Álcool', 'Sinc ASO'],
+        safeteq: ['Regras Críticas (CRM/LSR)', 'Bloqueio Portaria', 'IoT Álcool', 'Sinc ASO'],
         edudesk: ['IA Aulas', 'Gerador Testes', 'Admissões', 'Portal Pais']
       },
       footer: {
@@ -1884,6 +2175,13 @@ export const translations = {
       login: 'Entrar',
       logout: 'Sair da Central',
       poweredBy: 'Desenvolvido por',
+      safeteq: {
+        identity: 'Identidade (Nome de Utilizador)',
+        accessKey: 'Chave de Acesso (Palavra-passe)',
+        signIn: 'Entrar no Cofre',
+        auditNotice: 'Acesso registado e auditado. Apenas pessoal autorizado.',
+        systemTag: 'Ecossistema de Conformidade de Segurança'
+      },
       loginPage: {
         title: 'Central do Cliente',
         subtitle: 'Acesso Seguro ao Ecossistema Digitec',
@@ -2112,17 +2410,17 @@ export const translations = {
         deleteRecord: 'Purgar Registo'
     },
     racDefs: {
-        RAC01: 'RACS 01 - Trabalho em Altura',
-        RAC02: 'RACS 02 - Veículos e Equipamentos Móveis',
-        RAC03: 'RACS 03 - Bloqueio de Equipamentos Móveis',
-        RAC04: 'RACS 04 - Proteção de Máquinas',
-        RAC05: 'RACS 05 - Espaço Confinado',
-        RAC06: 'RACS 06 - Operações de Içamento',
-        RAC07: 'RACS 07 - Estabilidade do Solo',
-        RAC08: 'RACS 08 - Eletricidade',
-        RAC09: 'RACS 09 - Explosivos',
-        RAC10: 'RACS 10 - Metal Líquido',
-        RAC11: 'RACS 11 - Tráfego de Mina',
+        RAC01: 'LSR 01 / CRM - Trabalho em Altura',
+        RAC02: 'LSR 02 / CRM - Veículos e Equipamentos Móveis',
+        RAC03: 'LSR 03 / CRM - Bloqueio e Isolamento de Energia',
+        RAC04: 'LSR 04 / CRM - Proteção de Máquinas',
+        RAC05: 'LSR 05 / CRM - Espaço Confinado',
+        RAC06: 'LSR 06 / CRM - Operações de Içamento',
+        RAC07: 'LSR 07 / CRM - Estabilidade do Solo e Escavações',
+        RAC08: 'LSR 08 / CRM - Segurança Elétrica',
+        RAC09: 'LSR 09 / CRM - Explosivos e Fogo',
+        RAC10: 'LSR 10 / CRM - Metal Líquido e Térmico',
+        RAC11: 'LSR 11 / CRM - Tráfego de Mina e Regras Viárias',
         PTS: 'PTS - Permissão de Trabalho Seguro',
         ART: 'ART - Análise de Risco da Tarefa',
         LIB_OPS: 'LIB-OPS - Liberação Operacional',
@@ -2450,6 +2748,8 @@ export const translations = {
     },
     proposal: {
         digitalTrans: 'Proposta de Transformação Digital',
+        scenarioTitle: 'Cenário do Mundo Real',
+        integrationTitle: 'Integração Unificada de Dados',
         aboutMe: {
             title: 'Arquiteto de Soluções',
             name: 'Pita Domingos',
@@ -2530,7 +2830,7 @@ export const translations = {
         thankYou: {
             title: 'Gratidão',
             contact: 'info@digitecinternational.com',
-            phone: '+258 84 547 9481'
+            phone: '+258 87 243 9954'
         }
     },
     ai: {

@@ -1,15 +1,15 @@
 
 export enum RAC {
-  RAC01 = 'RAC 01 - Working at Height',
-  RAC02 = 'RAC 02 - Vehicles and Mobile Equipment',
-  RAC03 = 'RAC 03 - Mobile Equipment Lockout',
-  RAC04 = 'RAC 04 - Machine Guarding',
-  RAC05 = 'RAC 05 - Confined Space',
-  RAC06 = 'RAC 06 - Lifting Operations',
-  RAC07 = 'RAC 07 - Ground Stability',
-  RAC08 = 'RAC 08 - Electricity',
-  RAC09 = 'RAC 09 - Explosives',
-  RAC10 = 'RAC 10 - Liquid Metal'
+  RAC01 = 'LSR 01 / CRM - Working at Height',
+  RAC02 = 'LSR 02 / CRM - Vehicles and Mobile Equipment',
+  RAC03 = 'LSR 03 / CRM - Mobile Equipment Lockout',
+  RAC04 = 'LSR 04 / CRM - Machine Guarding',
+  RAC05 = 'LSR 05 / CRM - Confined Space',
+  RAC06 = 'LSR 06 / CRM - Lifting Operations',
+  RAC07 = 'LSR 07 / CRM - Ground Stability',
+  RAC08 = 'LSR 08 / CRM - Electricity',
+  RAC09 = 'LSR 09 / CRM - Explosives',
+  RAC10 = 'LSR 10 / CRM - Liquid Metal'
 }
 
 export interface RacDef {

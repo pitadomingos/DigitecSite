@@ -47,9 +47,9 @@ const PortfolioPage: React.FC = () => {
     {
       id: 'safeteq',
       name: t.portfolio?.items?.safeteq?.name || 'SAFETEQ Enterprise Risk Management',
-      category: t.portfolio?.items?.safeteq?.category || 'Industrial Risk & Safety Compliance',
+      category: t.portfolio?.items?.safeteq?.category || 'Workforce Mobilization & Risk SaaS',
       group: 'industrial',
-      description: t.portfolio?.items?.safeteq?.desc || 'Compliance & risk management engine automating Critical Activity Requirements (RAC 01-11), gate lockout daemons, alcohol IoT testing, and digital safety passports.',
+      description: t.portfolio?.items?.safeteq?.desc || 'All-in-one Risk Management and Workforce Mobilization SaaS unifying 7 core modules: Onboarding & Mobilization, Training & Certifications, SafeSite Incident Management, SSMA Ecosystem (ISO 45001), EPI & Asset Tracking, Master Strategy Risk Management, and Baseline Risk.',
       icon: ShieldCheck,
       color: 'blue',
       gradient: 'from-blue-600 via-indigo-600 to-cyan-600',
@@ -59,9 +59,9 @@ const PortfolioPage: React.FC = () => {
         t.portfolio?.industries?.ports || 'Ports',
         t.portfolio?.industries?.manufacturing || 'Manufacturing'
       ],
-      tags: ['RAC 01-11', 'Gate Lockout', 'Alcohol IoT', 'ASO Sync'],
+      tags: ['Workforce Mobilization', 'Gate Security QR', 'SafeSite SSMA', 'Multi-Tenant SaaS'],
       badgeLabel: t.portfolio?.labels?.flagship || 'Sovereign Flagship',
-      stats: '6,000+ Workers • RAC 01-11 & Gate Lockout Daemon',
+      stats: '6,000+ Workers • Gate Security • SafeSite SSMA',
       appUrl: 'https://rac-s.vercel.app',
       isFlagship: true
     },

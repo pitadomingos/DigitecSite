@@ -27,7 +27,7 @@ const VisionPage: React.FC = () => {
       milestones: [
         'H365 28+ Clinical Modules & CHAEM 7-Step AMA',
         'EduDesk AI Lesson Planner & Test Generator',
-        'SAFETEQ RAC 01-11 Gate Lockout Verification',
+        'SAFETEQ Critical Risk Standards (CRM/LSR) Gate Lockout Verification',
         'Offline-First Local LAN (L-LAN) Infrastructure'
       ]
     },
@@ -84,14 +84,14 @@ const VisionPage: React.FC = () => {
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-black uppercase tracking-widest mb-6">
-              <Compass size={14} /> {t.publicHome.vision.title || 'Our Vision'}
+              <Compass size={14} /> {t.publicHome.vision?.title || 'Our Vision'}
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight uppercase">
-              Pioneering <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">Sovereign Digital Infrastructure</span>
+              {t.publicHome.vision?.pioneering || 'Pioneering'} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">{t.publicHome.vision?.sovereignInfra || 'Sovereign Digital Infrastructure'}</span>
             </h1>
             <div className="w-24 h-2 bg-blue-600 mx-auto rounded-full mb-8 shadow-lg shadow-blue-500/50"></div>
             <p className="text-xl text-slate-300 leading-relaxed font-medium">
-              We are bridging physical operations with intelligent, offline-resilient, AI-empowered digital ecosystems tailored for healthcare networks, education systems, heavy industry, and enterprise logistics.
+              {t.publicHome.vision?.subtitle || 'We are bridging physical operations with intelligent, offline-resilient, AI-empowered digital ecosystems tailored for healthcare networks, education systems, heavy industry, and enterprise logistics.'}
             </p>
           </div>
 
@@ -101,9 +101,11 @@ const VisionPage: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center font-black mb-6 border border-blue-500/30">
                 <Globe2 size={24} />
               </div>
-              <h3 className="text-xl font-black text-white mb-3">01. Eliminate Operational Friction</h3>
+              <h3 className="text-xl font-black text-white mb-3">
+                {t.publicHome.vision?.goalsList?.[0]?.title || '01. Eliminate Operational Friction'}
+              </h3>
               <p className="text-slate-400 text-sm leading-relaxed font-medium">
-                Unifying fragmented legacy data into single, immutable digital records across healthcare facilities, schools, and industrial sites.
+                {t.publicHome.vision?.goalsList?.[0]?.desc || 'Unifying fragmented legacy data into single, immutable digital records across healthcare facilities, schools, and industrial sites.'}
               </p>
             </div>
 
@@ -111,9 +113,11 @@ const VisionPage: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-cyan-600/20 text-cyan-400 flex items-center justify-center font-black mb-6 border border-cyan-500/30">
                 <Cpu size={24} />
               </div>
-              <h3 className="text-xl font-black text-white mb-3">02. AI-Assistive Governance</h3>
+              <h3 className="text-xl font-black text-white mb-3">
+                {t.publicHome.vision?.goalsList?.[1]?.title || '02. AI-Assistive Governance'}
+              </h3>
               <p className="text-slate-400 text-sm leading-relaxed font-medium">
-                Empowering doctors with Gemini 2.5 Flash clinical assistance, teachers with AI lesson generators, and safety officers with automated RAC gate lockouts.
+                {t.publicHome.vision?.goalsList?.[1]?.desc || 'Empowering doctors with Gemini 2.5 Flash clinical assistance, teachers with AI lesson generators, and safety officers with automated RAC gate lockouts.'}
               </p>
             </div>
 
@@ -121,9 +125,11 @@ const VisionPage: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-black mb-6 border border-indigo-500/30">
                 <Layers size={24} />
               </div>
-              <h3 className="text-xl font-black text-white mb-3">03. Homegrown Global Standards</h3>
+              <h3 className="text-xl font-black text-white mb-3">
+                {t.publicHome.vision?.goalsList?.[2]?.title || '03. Homegrown Global Standards'}
+              </h3>
               <p className="text-slate-400 text-sm leading-relaxed font-medium">
-                Delivering world-class software engineered in Mozambique to empower African enterprises and global industrial operators.
+                {t.publicHome.vision?.goalsList?.[2]?.desc || 'Delivering world-class software engineered in Mozambique to empower African enterprises and global industrial operators.'}
               </p>
             </div>
           </div>

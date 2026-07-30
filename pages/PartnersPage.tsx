@@ -26,8 +26,8 @@ const PartnersPage: React.FC = () => {
       industryKey: 'mining',
       category: partnerItems?.vulcan?.industry || 'Heavy Mining & Extraction',
       location: partnerItems?.vulcan?.location || 'Tete, Mozambique',
-      desc: partnerItems?.vulcan?.desc || 'Enterprise risk management with SAFETEQ RAC compliance, automated safety lockouts, and CHAEM occupational health tracking for 6,000+ workers.',
-      metrics: partnerItems?.vulcan?.metrics || '6,000+ Workers • RAC 01-11 Compliance',
+      desc: partnerItems?.vulcan?.desc || 'Enterprise risk management with SAFETEQ Critical Risk Management (CRM/LSR) compliance, automated safety lockouts, and CHAEM occupational health tracking for 6,000+ workers.',
+      metrics: partnerItems?.vulcan?.metrics || '6,000+ Workers • Critical Risk Standards (CRM/LSR)',
       solutionUsed: 'SAFETEQ + CHAEM Occupational Health',
       logoType: 'image',
       logoUrl: '/assets/vulcan.png',
@@ -58,7 +58,7 @@ const PartnersPage: React.FC = () => {
       location: partnerItems?.moatize?.location || 'Moatize, Tete, Mozambique',
       desc: partnerItems?.moatize?.desc || 'Contractor safety matrix validation, workforce health tracking, and zero-harm operational compliance across critical mining pits.',
       metrics: partnerItems?.moatize?.metrics || 'Contractor Gate Lockout • Zero-Harm',
-      solutionUsed: 'SAFETEQ RAC 01-11 + MicroFin',
+      solutionUsed: 'SAFETEQ Critical Risk Management (CRM/LSR) + MicroFin',
       logoType: 'svg',
       logoIcon: HardHat,
       badgeColor: 'border-emerald-500/30 text-emerald-400 bg-emerald-500/10',
@@ -137,7 +137,7 @@ const PartnersPage: React.FC = () => {
                   : 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-white'
               }`}
             >
-              All Partners ({partnerList.length})
+              {t.publicHome?.partners?.filters?.all || 'All Partners'} ({partnerList.length})
             </button>
             <button
               onClick={() => setActiveFilter('mining')}
@@ -147,7 +147,7 @@ const PartnersPage: React.FC = () => {
                   : 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-white'
               }`}
             >
-              Mining & Energy (2)
+              {t.publicHome?.partners?.filters?.mining || 'Mining & Energy'} (2)
             </button>
             <button
               onClick={() => setActiveFilter('testing')}
@@ -157,7 +157,7 @@ const PartnersPage: React.FC = () => {
                   : 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-white'
               }`}
             >
-              Testing & Medical (1)
+              {t.publicHome?.partners?.filters?.testing || 'Testing & Medical'} (1)
             </button>
             <button
               onClick={() => setActiveFilter('logistics')}
@@ -167,7 +167,7 @@ const PartnersPage: React.FC = () => {
                   : 'bg-white/5 text-slate-400 border-white/10 hover:bg-white/10 hover:text-white'
               }`}
             >
-              Rail & Port Logistics (1)
+              {t.publicHome?.partners?.filters?.logistics || 'Rail & Port Logistics'} (1)
             </button>
           </div>
 
@@ -237,7 +237,7 @@ const PartnersPage: React.FC = () => {
                     <div className="p-4 rounded-2xl bg-white/5 border border-white/5 mb-6 flex flex-wrap items-center justify-between gap-3">
                       <div className="flex items-center gap-2 text-xs font-bold text-slate-300">
                         <Zap size={14} className="text-yellow-400" />
-                        <span>Integration: <strong className="text-white">{partner.solutionUsed}</strong></span>
+                        <span>{t.publicHome?.partners?.labels?.integration || 'Integration:'} <strong className="text-white">{partner.solutionUsed}</strong></span>
                       </div>
                       <span className="text-xs font-black uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-lg border border-cyan-500/20">
                         {partner.metrics}
@@ -247,13 +247,13 @@ const PartnersPage: React.FC = () => {
                     <div className="flex items-center justify-between text-xs font-mono text-slate-400">
                       <span className="flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        Status: ACTIVE PARTNER
+                        {t.publicHome?.partners?.labels?.activePartner || 'Status: ACTIVE PARTNER'}
                       </span>
                       <button 
                         onClick={() => navigate('/portfolio')}
                         className="text-cyan-400 hover:text-white flex items-center gap-1 font-sans font-bold transition-colors group-hover:translate-x-1"
                       >
-                        View Ecosystem Specs <ArrowRight size={14} />
+                        {t.publicHome?.partners?.labels?.viewSpecs || 'View Ecosystem Specs'} <ArrowRight size={14} />
                       </button>
                     </div>
                   </div>
@@ -272,23 +272,23 @@ const PartnersPage: React.FC = () => {
                 <Globe2 size={32} />
               </div>
               <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight uppercase">
-                Join Our Strategic <span className="text-cyan-400">Ecosystem</span>
+                {t.publicHome?.partners?.cta?.title || 'Join Our Strategic Ecosystem'}
               </h2>
               <p className="text-slate-300 text-lg md:text-xl font-medium mb-10 leading-relaxed">
-                Partner with Digitec to digitize your operations, enhance safety compliance, or connect to Mozambique's premier digital health and educational infrastructure.
+                {t.publicHome?.partners?.cta?.desc || "Partner with Digitec to digitize your operations, enhance safety compliance, or connect to Mozambique's premier digital health and educational infrastructure."}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => navigate('/contact')}
                   className="bg-blue-600 text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/30 hover:scale-105 active:scale-95"
                 >
-                  Become a Partner
+                  {t.publicHome?.partners?.cta?.becomePartner || 'Become a Partner'}
                 </button>
                 <button 
                   onClick={() => navigate('/portfolio')}
                   className="bg-white/5 border border-white/10 text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white/10 transition-all hover:border-white/20 active:scale-95"
                 >
-                  Explore All Solutions
+                  {t.publicHome?.partners?.cta?.exploreSolutions || 'Explore All Solutions'}
                 </button>
               </div>
             </div>
