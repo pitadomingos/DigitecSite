@@ -80,8 +80,8 @@ const PortfolioPage: React.FC = () => {
       icon: Activity,
       color: 'rose',
       gradient: 'from-rose-500 to-pink-500',
-      industries: [t.portfolio.industries.healthcare, t.portfolio.industries.clinical],
-      tags: [t.portfolio.tags.scalable, t.portfolio.tags.secure, t.portfolio.tags.cloud],
+      industries: [t.portfolio.industries.healthcare, t.portfolio.industries.gov, t.portfolio.industries.industry, t.portfolio.industries.clinical],
+      tags: [t.portfolio.tags.cloud, t.portfolio.tags.offline, t.portfolio.tags.security, t.portfolio.tags.scalable],
       badgeLabel: t.portfolio.labels.ready,
       appUrl: 'https://h365-new.vercel.app/'
     },

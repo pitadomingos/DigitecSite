@@ -97,6 +97,10 @@ export const translations = {
         btnExplore: 'Explore Ecosystem',
         btnEnter: 'Enter Client Hub'
       },
+      terminal: {
+        online: 'ONLINE',
+        systemVerified: 'System Verified & Active'
+      },
       about: {
         title: 'Custom Software Engineering',
         subtitle: 'Digitec engineers bespoke digital ecosystems for global industries, innovative startups, and modern residential developments. We transform complex operational needs into mission-critical software that empowers businesses of all scales.',
@@ -111,8 +115,8 @@ export const translations = {
         },
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - Our flagship compliance engine for Critical Activity Requirements.',
-          edudesk: 'Industrial Learning Management System digitizing training lifecycles.',
-          h365: 'Integrated Health informatics for remote and high-risk site operations.',
+          edudesk: 'EduDesk — All-in-one AI-powered School Management System empowering educators with AI lesson planning, test generation, admissions, and parent/student portals.',
+          h365: 'H365 Digital Health Ecosystem — National healthcare infrastructure uniting H365 SaaS (Hospital Command Center), CHAEM (Occupational Health), and Patient Portal across 1,500+ facilities.',
           microfin: 'Automated financial orchestration for industrial contractor networks.',
           websites: 'Precision-engineered portals for startups, residences, and individual companies.'
         }
@@ -130,10 +134,42 @@ export const translations = {
         ]
       },
       partners: {
-        title: 'Global Industrial Partners',
+        title: 'Strategic Industrial & Institutional Partners',
+        subtitle: 'Our systems power mission-critical operations, health networks, safety protocols, and supply chains for industry leaders and public infrastructure.',
         stats: {
           records: 'Over 12,000+ Safety Credentials Managed',
+          facilities: '1,500+ Health Facilities Digitized',
           reliability: '99.99% Operational Uptime'
+        },
+        items: {
+          vulcan: {
+            name: 'Vulcan Mining',
+            industry: 'Heavy Mining & Extraction',
+            location: 'Tete, Mozambique',
+            desc: 'Enterprise risk management with SAFETEQ RAC compliance, automated safety lockouts, and CHAEM occupational health tracking for 6,000+ workers.',
+            metrics: '6,000+ Workers • RAC 01-11 Compliance'
+          },
+          testing: {
+            name: 'Testing',
+            industry: 'Technical & Medical Testing',
+            location: 'Maputo & Tete, Mozambique',
+            desc: 'Industrial certification, laboratory workflow digitization, and real-time medical examination (ASO) sync integrated directly into H365 and SAFETEQ.',
+            metrics: 'Automated ASO Sync • Lab Workflow'
+          },
+          moatize: {
+            name: 'Mina de Moatize',
+            industry: 'Coal Extraction & Mineral Operations',
+            location: 'Moatize, Tete, Mozambique',
+            desc: 'Contractor safety matrix validation, workforce health tracking, and zero-harm operational compliance across critical mining pits.',
+            metrics: 'Contractor Gate Lockout • Zero-Harm'
+          },
+          cln: {
+            name: 'CLN (Corredor Logístico de Nacala)',
+            industry: 'Rail & Port Logistics',
+            location: 'Nacala & Moatize, Mozambique',
+            desc: 'Logistics workforce health surveillance, heavy transport safety credentials, and corridor occupational risk monitoring across rail & deepwater port networks.',
+            metrics: 'Rail & Port Telemetry • Transit ASO'
+          }
         }
       },
       contact: {
@@ -282,14 +318,14 @@ export const translations = {
           desc: 'A high-conversion corporate ecosystem for leading engineering firms. Focused on lead generation and industrial project showcasing.'
         },
         edudesk: {
-          name: 'EduDesk',
-          category: 'Industrial Training',
-          desc: 'Digitizing the lifecycle of apprentice and operator training programs with gradebooks and attendance modules.'
+          name: 'EduDesk AI',
+          category: 'AI School Management System',
+          desc: 'All-in-one AI-powered School Management Platform integrating admissions, finance, academics, AI lesson planning, test generation, parent/student portals, and multi-school management.'
         },
         h365: {
-          name: 'H365 Site Health',
-          category: 'Occupational Health',
-          desc: 'Medical management for remote operations. Integrated ASO tracking and Electronic Medical Records.'
+          name: 'H365 Digital Health Ecosystem',
+          category: 'National Digital Health Infrastructure',
+          desc: 'Unified "One Platform, Three Apps" ecosystem (H365 SaaS, CHAEM Occupational Health, and Patient Portal) serving 1,500+ health facilities across all 11 provinces with 28+ clinical modules, Master Patient Index (MPI), Gemini 2.5 Flash AI Co-Pilot, and offline-first L-LAN architecture.'
         },
         microfin: {
           name: 'MicroFin',
@@ -413,25 +449,41 @@ export const translations = {
           ]
       },
       edudesk: {
-        subtitle: 'Digital Campus Orchestration',
-        challenge: 'Legacy paper-based grading in industrial training centers led to certification delays and lack of data transparency.',
-        solution: 'EduDesk is a centralized training management system that automates gradebooks, attendance, and certification issuance.',
-        features: ['Digital Gradebooks', 'Automated Attendance', 'NFC Integration', 'Real-time Progress Tracking'],
+        subtitle: 'Empowering Educators, Engaging Communities (AI School Management Ecosystem)',
+        challenge: 'Schools struggle with disconnected software, manual data entry, and paper-based processes. This creates data silos, consumes valuable teacher time, and prevents administrators from obtaining a clear, real-time view of school performance.',
+        solution: 'EduDesk integrates every aspect of school management into a single, intuitive platform. From admissions, finance, and academics to AI-powered lesson planning, test generation, automated grading analytics, unified parent/student portals, and multi-school group management.',
+        features: [
+          'AI Lesson Planner & AI Test Generator for Teachers',
+          'Automated Grading Analytics & Simplified Attendance Tracking',
+          '360° Administrative Oversight & Comprehensive Financial Management',
+          'Streamlined Admissions Lifecycle & AI School Performance Reports',
+          'Unified Parent & Student Engagement Portal with Fee Tracking',
+          'AI-Powered Student Academic Guidance & Schedule Access',
+          'Multi-School Centralized Management Dashboard & Consolidated Reporting'
+        ],
         impact: [
-          { label: 'Efficiency', desc: 'Faster grading cycles.' },
-          { label: 'Transparency', desc: 'Live access to student data.' },
-          { label: 'Paperwork', desc: '90% reduction in physical logs.' }
+          { label: 'Admin Workload', desc: '70% reduction in manual data entry and repetitive paperwork.' },
+          { label: 'Community Engagement', desc: '95%+ active participation on parent and student portals.' },
+          { label: 'Operational Control', desc: '360° real-time visibility across single and multi-school groups.' }
         ]
       },
       h365: {
-        subtitle: 'Occupational Health Platform',
-        challenge: 'Remote mining sites lacked integrated medical history and real-time ASO tracking, increasing safety risks.',
-        solution: 'H365 provides a comprehensive EMR and occupational health platform with integrated certification tracking.',
-        features: ['Electronic Medical Records', 'ASO Auto-Alerts', 'Telemedicine Integration', 'Physical Fitness Tracking'],
+        subtitle: 'National Healthcare Architecture & Triad Ecosystem (H365 SaaS, CHAEM & Patient Portal)',
+        challenge: 'Mozambique’s healthcare system faced clinical friction ("O Atrito") from paper record fragmentation across 1,500+ facilities, industrial worker health blind spots ("O Ponto Cego"), and patient disconnection ("A Desconexão") from personal medical records.',
+        solution: 'H365 delivers Mozambique’s definitive "One Platform, Three Apps" digital health ecosystem: H365 SaaS as the Hospital Command Center (28+ clinical modules), CHAEM for 6-sector industrial occupational health (7-step digital AMA workflow), and the Citizen Empowerment Patient Portal with satellite sync, medication tracking, and Gemini 2.5 Flash AI clinical assistance.',
+        features: [
+          'H365 SaaS: 28+ Clinical Modules (Triage, Maternity PMTCT, Pharmacy, Ward)',
+          'CHAEM: 7-Step Digital AMA Workflow for 6 Industrial Sectors',
+          'Patient Portal: Citizen Empowerment & Direct Record Access',
+          'Master Patient Index (MPI) with NID Validation & Visual Biometrics',
+          'Gemini 2.5 Flash AI Clinical Co-Pilot (Assistive Governance)',
+          'Offline-First L-LAN Architecture with Smart Background Sync',
+          'Epidemic Intelligence & MISAU DHIS2 4-Level Surveillance'
+        ],
         impact: [
-          { label: 'Risk Reduction', desc: 'Fewer health-related incidents.' },
-          { label: 'Compliance', desc: '100% ASO validity tracking.' },
-          { label: 'Access', desc: 'Instant medical data for HSE.' }
+          { label: 'Facility Coverage', desc: '1,500+ Health Facilities digitized across all 11 provinces.' },
+          { label: 'Industrial Compliance', desc: 'Real-time AMA occupational tracking across 6 industrial sectors.' },
+          { label: 'System Uptime', desc: '100% Local clinical availability via L-LAN architecture.' }
         ]
       },
       microfin: {
@@ -1266,6 +1318,10 @@ export const translations = {
         btnExplore: 'Explorar Ecossistema',
         btnEnter: 'Central do Cliente'
       },
+      terminal: {
+        online: 'EM LINHA',
+        systemVerified: 'Sistema Verificado e Ativo'
+      },
       about: {
         title: 'Engenharia de Software Personalizada',
         subtitle: 'Projetamos ecossistemas digitais sob medida para indústrias globais, startups inovadoras e desenvolvimentos residenciais modernos. Transformamos necessidades operacionais complexas em software de missão crítica.',
@@ -1280,8 +1336,8 @@ export const translations = {
         },
         cards: {
           safeteq: 'SAFETEQ Enterprise Risk Management - O padrão para Requisitos de Atividades Críticas.',
-          edudesk: 'Gestão de campus para centros de educação industrial.',
-          h365: 'Sistemas de saúde para mineração focados em conformidade.',
+          edudesk: 'EduDesk — Sistema Completo de Gestão Escolar com IA capacitando educadores com planeador de aulas, gerador de testes, admissões e portal de pais/alunos.',
+          h365: 'Ecossistema Digital de Saúde H365 — Infraestrutura nacional integrando H365 SaaS (Centro de Comando Hospitalar), CHAEM (Saúde Ocupacional) e Portal do Paciente em mais de 1.500 unidades.',
           microfin: 'Orquestração financeira para cadeias industriais.',
           websites: 'Portais de precisão para startups, residências e empresas individuais.'
         }
@@ -1299,10 +1355,42 @@ export const translations = {
         ]
       },
       partners: {
-        title: 'Parceiros Industriais Globais',
+        title: 'Parceiros Estratégicos Industriais e Institucionais',
+        subtitle: 'Nossos sistemas alimentam operações de missão crítica, redes de saúde, protocolos de segurança e cadeias de suprimentos para líderes industriais e infraestrutura pública.',
         stats: {
           records: 'Mais de 12.000+ Credenciais de Segurança Gerenciadas',
+          facilities: '1.500+ Unidades Sanitárias Digitalizadas',
           reliability: '99,99% de Disponibilidade Operacional'
+        },
+        items: {
+          vulcan: {
+            name: 'Vulcan Mining',
+            industry: 'Mineração Pesada e Extração',
+            location: 'Tete, Moçambique',
+            desc: 'Gestão de risco empresarial com conformidade SAFETEQ RAC, bloqueios de segurança automatizados e rastreio de saúde ocupacional CHAEM para 6.000+ trabalhadores.',
+            metrics: '6.000+ Trabalhadores • Conformidade RAC 01-11'
+          },
+          testing: {
+            name: 'Testing',
+            industry: 'Testes Técnicos e Médicos Ocupacionais',
+            location: 'Maputo e Tete, Moçambique',
+            desc: 'Certificação industrial, digitalização de fluxos de laboratório e sincronização de exames médicos (ASO) integrados diretamente ao H365 e SAFETEQ.',
+            metrics: 'Sincronização ASO Automatizada • Fluxo Lab'
+          },
+          moatize: {
+            name: 'Mina de Moatize',
+            industry: 'Extração de Carvão e Operações Minerais',
+            location: 'Moatize, Tete, Moçambique',
+            desc: 'Validação da matriz de segurança de empreiteiros, rastreio de saúde dos trabalhadores e conformidade operacional de dano zero em minas críticas.',
+            metrics: 'Bloqueio de Portaria • Dano Zero'
+          },
+          cln: {
+            name: 'CLN (Corredor Logístico de Nacala)',
+            industry: 'Logística Ferroviária e Portuária',
+            location: 'Nacala e Moatize, Moçambique',
+            desc: 'Vigilância de saúde da força de trabalho logística, credenciais de segurança de transporte pesado e monitoramento de risco ocupacional no corredor ferroviário e portuário.',
+            metrics: 'Telemetria Ferroviária e Portuária • ASO em Trânsito'
+          }
         }
       },
       contact: {
@@ -1451,14 +1539,14 @@ export const translations = {
           desc: 'Um ecossistema corporativo de alta conversão para empresas líderes de engenharia. Focado na geração de leads e na exibição de projetos industriais.'
         },
         edudesk: {
-          name: 'EduDesk',
-          category: 'Treinamento Industrial',
-          desc: 'Digitalizando o ciclo de vida dos programas de treinamento de aprendizes e operadores com livros de notas e módulos de assiduidade.'
+          name: 'EduDesk AI',
+          category: 'Sistema de Gestão Escolar com IA',
+          desc: 'Plataforma completa de Gestão Escolar baseada em IA integrando admissões, finanças, área académica, planeamento de aulas por IA, gerador de testes, portais de pais/alunos e gestão para grupos escolares.'
         },
         h365: {
-          name: 'H365 Site Health',
-          category: 'Saúde Ocupacional',
-          desc: 'Gestão médica para operações remotas. Rastreamento ASO integrado e Registos Médicos Eletrónicos.'
+          name: 'Ecossistema Digital de Saúde H365',
+          category: 'Infraestrutura de Saúde Digital Nacional',
+          desc: 'Ecossistema unificado "Uma Plataforma, Três Apps" (H365 SaaS, Saúde Ocupacional CHAEM e Portal do Paciente) servindo mais de 1.500 unidades sanitárias nas 11 províncias com 28+ módulos clínicos, MPI, IA Gemini 2.5 Flash e arquitetura L-LAN offline-first.'
         },
         microfin: {
           name: 'MicroFin',
@@ -1582,25 +1670,41 @@ export const translations = {
           ]
       },
       edudesk: {
-        subtitle: 'Orquestração de Campus Digital',
-        challenge: 'A classificação manual em papel nos centros de formação industrial levava a atrasos na certificação e falta de transparência nos dados.',
-        solution: 'O EduDesk é um sistema de gestão de formação centralizado que automatiza cadernetas, assiduidade e emissão de certificados.',
-        features: ['Cadernetas Digitais', 'Assiduidade Automatizada', 'Integração NFC', 'Acompanhamento de Progresso em Tempo Real'],
+        subtitle: 'Capacitando Educadores, Engajando Comunidades (Ecossistema de Gestão Escolar com IA)',
+        challenge: 'As escolas enfrentam o desafio de softwares desconectados, inserção manual de dados e processos em papel. Isto cria silos de dados, consome tempo valioso dos professores e impede que os administradores tenham uma visão clara e em tempo real do desempenho escolar.',
+        solution: 'O EduDesk integra todos os aspetos da gestão escolar numa única plataforma intuitiva. Desde admissões, finanças e área académica até planeamento de aulas por IA, gerador de testes, análises automatizadas de notas, portais unificados para pais e alunos e gestão de grupos escolares.',
+        features: [
+          'Planeador de Aulas por IA e Gerador de Testes para Professores',
+          'Análise Automatizada de Notas e Gestão Simplificada de Assiduidade',
+          'Visão Administrativa 360° e Gestão Financeira Abrangente',
+          'Ciclo de Vida de Admissões e Relatórios de Desempenho Escolar por IA',
+          'Portal Unificado de Envolvimento de Pais e Alunos com Acompanhamento de Propinas',
+          'Aconselhamento Académico por IA para Alunos e Acesso a Horários e Notas',
+          'Painel de Gestão Centralizada para Múltiplas Escolas e Relatórios Consolidados'
+        ],
         impact: [
-          { label: 'Eficiência', desc: 'Ciclos de classificação mais rápidos.' },
-          { label: 'Transparência', desc: 'Acesso em tempo real aos dados dos alunos.' },
-          { label: 'Papelada', desc: 'redução de 90% nos registos físicos.' }
+          { label: 'Carga Administrativa', desc: 'Redução de 70% no trabalho manual e burocracia repetitiva.' },
+          { label: 'Envolvimento da Comunidade', desc: 'Mais de 95% de participação ativa nos portais de pais e alunos.' },
+          { label: 'Controlo Operacional', desc: 'Visibilidade em tempo real 360° para escolas individuais e grupos.' }
         ]
       },
       h365: {
-        subtitle: 'Plataforma de Saúde Ocupacional',
-        challenge: 'Os locais de mineração remotos careciam de histórico médico integrado e acompanhamento de ASO em tempo real, aumentando os riscos de segurança.',
-        solution: 'O H365 fornece uma plataforma completa de EMR e saúde ocupacional com acompanhamento integrado de certificações.',
-        features: ['Registos Médicos Eletrónicos', 'Auto-Alertas ASO', 'Integração de Telemedicina', 'Acompanhamento de Aptidão Física'],
+        subtitle: 'Arquitetura Nacional de Saúde e Ecossistema em Tríade (H365 SaaS, CHAEM e Portal do Paciente)',
+        challenge: 'O sistema de saúde de Moçambique enfrentava atrito clínico ("O Atrito") devido à fragmentação de registos em papel em mais de 1.500 unidades sanitárias, pontos cegos na saúde do trabalhador industrial ("O Ponto Cego") e a desconexão do cidadão ("A Desconexão") do seu histórico médico.',
+        solution: 'O H365 entrega o definitivo ecossistema digital de saúde de Moçambique "Uma Plataforma, Três Apps": H365 SaaS como Centro de Comando Hospitalar (28+ módulos clínicos), CHAEM para saúde ocupacional em 6 setores industriais (fluxo digital AMA em 7 etapas) e o Portal do Paciente para acesso direto a histórico, sincronia e receitas, alimentados pelo co-piloto de IA Gemini 2.5 Flash.',
+        features: [
+          'H365 SaaS: 28+ Módulos Clínicos (Triagem, Maternidade PTV, Farmácia, Enfermarias)',
+          'CHAEM: Fluxo Digital AMA em 7 Etapas para 6 Setores Industriais',
+          'Portal do Paciente: Capacitação do Cidadão e Acesso Direto a Registos',
+          'Master Patient Index (MPI) com Validação de NUID/BI e Biometria Visual',
+          'Co-Piloto Clínico IA Gemini 2.5 Flash (Governança Assistiva)',
+          'Arquitetura L-LAN Offline-First com Sincronização Inteligente PWA',
+          'Inteligência Epidemiológica e Vigilância MISAU DHIS2 em 4 Níveis'
+        ],
         impact: [
-          { label: 'Redução de Risco', desc: 'Menos incidentes relacionados com a saúde.' },
-          { label: 'Conformidade', desc: '100% de acompanhamento da validade de ASO.' },
-          { label: 'Acesso', desc: 'Dados médicos instantâneos para HSE.' }
+          { label: 'Unidades Sanitárias', desc: '1.500+ Unidades de Saúde digitalizadas nas 11 províncias.' },
+          { label: 'Conformidade Industrial', desc: 'Rastreio AMA em tempo real em 6 setores industriais.' },
+          { label: 'Disponibilidade', desc: '100% de operação clínica local via arquitetura L-LAN.' }
         ]
       },
       microfin: {

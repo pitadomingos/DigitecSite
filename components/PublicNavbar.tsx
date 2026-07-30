@@ -66,7 +66,7 @@ const PublicNavbar: React.FC = () => {
 
           <button onClick={toggleLanguage} className="flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all text-[10px] font-black uppercase tracking-widest">
               <Globe size={12} />
-              {language}
+              {language.toUpperCase()}
           </button>
 
           <button 
@@ -103,6 +103,10 @@ const PublicNavbar: React.FC = () => {
               {t.publicHome.nav[item.name as keyof typeof t.publicHome.nav] || item.name}
             </button>
           ))}
+          <button onClick={toggleLanguage} className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-all text-[10px] font-black uppercase tracking-widest w-full">
+            <Globe size={14} />
+            Language: {language.toUpperCase()}
+          </button>
           <button onClick={() => { navigate('/launchpad'); setMobileMenuOpen(false); }} className="bg-blue-600 text-white py-3 rounded-lg font-black text-[10px] uppercase tracking-widest">{t.publicHome.nav.enterHub}</button>
         </div>
       )}

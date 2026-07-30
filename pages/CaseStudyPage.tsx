@@ -83,17 +83,17 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         isAvailable: false
       },
       edudesk: {
-        title: 'EduDesk',
+        title: 'EduDesk AI',
         subtitle: t.caseStudies.edudesk.subtitle,
         challenge: t.caseStudies.edudesk.challenge,
         solution: t.caseStudies.edudesk.solution,
         features: t.caseStudies.edudesk.features,
         impact: [
-          { label: t.caseStudies.edudesk.impact?.[0]?.label || '', value: '+22%', desc: t.caseStudies.edudesk.impact?.[0]?.desc || '' },
-          { label: t.caseStudies.edudesk.impact?.[1]?.label || '', value: '85%', desc: t.caseStudies.edudesk.impact?.[1]?.desc || '' },
-          { label: t.caseStudies.edudesk.impact?.[2]?.label || '', value: '-35%', desc: t.caseStudies.edudesk.impact?.[2]?.desc || '' }
+          { label: t.caseStudies.edudesk.impact?.[0]?.label || '', value: '-70%', desc: t.caseStudies.edudesk.impact?.[0]?.desc || '' },
+          { label: t.caseStudies.edudesk.impact?.[1]?.label || '', value: '+95%', desc: t.caseStudies.edudesk.impact?.[1]?.desc || '' },
+          { label: t.caseStudies.edudesk.impact?.[2]?.label || '', value: '360°', desc: t.caseStudies.edudesk.impact?.[2]?.desc || '' }
         ],
-        stack: ['Next.js', 'Tailwind', 'PostgreSQL', 'Twilio API', 'NFC Sync'],
+        stack: ['Next.js', 'React 18', 'TypeScript', 'Tailwind CSS', 'Gemini AI Engine', 'Multi-School Portal'],
         color: 'indigo',
         icon: GraduationCap,
         gradient: 'from-indigo-500 to-blue-500',
@@ -101,17 +101,17 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         isAvailable: false
       },
       h365: {
-        title: 'H365',
+        title: 'H365 Ecosystem',
         subtitle: t.caseStudies.h365.subtitle,
         challenge: t.caseStudies.h365.challenge,
         solution: t.caseStudies.h365.solution,
         features: t.caseStudies.h365.features,
         impact: [
-          { label: t.caseStudies.h365.impact?.[0]?.label || '', value: '-42%', desc: t.caseStudies.h365.impact?.[0]?.desc || '' },
-          { label: t.caseStudies.h365.impact?.[1]?.label || '', value: '-88%', desc: t.caseStudies.h365.impact?.[1]?.desc || '' },
-          { label: t.caseStudies.h365.impact?.[2]?.label || '', value: 'Inst.', desc: t.caseStudies.h365.impact?.[2]?.desc || '' }
+          { label: t.caseStudies.h365.impact?.[0]?.label || '', value: '1,500+', desc: t.caseStudies.h365.impact?.[0]?.desc || '' },
+          { label: t.caseStudies.h365.impact?.[1]?.label || '', value: '6 Sectors', desc: t.caseStudies.h365.impact?.[1]?.desc || '' },
+          { label: t.caseStudies.h365.impact?.[2]?.label || '', value: '100%', desc: t.caseStudies.h365.impact?.[2]?.desc || '' }
         ],
-        stack: ['React', 'Python (AI)', 'Redis Cache', 'MongoDB', 'WebRTC'],
+        stack: ['Next.js 15.5', 'React 18 / Vite', 'Gemini 2.5 Flash', 'Offline L-LAN', 'Master Patient Index (MPI)', 'MISAU DHIS2'],
         color: 'rose',
         icon: Activity,
         gradient: 'from-rose-500 to-pink-500',
@@ -231,49 +231,49 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             {currentStudy.impact.filter(s => s.label).map((stat, i) => (
-                <div key={i} className="bg-white dark:bg-slate-900 p-8 rounded-[2rem] shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center group hover:scale-105 transition-transform">
+                <div key={i} className="bg-slate-900/80 backdrop-blur-xl p-8 rounded-[2rem] shadow-xl border border-slate-800 flex flex-col items-center text-center group hover:scale-105 transition-transform">
                     <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-2">{stat.label}</span>
                     <div className={`text-5xl font-black bg-clip-text text-transparent bg-gradient-to-br ${currentStudy.gradient} mb-3`}>{stat.value}</div>
-                    <p className="text-sm text-slate-500 font-medium">{stat.desc}</p>
+                    <p className="text-sm text-slate-300 font-medium">{stat.desc}</p>
                 </div>
             ))}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-8 space-y-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                <section>
+            <div className="lg:col-span-8 space-y-8 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                <section className="bg-slate-900/70 backdrop-blur-xl p-8 sm:p-10 rounded-[2.5rem] border border-slate-800 shadow-2xl">
                     <div className="flex items-center gap-3 mb-6">
-                        <div className={`p-2 bg-${currentStudy.color}-50 rounded-lg text-${currentStudy.color}-600`}>
+                        <div className={`p-2.5 bg-slate-800/80 rounded-xl text-cyan-400 border border-slate-700/50`}>
                             <Target size={24} />
                         </div>
-                        <h2 className="text-3xl font-black text-slate-900 tracking-tight">{labels.challenge}</h2>
+                        <h2 className="text-3xl font-black text-white tracking-tight">{labels.challenge}</h2>
                     </div>
-                    <p className="text-xl text-slate-600 leading-relaxed font-light text-justify">
+                    <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-light text-justify">
                         {currentStudy.challenge}
                     </p>
                 </section>
 
-                <section>
+                <section className="bg-slate-900/70 backdrop-blur-xl p-8 sm:p-10 rounded-[2.5rem] border border-slate-800 shadow-2xl">
                     <div className="flex items-center gap-3 mb-6">
-                        <div className={`p-2 bg-${currentStudy.color}-50 rounded-lg text-${currentStudy.color}-600`}>
+                        <div className={`p-2.5 bg-slate-800/80 rounded-xl text-cyan-400 border border-slate-700/50`}>
                             <Zap size={24} />
                         </div>
-                        <h2 className="text-3xl font-black text-slate-900 tracking-tight">{labels.solution}</h2>
+                        <h2 className="text-3xl font-black text-white tracking-tight">{labels.solution}</h2>
                     </div>
-                    <p className="text-xl text-slate-600 leading-relaxed font-light text-justify">
+                    <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-light text-justify">
                         {currentStudy.solution}
                     </p>
                 </section>
 
-                <section className="bg-slate-50 rounded-[3rem] p-10 border border-slate-100">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-                        <CheckCircle2 className="text-green-500" /> {labels.techFeatures}
+                <section className="bg-slate-900/70 backdrop-blur-xl rounded-[2.5rem] p-8 sm:p-10 border border-slate-800 shadow-2xl">
+                    <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+                        <CheckCircle2 className="text-emerald-400" /> {labels.techFeatures}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {currentStudy.features.map((feature, i) => (
-                            <div key={i} className="flex gap-4 items-start p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
-                                <div className={`w-2 h-2 rounded-full bg-${currentStudy.color}-500 mt-2 shrink-0`}></div>
-                                <p className="text-slate-700 font-medium leading-relaxed">{feature}</p>
+                            <div key={i} className="flex gap-4 items-start p-5 bg-slate-800/60 rounded-2xl shadow-sm border border-slate-700/60">
+                                <div className={`w-2.5 h-2.5 rounded-full bg-cyan-400 mt-2 shrink-0 shadow-sm shadow-cyan-400/50`}></div>
+                                <p className="text-slate-200 font-medium leading-relaxed text-sm md:text-base">{feature}</p>
                             </div>
                         ))}
                     </div>
@@ -281,21 +281,21 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
             </div>
 
             <div className="lg:col-span-4 space-y-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                <div className="bg-slate-900 rounded-[2.5rem] p-8 text-white shadow-2xl relative overflow-hidden">
-                    <div className={`absolute top-0 right-0 w-32 h-32 bg-${currentStudy.color}-500 rounded-full blur-[80px] opacity-20`}></div>
+                <div className="bg-slate-900/90 rounded-[2.5rem] p-8 text-white shadow-2xl border border-slate-800 relative overflow-hidden">
+                    <div className={`absolute top-0 right-0 w-32 h-32 bg-cyan-500/20 rounded-full blur-[80px]`}></div>
                     <h3 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-6 border-b border-white/10 pb-4">{labels.stack}</h3>
                     <div className="flex flex-wrap gap-3">
                         {currentStudy.stack.map(tech => (
-                            <span key={tech} className="px-4 py-2 bg-white/10 rounded-xl text-sm font-bold border border-white/10 backdrop-blur-sm">
+                            <span key={tech} className="px-4 py-2 bg-slate-800/80 text-cyan-300 rounded-xl text-sm font-bold border border-slate-700/60 backdrop-blur-sm">
                                 {tech}
                             </span>
                         ))}
                     </div>
                 </div>
 
-                <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-xl">
-                    <h3 className="text-xl font-bold text-slate-900 mb-6">{labels.buildLaunch}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-8">
+                <div className="bg-slate-900/90 rounded-[2.5rem] p-8 border border-slate-800 shadow-xl">
+                    <h3 className="text-xl font-bold text-white mb-6">{labels.buildLaunch}</h3>
+                    <p className="text-slate-300 text-sm leading-relaxed mb-8">
                         {canLaunch ? labels.standardsDesc : labels.stagingDesc}
                     </p>
                     {canLaunch ? (
@@ -314,7 +314,7 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
                           </Link>
                         )
                     ) : (
-                        <div className="w-full py-4 rounded-2xl bg-slate-100 text-slate-400 font-black flex items-center justify-center gap-2 border border-slate-200 cursor-not-allowed opacity-60">
+                        <div className="w-full py-4 rounded-2xl bg-slate-800 text-slate-500 font-black flex items-center justify-center gap-2 border border-slate-700/50 cursor-not-allowed opacity-60">
                             <Lock size={18} /> {t.launchpad.btnLaunch}
                         </div>
                     )}

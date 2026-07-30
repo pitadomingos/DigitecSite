@@ -1,158 +1,163 @@
-
-import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { 
+  Users, Award, Cpu, ShieldCheck, Database, Globe2, 
+  ArrowRight, Linkedin, Mail, Sparkles, CheckCircle2, Terminal
+} from 'lucide-react';
 import PublicNavbar from '../components/PublicNavbar';
 import PublicFooter from '../components/PublicFooter';
-import { User, Briefcase, Award, GraduationCap, Github, Linkedin, Twitter } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const TeamPage: React.FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
-  const teamMembers = [
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const members = [
     {
       id: 'pita',
-      image: 'https://lh3.googleusercontent.com/d/1_1JHI2g9uApQDaEkv9NDpBZC0TPWqZI7', 
-      data: t.team?.members?.pita
+      name: t.team.members.pita.name || 'Pita Domingos',
+      role: t.team.members.pita.role || 'Chief Executive Officer (CEO)',
+      experience: t.team.members.pita.experience || '25+ years driving innovation',
+      specialization: t.team.members.pita.specialization || 'Mining systems development',
+      expertise: t.team.members.pita.expertise || 'Full-stack Data Scientist',
+      bio: t.team.members.pita.bio || 'Pita brings over a quarter-century of deep industry expertise to our leadership team. He specializes in designing complex mining systems development frameworks. As a full-stack Data Scientist, he bridges advanced data analytics with operational strategies to scale corporate growth.',
+      badge: 'Data Scientist & Executive',
+      skills: ['Mining Systems', 'Enterprise Frameworks', 'Data Science', 'Operational Strategy'],
+      color: 'blue'
     },
     {
       id: 'derco',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800',
-      data: t.team?.members?.derco
+      name: t.team.members.derco.name || 'Dercio Nguenze',
+      role: t.team.members.derco.role || 'Chief Technology Officer (CTO)',
+      experience: t.team.members.derco.experience || '10+ years leading technical teams',
+      specialization: t.team.members.derco.specialization || 'Enterprise infrastructure',
+      expertise: t.team.members.derco.expertise || 'Advanced systems management',
+      bio: t.team.members.derco.bio || 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
+      badge: 'Systems Architect',
+      skills: ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering'],
+      color: 'cyan'
     },
     {
       id: 'fernandell',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800',
-      data: t.team?.members?.fernandell
+      name: t.team.members.fernandell.name || 'Fernandel Chambal',
+      role: t.team.members.fernandell.role || 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
+      experience: t.team.members.fernandell.experience || '15+ years in strategic growth',
+      specialization: t.team.members.fernandell.specialization || 'Business development & marketing',
+      expertise: t.team.members.fernandell.expertise || 'Global trade & logistics',
+      bio: t.team.members.fernandell.bio || 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
+      badge: 'Commercial Strategy',
+      skills: ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations'],
+      color: 'indigo'
     }
   ];
 
-  if (!t.team) {
-    return (
-      <div className="min-h-screen bg-[#020617] text-white flex items-center justify-center">
-        <p className="font-mono tracking-widest animate-pulse">SYNCHRONIZING LEADERSHIP DATA...</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen bg-[#020617] text-white selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#020617] text-white flex flex-col font-sans selection:bg-blue-500/30">
       <PublicNavbar />
-
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-500/20 to-transparent blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6">
-              <Award size={12} /> {t.team.hero.badge}
+      
+      <main className="flex-grow pt-32 pb-24">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center max-w-4xl mx-auto mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-black uppercase tracking-widest mb-6">
+              <Sparkles size={14} /> {t.team.hero.badge || 'Leadership & Vision'}
             </div>
-            <h1 className="text-5xl md:text-8xl font-black text-white mb-6 tracking-tighter uppercase leading-none">
-              {t.team.hero.title} <br />
-              <span className="text-blue-500">{t.team.hero.titleAccent}</span>
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight uppercase">
+              The Minds Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Digitec</span>
             </h1>
-            <p className="text-xl text-slate-400 leading-relaxed font-medium">
-              {t.team.hero.desc}
+            <div className="w-24 h-2 bg-blue-600 mx-auto rounded-full mb-8 shadow-lg shadow-blue-500/50"></div>
+            <p className="text-xl text-slate-300 leading-relaxed font-medium">
+              {t.team.hero.desc || 'Our leadership team combines decades of specialized experience in mining systems, enterprise infrastructure, healthcare digitization, and global business development.'}
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Team Grid */}
-      <section className="py-24 border-t border-white/5 bg-white/2">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {teamMembers.map((member) => (
-              member.data && (
-                <div key={member.id} className="group">
-                  {/* Member Card */}
-                  <div className="relative mb-8 aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-slate-900 shadow-2xl">
-                     <img 
-                      src={member.image} 
-                      alt={member.data.name}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-60"></div>
-                     
-                     {/* Role Badge Overlay */}
-                     <div className="absolute bottom-6 left-6 right-6">
-                        <div className="bg-blue-600 px-4 py-2 rounded-xl inline-block mb-3 shadow-xl">
-                          <span className="text-[10px] font-black uppercase tracking-widest text-white">
-                            {member.data.role}
-                          </span>
-                        </div>
-                        <h3 className="text-3xl font-black text-white tracking-tight uppercase">{member.data.name}</h3>
-                     </div>
+          {/* Executive Leadership Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            {members.map((member) => (
+              <div 
+                key={member.id}
+                className="bg-slate-900/80 rounded-[2.5rem] border border-white/10 p-8 md:p-10 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-500 group relative overflow-hidden shadow-2xl"
+              >
+                <div>
+                  {/* Executive Avatar Header */}
+                  <div className="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-600 p-0.5 shadow-xl group-hover:scale-105 transition-transform">
+                      <div className="w-full h-full bg-slate-950 rounded-[0.9rem] flex items-center justify-center font-black text-2xl text-cyan-400">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    </div>
+                    <span className="px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                      {member.badge}
+                    </span>
                   </div>
 
-                  {/* Details Section */}
-                  <div className="space-y-6">
-                    {/* Bio */}
-                    <p className="text-slate-400 leading-relaxed text-sm font-medium h-24 overflow-y-auto scrollbar-hide">
-                      {member.data.bio}
-                    </p>
+                  {/* Name & Title */}
+                  <h2 className="text-2xl font-black text-white mb-2 tracking-tight group-hover:text-cyan-400 transition-colors">
+                    {member.name}
+                  </h2>
+                  <div className="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-4">
+                    {member.role}
+                  </div>
 
-                    {/* Stats Grid */}
-                    <div className="grid grid-cols-1 gap-3">
-                      <div className="flex items-start gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors">
-                        <div className="mt-1 text-blue-400"><Briefcase size={16} /></div>
-                        <div>
-                          <div className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-0.5">Experience</div>
-                          <div className="text-xs font-bold text-white">{member.data.experience}</div>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors">
-                        <div className="mt-1 text-blue-400"><Award size={16} /></div>
-                        <div>
-                          <div className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-0.5">Specialization</div>
-                          <div className="text-xs font-bold text-white">{member.data.specialization}</div>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors">
-                        <div className="mt-1 text-blue-400"><GraduationCap size={16} /></div>
-                        <div>
-                          <div className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-0.5">Expertise</div>
-                          <div className="text-xs font-bold text-white">{member.data.expertise}</div>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6 bg-white/5 p-3 rounded-xl border border-white/5">
+                    <Award size={14} className="text-amber-400 shrink-0" />
+                    <span>{member.experience}</span>
+                  </div>
 
-                    {/* Socials */}
-                    <div className="flex gap-4 pt-4">
-                      <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all border border-white/10">
-                        <Linkedin size={18} />
-                      </a>
-                      <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-400 hover:text-white transition-all border border-white/10">
-                        <Twitter size={18} />
-                      </a>
-                      <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-slate-700 hover:text-white transition-all border border-white/10">
-                        <Github size={18} />
-                      </a>
-                    </div>
+                  {/* Bio */}
+                  <p className="text-slate-300 text-sm leading-relaxed font-medium mb-8">
+                    {member.bio}
+                  </p>
+
+                  {/* Skills Pills */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {member.skills.map((skill, idx) => (
+                      <span key={idx} className="text-[10px] font-black uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-lg">
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              )
+
+                {/* Footer Action */}
+                <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+                  <span className="flex items-center gap-1.5 text-emerald-400 font-bold">
+                    <CheckCircle2 size={14} /> VERIFIED LEAD
+                  </span>
+                  <button 
+                    onClick={() => navigate('/contact')}
+                    className="text-cyan-400 hover:text-white flex items-center gap-1 font-sans font-bold transition-colors"
+                  >
+                    Contact <ArrowRight size={14} />
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA Section */}
-      <section className="py-24 border-t border-white/5 bg-[#020617] relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-8 uppercase tracking-tighter">
-            Architecting Your <span className="text-blue-500">Digital Future</span>
-          </h2>
-          <button 
-            onClick={() => window.location.hash = '/contact'}
-            className="px-10 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-black text-sm uppercase tracking-widest transition-all shadow-xl shadow-blue-500/20"
-          >
-            Connect with Leadership
-          </button>
+          {/* Join Our Engineering Culture CTA */}
+          <section className="text-center bg-gradient-to-r from-blue-900/60 via-slate-900 to-indigo-900/60 p-12 md:p-20 rounded-[3.5rem] border border-blue-500/30 overflow-hidden shadow-2xl relative">
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight uppercase">
+                Build Sovereign Systems With Us
+              </h2>
+              <p className="text-slate-300 text-lg mb-10 font-medium">
+                Our multidisciplinary team combines data science, cloud architecture, and industrial domain knowledge to build Africa's next generation of digital tools.
+              </p>
+              <button 
+                onClick={() => navigate('/contact')}
+                className="bg-blue-600 text-white px-10 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/30 hover:scale-105 active:scale-95"
+              >
+                Get In Touch
+              </button>
+            </div>
+          </section>
         </div>
-      </section>
+      </main>
 
       <PublicFooter />
     </div>
