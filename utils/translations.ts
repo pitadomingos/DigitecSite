@@ -532,26 +532,39 @@ export const translations = {
       }
     },
     launchpad: {
-      title: 'Digital Command Hub',
-      welcome: 'Welcome, {name}. Select an industrial workspace.',
-      btnLaunch: 'Access Vault',
-      btnExplore: 'View Specs',
-      hub: 'Hub',
+      title: 'Client Hub & Sovereign Systems',
+      subtitle: 'Central command portal for healthcare networks, industrial safety, and education platforms.',
+      welcome: 'Welcome back, {name}. Select an enterprise application workspace.',
+      btnLaunch: 'Launch Application',
+      btnSpecs: 'View Specifications',
+      btnExplore: 'Explore System',
+      hub: 'Client Hub',
       switchApp: 'Switch Application',
+      flagshipBadge: 'Sovereign Flagship Platform',
       status: {
         active: 'Production Active',
         access: 'Standard Access',
         trial: 'Beta Testing',
-        enterprise: 'Enterprise',
+        enterprise: 'Enterprise Active',
         pending: 'Pending Setup',
         locked: 'Locked'
       },
+      stats: {
+        h365: '1,500+ Facilities • MISAU DHIS2 & L-LAN Active',
+        safeteq: '6,000+ Workers • RAC 01-11 & Gate Lockout Daemon',
+        edudesk: 'All-in-One AI • Lessons, Tests & Parent Portal'
+      },
+      tags: {
+        h365: ['H365 SaaS', 'CHAEM 7-Step', 'Gemini 2.5 AI', 'Patient Portal'],
+        safeteq: ['RAC 01-11', 'Gate Lockout', 'Alcohol IoT', 'ASO Sync'],
+        edudesk: ['Lesson AI', 'Test Gen', 'Admissions', 'Parent Portal']
+      },
       footer: {
         title: 'Unified Ecosystem Support',
-        desc: 'Digitec provides cross-app data synchronization for enterprise clients.',
+        desc: 'Digitec provides cross-app data synchronization and dedicated SLA engineering for enterprise clients.',
         btn: 'Contact Solutions Architect'
       },
-      globalStatus: 'Status: Operational'
+      globalStatus: 'Ecosystem Status: Operational'
     },
     nav: {
       dashboard: 'Dashboard',
@@ -1753,26 +1766,39 @@ export const translations = {
       }
     },
     launchpad: {
-      title: 'Centro de Comando Digital',
-      welcome: 'Bem-vindo, {name}. Selecione um espaço de trabalho industrial.',
-      btnLaunch: 'Aceder ao Cofre',
-      btnExplore: 'Ver Especificações',
-      hub: 'Hub',
+      title: 'Central do Cliente e Sistemas Soberanos',
+      subtitle: 'Portal de comando central para redes de saúde, segurança industrial e plataformas de educação.',
+      welcome: 'Bem-vindo de volta, {name}. Selecione um espaço de trabalho empresarial.',
+      btnLaunch: 'Lançar Aplicação',
+      btnSpecs: 'Ver Especificações',
+      btnExplore: 'Explorar Sistema',
+      hub: 'Central do Cliente',
       switchApp: 'Mudar de Aplicação',
+      flagshipBadge: 'Plataforma Soberana Principal',
       status: {
         active: 'Produção Ativa',
         access: 'Acesso Padrão',
         trial: 'Teste Beta',
-        enterprise: 'Empresarial',
+        enterprise: 'Empresarial Ativo',
         pending: 'Configuração Pendente',
         locked: 'Bloqueado'
       },
+      stats: {
+        h365: '1.500+ Unidades • MISAU DHIS2 e L-LAN Ativo',
+        safeteq: '6.000+ Trabalhadores • RAC 01-11 e Portaria Física',
+        edudesk: 'Tudo-em-Um com IA • Aulas, Testes e Portal de Pais'
+      },
+      tags: {
+        h365: ['H365 SaaS', 'CHAEM 7 Passos', 'IA Gemini 2.5', 'Portal Paciente'],
+        safeteq: ['RAC 01-11', 'Bloqueio Portaria', 'IoT Álcool', 'Sinc ASO'],
+        edudesk: ['IA Aulas', 'Gerador Testes', 'Admissões', 'Portal Pais']
+      },
       footer: {
         title: 'Suporte a Ecossistema Unificado',
-        desc: 'A Digitec fornece sincronização de dados entre aplicações para clientes empresariais.',
+        desc: 'A Digitec fornece sincronização de dados entre aplicações e engenharia SLA dedicada para clientes empresariais.',
         btn: 'Contactar Arquiteto de Soluções'
       },
-      globalStatus: 'Estado: Operacional'
+      globalStatus: 'Estado do Ecossistema: Operacional'
     },
     nav: {
       dashboard: 'Painel',

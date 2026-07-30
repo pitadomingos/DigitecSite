@@ -97,8 +97,8 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ isAuthenticated }) => {
         color: 'indigo',
         icon: GraduationCap,
         gradient: 'from-indigo-500 to-blue-500',
-        appPath: '#',
-        isAvailable: false
+        appPath: '/portfolio/edudesk',
+        isAvailable: true
       },
       h365: {
         title: 'H365 Ecosystem',
