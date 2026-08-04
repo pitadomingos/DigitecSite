@@ -30,28 +30,28 @@ const TeamPage: React.FC = () => {
       color: 'blue'
     },
     {
-      id: 'derco',
-      name: t.team?.members?.derco?.name || 'Dercio Nguenze',
-      role: t.team?.members?.derco?.role || 'Chief Technology Officer (CTO)',
-      experience: t.team?.members?.derco?.experience || '10+ years leading technical teams',
-      specialization: t.team?.members?.derco?.specialization || 'Enterprise infrastructure',
-      expertise: t.team?.members?.derco?.expertise || 'Advanced systems management',
-      bio: t.team?.members?.derco?.bio || 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
-      badge: t.team?.members?.derco?.badge || 'Systems Architect',
-      skills: t.team?.members?.derco?.skills || ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering'],
-      color: 'cyan'
+      id: 'luica',
+      name: t.team?.members?.luica?.name || 'Luica Machava',
+      role: t.team?.members?.luica?.role || 'Chief Financial Officer (CFO)',
+      experience: t.team?.members?.luica?.experience || '15+ years in corporate finance & fiscal governance',
+      specialization: t.team?.members?.luica?.specialization || 'Capital allocation & financial strategy',
+      expertise: t.team?.members?.luica?.expertise || 'Corporate fiscal control & audit compliance',
+      bio: t.team?.members?.luica?.bio || 'Luica directs Digitec\'s financial strategy, capital allocation, and fiscal compliance. With over 15 years of experience in corporate finance across industrial and technological sectors, she ensures rigorous financial controls, sustainable growth, and transparent audit trails across all enterprise ventures.',
+      badge: t.team?.members?.luica?.badge || 'Financial Strategy & Governance',
+      skills: t.team?.members?.luica?.skills || ['Corporate Finance', 'Fiscal Governance', 'Capital Allocation', 'Risk Mitigation'],
+      color: 'emerald'
     },
     {
-      id: 'fernandell',
-      name: t.team?.members?.fernandell?.name || 'Fernandel Chambal',
-      role: t.team?.members?.fernandell?.role || 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
-      experience: t.team?.members?.fernandell?.experience || '15+ years in strategic growth',
-      specialization: t.team?.members?.fernandell?.specialization || 'Business development & marketing',
-      expertise: t.team?.members?.fernandell?.expertise || 'Global trade & logistics',
-      bio: t.team?.members?.fernandell?.bio || 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
-      badge: t.team?.members?.fernandell?.badge || 'Commercial Strategy',
-      skills: t.team?.members?.fernandell?.skills || ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations'],
-      color: 'indigo'
+      id: 'nilza',
+      name: t.team?.members?.nilza?.name || 'Nilza Dos Santos',
+      role: t.team?.members?.nilza?.role || 'Chief Technological Officer (CTO)',
+      experience: t.team?.members?.nilza?.experience || '12+ years leading technology & engineering teams',
+      specialization: t.team?.members?.nilza?.specialization || 'Enterprise software & cloud infrastructure',
+      expertise: t.team?.members?.nilza?.expertise || 'Systems architecture & AI integration',
+      bio: t.team?.members?.nilza?.bio || 'Nilza oversees Digitec\'s technological roadmap, system architecture, and engineering innovation. With more than a decade of specialized experience in enterprise infrastructure and AI-driven systems, she ensures all software ecosystems achieve maximum resilience, high availability, and offline-first reliability.',
+      badge: t.team?.members?.nilza?.badge || 'Systems Architect & Tech Lead',
+      skills: t.team?.members?.nilza?.skills || ['Cloud Infrastructure', 'Offline-First L-LAN', 'Systems Architecture', 'AI Integration'],
+      color: 'cyan'
     }
   ];
 

@@ -419,25 +419,25 @@ export const translations = {
           badge: 'Data Scientist & Executive',
           skills: ['Mining Systems', 'Enterprise Frameworks', 'Data Science', 'Operational Strategy']
         },
-        derco: {
-          name: 'Dercio Nguenze',
-          role: 'Chief Technology Officer (CTO)',
-          experience: '10+ years leading technical teams',
-          specialization: 'Enterprise infrastructure',
-          expertise: 'Advanced systems management',
-          bio: 'Dercio oversees the company\'s technical vision, infrastructure, and engineering roadmap. With more than a decade of specialized experience in systems management, he ensures our architecture is secure, scalable, and built on cutting-edge framework standards.',
-          badge: 'Systems Architect',
-          skills: ['Cloud Infrastructure', 'Offline-First LAN', 'System Security', 'Full-Stack Engineering']
+        luica: {
+          name: 'Luica Machava',
+          role: 'Chief Financial Officer (CFO)',
+          experience: '15+ years in corporate finance & fiscal governance',
+          specialization: 'Capital allocation & financial strategy',
+          expertise: 'Corporate fiscal control & audit compliance',
+          bio: 'Luica directs Digitec\'s financial strategy, capital allocation, and fiscal compliance. With over 15 years of experience in corporate finance across industrial and technological sectors, she ensures rigorous financial controls, sustainable growth, and transparent audit trails across all enterprise ventures.',
+          badge: 'Financial Strategy & Governance',
+          skills: ['Corporate Finance', 'Fiscal Governance', 'Capital Allocation', 'Risk Mitigation']
         },
-        fernandell: {
-          name: 'Fernandel Chambal',
-          role: 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
-          experience: '15+ years in strategic growth',
-          specialization: 'Business development & marketing',
-          expertise: 'Global trade & logistics',
-          bio: 'Fernandell leads our commercial expansion and strategic partnerships. With extensive experience in global trade and marketing, he ensures our solutions reach the right markets while maintaining strong corporate relationships and sustainable growth.',
-          badge: 'Commercial Strategy',
-          skills: ['Global Trade', 'Strategic Partnerships', 'Market Expansion', 'Client Relations']
+        nilza: {
+          name: 'Nilza Dos Santos',
+          role: 'Chief Technological Officer (CTO)',
+          experience: '12+ years leading technology & engineering teams',
+          specialization: 'Enterprise software & cloud infrastructure',
+          expertise: 'Systems architecture & AI integration',
+          bio: 'Nilza oversees Digitec\'s technological roadmap, system architecture, and engineering innovation. With more than a decade of specialized experience in enterprise infrastructure and AI-driven systems, she ensures all software ecosystems achieve maximum resilience, high availability, and offline-first reliability.',
+          badge: 'Systems Architect & Tech Lead',
+          skills: ['Cloud Infrastructure', 'Offline-First L-LAN', 'Systems Architecture', 'AI Integration']
         }
       }
     },
@@ -1907,25 +1907,25 @@ export const translations = {
           badge: 'Cientista de Dados e Executivo',
           skills: ['Sistemas de Mineração', 'Frameworks Empresariais', 'Ciência de Dados', 'Estratégia Operacional']
         },
-        derco: {
-          name: 'Dercio Nguenze',
-          role: 'Chief Technology Officer (CTO)',
-          experience: '10+ anos liderando equipes técnicas',
-          specialization: 'Infraestrutura empresarial',
-          expertise: 'Gestão avançada de sistemas',
-          bio: 'Dercio supervisiona a visão técnica, a infraestrutura e o roteiro de engenharia da empresa. Com mais de uma década de experiência especializada em gestão de sistemas, ele garante que nossa arquitetura seja segura, escalável e construída sobre padrões de framework de ponta.',
-          badge: 'Arquiteto de Sistemas',
-          skills: ['Infraestrutura em Nuvem', 'LAN Offline-First', 'Segurança de Sistemas', 'Engenharia Full-Stack']
+        luica: {
+          name: 'Luica Machava',
+          role: 'Chief Financial Officer (CFO)',
+          experience: '15+ anos em finanças corporativas e governança fiscal',
+          specialization: 'Alocação de capital e estratégia financeira',
+          expertise: 'Controlo fiscal corporativo e auditoria de conformidade',
+          bio: 'Luica direciona a estratégia financeira, alocação de capital e conformidade fiscal da Digitec. Com mais de 15 anos de experiência em finanças corporativas nos setores industrial e tecnológico, ela garante rigorosos controlos financeiros, crescimento sustentável e auditorias transparentes em todos os empreendimentos empresariais.',
+          badge: 'Estratégia Financeira e Governança',
+          skills: ['Finanças Corporativas', 'Governança Fiscal', 'Alocação de Capital', 'Mitigação de Riscos']
         },
-        fernandell: {
-          name: 'Fernandel Chambal',
-          role: 'Chief Commercial, Marketing & Business Development Officer (CCMB)',
-          experience: '15+ anos em crescimento estratégico',
-          specialization: 'Desenvolvimento de negócios e marketing',
-          expertise: 'Comércio global e logística',
-          bio: 'Fernandell lidera nossa expansão comercial e parcerias estratégicas. Com vasta experiência em comércio global e marketing, ele garante que nossas soluções cheguem aos mercados certos, mantendo fortes relacionamentos corporativos e crescimento sustentável.',
-          badge: 'Estratégia Comercial',
-          skills: ['Comércio Global', 'Parcerias Estratégicas', 'Expansão de Mercado', 'Relações com Clientes']
+        nilza: {
+          name: 'Nilza Dos Santos',
+          role: 'Chief Technological Officer (CTO)',
+          experience: '12+ anos liderando equipas de tecnologia e engenharia',
+          specialization: 'Software empresarial e infraestrutura em nuvem',
+          expertise: 'Arquitetura de sistemas e integração de IA',
+          bio: 'Nilza supervisiona o roteiro tecnológico, a arquitetura de sistemas e a inovação em engenharia da Digitec. Com mais de uma década de experiência especializada em infraestrutura empresarial e sistemas impulsionados por IA, ela garante que todos os ecossistemas de software alcancem máxima resiliência, alta disponibilidade e fiabilidade offline-first.',
+          badge: 'Arquiteta de Sistemas e Líder Técnica',
+          skills: ['Infraestrutura em Nuvem', 'L-LAN Offline-First', 'Arquitetura de Sistemas', 'Integração de IA']
         }
       }
     },
