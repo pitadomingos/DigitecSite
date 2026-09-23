@@ -203,10 +203,10 @@ async function verifyWorkforceSafetyGate(workerId: string) {
                     {t.publicHome.hero.btnExplore} <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform"/>
                   </button>
                   <button 
-                    onClick={() => navigate('/partners')} 
+                    onClick={() => navigate('/contact')} 
                     className="bg-transparent border border-white/20 text-slate-200 px-9 py-4 rounded-full font-black hover:bg-white/5 transition-all hover:border-white/40 active:scale-95 text-xs uppercase tracking-widest"
                   >
-                    {t.publicHome.nav.partners || 'Strategic Partners'}
+                    {t.publicHome.nav.contact || 'Contact Us'}
                   </button>
                 </div>
             </div>
@@ -442,7 +442,8 @@ async function verifyWorkforceSafetyGate(workerId: string) {
         </div>
       </section>
 
-      {/* --- FEATURED PARTNERS SECTION --- */}
+      {/* --- FEATURED PARTNERS SECTION (HIDDEN TEMPORARILY, ACTIVATE LATER) --- */}
+      {/* 
       <section className="py-24 bg-slate-900/40 border-y border-white/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -463,7 +464,6 @@ async function verifyWorkforceSafetyGate(workerId: string) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Vulcan Mining */}
             <div 
               onClick={() => navigate('/partners')}
               className="p-6 rounded-3xl bg-slate-900 border border-white/10 hover:border-orange-500/50 transition-all cursor-pointer group flex flex-col justify-between"
@@ -485,7 +485,6 @@ async function verifyWorkforceSafetyGate(workerId: string) {
               </span>
             </div>
 
-            {/* Testing */}
             <div 
               onClick={() => navigate('/partners')}
               className="p-6 rounded-3xl bg-slate-900 border border-white/10 hover:border-cyan-500/50 transition-all cursor-pointer group flex flex-col justify-between"
@@ -507,7 +506,6 @@ async function verifyWorkforceSafetyGate(workerId: string) {
               </span>
             </div>
 
-            {/* Mina de Moatize */}
             <div 
               onClick={() => navigate('/partners')}
               className="p-6 rounded-3xl bg-slate-900 border border-white/10 hover:border-emerald-500/50 transition-all cursor-pointer group flex flex-col justify-between"
@@ -529,7 +527,6 @@ async function verifyWorkforceSafetyGate(workerId: string) {
               </span>
             </div>
 
-            {/* CLN (Corredor Logístico de Nacala) */}
             <div 
               onClick={() => navigate('/partners')}
               className="p-6 rounded-3xl bg-slate-900 border border-white/10 hover:border-indigo-500/50 transition-all cursor-pointer group flex flex-col justify-between"
@@ -553,6 +550,7 @@ async function verifyWorkforceSafetyGate(workerId: string) {
           </div>
         </div>
       </section>
+      */}
 
       {/* --- FOOTER CTA --- */}
       <section className="py-24 bg-gradient-to-b from-[#020617] to-slate-950 text-center relative overflow-hidden">

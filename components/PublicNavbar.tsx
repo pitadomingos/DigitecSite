@@ -29,7 +29,7 @@ const PublicNavbar: React.FC = () => {
     { name: 'mission', path: '/mission' },
     { name: 'vision', path: '/vision' },
     { name: 'team', path: '/team' },
-    { name: 'partners', path: '/partners' },
+    // { name: 'partners', path: '/partners' }, // Hidden temporarily, will activate later
     { name: 'portfolio', path: '/portfolio' },
     { name: 'contact', path: '/contact' },
   ];

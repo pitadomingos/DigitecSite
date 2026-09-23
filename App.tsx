@@ -275,7 +275,8 @@ const App: React.FC = () => {
             <Route path="/vision" element={<VisionPage />} />
             <Route path="/mission" element={<MissionPage />} />
             <Route path="/team" element={<TeamPage />} />
-            <Route path="/partners" element={<PartnersPage />} />
+            {/* Partners page deactivated temporarily - activate later: <Route path="/partners" element={<PartnersPage />} /> */}
+            <Route path="/partners" element={<Navigate to="/" replace />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/portfolio/:id" element={<CaseStudyPage isAuthenticated={true} />} />
